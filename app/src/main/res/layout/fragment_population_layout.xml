@@ -59,7 +59,7 @@
 
         <ImageView android:layout_width="match_parent"
                    android:layout_height="270dp"
-                   android:src="@drawable/education2"
+                   android:src="@drawable/slake0"
                    android:fitsSystemWindows="true"
                    android:layout_gravity="center"
                    android:scaleType="centerCrop"

@@ -82,7 +82,7 @@
                     android:layout_marginRight="5dp">
 
                 <Button
-                        android:id="@+id/btn_citysanpablos"
+                        android:id="@+id/btn_historycity"
                         android:layout_width="55dp"
                         android:layout_height="55dp"
                         android:background="@drawable/citys"
@@ -94,7 +94,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textStyle="bold"
-                        android:text="The CIty"
+                        android:text="The City"
                         android:paddingTop="5dp"
                         android:textSize="13sp"
                         android:textColor="@color/white"
@@ -137,7 +137,7 @@
                     android:layout_marginRight="5dp">
 
                 <Button
-                        android:id="@+id/btn_barangaysanpablos"
+                        android:id="@+id/btn_barangaycity"
                         android:layout_width="55dp"
                         android:layout_height="55dp"
                         android:background="@drawable/barangays"
@@ -164,7 +164,7 @@
 
 
                 <Button
-                        android:id="@+id/btn_hymnsanpablos"
+                        android:id="@+id/btn_hymncity"
                         android:layout_width="55dp"
                         android:layout_height="55dp"
                         android:background="@drawable/hymn2"
@@ -243,19 +243,19 @@
             />
 
             <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Education"
-                    android:textStyle="bold"
-                    android:paddingLeft="20dp"
-                    android:paddingBottom="5dp"
-                    android:paddingTop="5dp"
-                    android:textSize="23dp"
-                    android:textColor="@color/white"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-            />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Education"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="23dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+        />
 
             <me.biubiubiu.justifytext.library.JustifyTextView
                     android:layout_width="match_parent"
@@ -269,7 +269,7 @@
             <Button
                     android:id="@+id/btn_education"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
+                    android:layout_height="20dp"
                     android:text="View more>>"
                     android:background="@drawable/text_border2"
                     android:textColor="@color/white"
@@ -277,7 +277,6 @@
                     android:paddingRight="7dp"
                     android:layout_gravity="right"
                     android:layout_marginRight="10dp"/>
-
 
             <TextView
                     android:layout_width="match_parent"
@@ -306,7 +305,7 @@
             <Button
                     android:id="@+id/btn_population"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
+                    android:layout_height="20dp"
                     android:text="View more>>"
                     android:background="@drawable/text_border2"
                     android:textColor="@color/white"
@@ -342,7 +341,7 @@
             <Button
                     android:id="@+id/btn_livelihood"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
+                    android:layout_height="20dp"
                     android:text="View more>>"
                     android:background="@drawable/text_border2"
                     android:textColor="@color/white"
@@ -350,9 +349,6 @@
                     android:paddingRight="7dp"
                     android:layout_gravity="right"
                     android:layout_marginRight="10dp"/>
-
-
-
 
         </LinearLayout>
 

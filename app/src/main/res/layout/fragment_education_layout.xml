@@ -435,6 +435,7 @@
                         android:textSize="10dp"
                         android:textColor="@color/white"
                         android:textAlignment="center"
+                        android:gravity="center"
                         android:textStyle="bold"/>
 
                 <TextView
@@ -444,6 +445,7 @@
                         android:textSize="10dp"
                         android:textColor="@color/white"
                         android:textAlignment="center"
+                        android:gravity="center"
                         android:layout_marginBottom="2dp"/>
 
                 <TextView
@@ -453,7 +455,7 @@
                         android:textSize="10dp"
                         android:textColor="@color/white"
                         android:textAlignment="center"
-
+                        android:gravity="center"
                         android:id="@+id/textView8"/>
 
             </LinearLayout>

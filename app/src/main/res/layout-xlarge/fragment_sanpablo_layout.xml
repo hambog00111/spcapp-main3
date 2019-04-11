@@ -118,10 +118,10 @@
                     android:layout_marginRight="25dp">
 
                 <Button
-                        android:id="@+id/btn_sanpablosscity"
+                        android:id="@+id/btn_historysanpablos"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:background="@drawable/sanpablenos"
+                        android:background="@drawable/history"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"/>
 
@@ -130,7 +130,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textStyle="bold"
-                        android:text="San Pableños"
+                        android:text="History"
                         android:paddingTop="5dp"
                         android:textSize="18sp"
                         android:textColor="@color/white"/>
