@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#27567E</color>
+    <color name="colorPrimaryDark">#122036</color>
+    <color name="colorAccent">#1C3757</color>
+    <color name="white">#FFFFFF</color>
+    <color name="tab">#1571FF</color>
+    <color name="black">#00000F</color>
+    <color name="red">#C20008</color>
+    <color name="blues">#1C3757</color>
+    <color name="bluess">#1C728E</color>
+    android:centerColor="#1C3757"
+    android:endColor="#122036"
+    android:startColor="#27567E"
+</resources>

@@ -1,0 +1,692 @@
+<resources>
+    <string name="app_name">SPC App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">San Pablo City Application</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_bpo">BPLO Fill Up</string>
+    
+    <string name="history1">
+
+        \t \t The earliest historical record of the City of San Pablo dates
+        back to pre-Spanish times when four (4) big barrios bounded by Mt. Banahaw
+        and Mt. Makiling composed Sampaloc. \n \n
+
+        \t \t In 1521, Sampaloc was changed to San Pablo De Los Montes, which became
+        a parish in 1556 and then a municipality in 1647.  In 1899, a Municipal
+        Government was established with Inocente Martinez as Municipal President
+        in 1902 when the Civil Government was granted independence from the Province
+        of Laguna.  On May 7, 1940, the charter bill sponsored by Congressman Tomas
+        Dizon was approved.  The bill became known as the City Charter of San Pablo
+        or Commonwealth Act No. 520. The City was inaugurated on March 30, 1941 with Dr.
+        Potenciano Malvar as the appointed City Mayor. \n \n
+
+        \t \t Over the years, it has flourished as a 1st class City.
+        It is now being governed by Hon. Loreto S. Amante as a
+        first term City Mayor until June 30, 2016. \n
+
+    </string>
+
+    <string name="Location1">
+
+       \t \t San Pablo City also known as the City of Seven Lakes is located
+        at geographical coordinates 14 4’ north latitude and 121east latitude.
+        It is about 87 south-southwest of the City of Manila with Rizal Park as reference point.
+        The City is the center of other progressive cities in Southern Luzon as it belongs to a vital economic hub.
+        The City at 14 15’ 20” north latitude is bounded by the mountain ranges of Kaisungan and
+        Calauan Hills in the south; Mabilog in the northwest; San Cristobal and Banahaw
+        Mountains in the east; and Susong-Dalaga, Napayong and Masalukot Hills in the south to the southeast. \n
+
+    </string>
+
+    <string name="home">
+
+        \t \t San Pablo City also known as the City of Seven Lakes is located
+        at geographical coordinates 14 4’ north latitude and 121east latitude.
+        It is about 87 south-southwest of the City of Manila with Rizal Park as reference point.
+        The City is the center of other progressive cities in Southern Luzon as it belongs to a vital economic hub.
+        The City at 14 15’ 20” north latitude is bounded by the mountain ranges of Kaisungan and
+        Calauan Hills in the south; Mabilog in the northwest; San Cristobal and Banahaw
+        Mountains in the east; and Susong-Dalaga, Napayong and Masalukot Hills in the south to the southeast. \n
+
+    </string>
+    <string name="Climate">
+
+        \t \t In San Pablo City, the months from January to April constitute the dry season and the remaining months
+        as wet season.  The relatively dry season makes the pattern closest to Type III in the Corona classification.
+        Warm temperature and high humidity is experienced in the city throughout the year with small seasonal variation.\n \n
+       \t \t  And because of its tropical climate precipitation within the city occurs only as rain.
+        It is affected however, by the Southwest Monsoon and cyclonic storms which subject it to wet climate. \n
+
+    </string>
+
+    <string name="TotalLand1">
+
+       \t \t  The City of San Pablo has a total land area of 19,899 hectares,
+        77.16% of which is devoted to crop production. \n
+
+    </string>
+
+
+    <string name="Population1">
+
+      \t \t The city’s population in 1989 was 186,810, showing an average annual rate of increase of 2.46 percent since 1980.
+        One half of this population was from ages 1 to 19 years. The poblacion population was 30 percent of the total,
+        females slightly outnumbering the males. The labor force ranges from 15-20 years of age. \n \n
+
+        \t \t San Pablo City is the fifth most populous local government unit in the province of Laguna.
+        In 2007 it has a population of 237,259 or 9.69 percent of the total provincial population.
+        Based on the 2010 census of population and housing as of May 1, 2010, the city’s population is 248,890. \n
+
+
+    </string>
+
+<string name="listofevents">
+         -   Coconut Festival
+    \n  -	City Fiesta
+    \n  -	Holy Week Celebration
+    \n  -	Flores de Mayo/Santacruzan
+    \n  -	San Pablo City Foundation Day
+    \n  -	Festival of Seven Lakes
+    \n  -	Laguna Day
+    \n  -	Rambutan/Lanzones Festival
+    \n  -	Festival of Lights
+
+</string>
+
+    <string name="listofevents2">
+
+         January 9-14
+      	\n January 15
+        \n March/April
+        \n  May 1-31
+        \n May 7
+        \n May 31
+        \n June 19
+        \n October
+        \n December
+
+    </string>
+
+    <string name="history3">
+      \t \t  In ancient times, San Pablo was known as the village of Sampalok.
+        It was an upland realm surrounded by mountain ranges and quiescent volcanic peaks.
+        Belief was that mountain making movements or orogeny  had thrust lower lying areas
+        to uplands and low rolling plains after extensive volcanisms took place millions of
+        years ago and  where caesal piniaceus tamarind  or sampalok trees grew  in wild
+        abundance. This upland realm became our hometown, San Pablo de los Montes. \n
+    </string>
+
+    <string name="Sampalok">
+        \t \t Sampalok was a large and prospering village which had its own system of government
+        and culture. Barangays already existed and each was headed by a chieftain who
+        was also known as  Gatpuno. Foremost among them were Gat Paguil, Gat Sungayan,
+        Gat Salakab and Gat Pulintan.  Cultural development was manifested in marriage
+        patterns, religion and social groups. \n \n
+        \t \t Even crude written symbols of communications
+        were used to record simple trades and forms of literature although oral handing of
+        customs, beliefs, songs and practices was preferred. The natives had a glimpse of
+        the outside world thru Chinese traders who were the first group to be in contact
+        with as evidenced by  ceramic pieces  that were unearthed and carbon-dated. \n
+    </string>
+
+    <string name="Spaniards">
+     \t \t   In search of gold the first Spanish troops under Captain Juan de Salcedo reached
+        the upland realm of Sampalok in 1571 and immediately announced governance in
+        the name of the king of Spain. Administration of its affairs was turned over to
+        the   Augustinian missionaries who succeeded in converting most of the natives
+        to Christianity. \n \n
+        \t \t Fiesta was introduced as part of religious rituals.  Consequently,
+        some barangay villages were renamed after saints as a reason for the festivity.
+        Native chieftains were renamed cabesa de barangay and in 1647 Sampalok was renamed
+        San Pablo de los Montes in honor of St. Paul the First Hermit and became an independent
+        municipality with a gobernadorcillo or capitan as its head. \n \n
+
+        \t \t  Centuries of Spanish colonization of the Philippine Islands had left its indelible
+        imprint on the social, economic and political life of the country. In San Pablo de
+        los Montes the gridiron plan for its central village or cabecera had been replicated
+        from   communities that were founded  under the Spanish empire which conspicuously
+        featured  a central plaza. From 1648 to 1898  249 gobernadorcillos  and 94 parish priests
+        had been  installed  in San Pablo de los Montes. \n \n
+
+        \t \t   Over the years there was genial and friendly relationship between the natives
+        and the religious who wielded the civil authority. Until the flames of revolution against
+        Spain that  was ignited by the execution of Dr. Jose P. Rizal who was well known to the
+        local citizenry had crept into San Pablo de los Montes and  produced revolutionists
+        and local  heroes. \n \n
+
+        \t \t   In the face of impending defeat the Spanish troops left the town
+        and the Philippine Flag was raised in the town plaza on June 6, 1898.
+        The revolutionists led by General Juan Cailles immediately appointed prominent
+        citizens as councilmen and town officials to effect local administration. \n
+
+    </string>
+
+    <string name="american">
+      \t \t The subsequent defeat of the Spanish colonizers set the stage for another war – the
+        Filipino-American war and the inevitable American occupation and establishment of
+        the Philippine Commonwealth. Although Manila was captured by the American troops on
+        June 30, 1898 the first American cavalry arrived in San Pablo on January 14, 1900
+        after taking Santa Cruz and Calamba earlier and routed the  local freedom fighters. \n \n
+
+        \t \t America’s pacification drive and grant of amnesty to freedom-fighters did much to
+        quell animosity and distrust among the local citizenry and on January 24, 1901 U.S.
+        military authorities appointed Don Pedro de Gorostiza as municipal president of San
+        Pablo.\n \n
+
+     \t \t Civil government in the Philippines was inaugurated on July 4, 1901.
+        It was ushered in locally by the elite of San Pablo  which was composed of the
+        influential, wealthy and closely related families  who easily dominated the fledgling
+        electoral process. \n \n
+
+      \t \t Don Marcos Paulino was the first elective municipal president of San Pablo (1902-1904).
+        The other municipal presidents who succeeded him are as follows: \n \n
+
+        1905-1907   -   Don Melecio Fule \n
+        1908-1910   -   Don Cornelio Alcantara \n
+        1911-1913   -   Don Simeon Gesmundo \n
+        1914-1916   -   Don Marcial Alimario \n
+        1916-1918   -   Don Feliciano Exconde \n
+        1919-1921   -   Don Potenciano Cabrera \n
+        1922-1924   -   Don Isidoro Alvaran \n
+        1925-1927   -   Don Zacarias Sahagun \n
+        1928-1931   -   Don Crispin Calabia \n
+        1931-1934   -   Don Gaudencio Aquino \n
+        1935-1938   -   Don Inocencio Barleta \n
+        1938-1940   -   Don Cristeto Brion \n \n
+
+       \t \t On May 7, 1940, San Pablo became a city thru enactment and approval of Commonwealth Act No.
+        520 which was sponsored by Assemblyman Tomas Dizon. Dr. Potenciano Malvar became the first
+        appointive City Mayor. \n
+
+    </string>
+
+    <string name="japanese">
+
+        \t \t In the morning of December 25, 1941 Japanese fighter planes dropped bombs in the city
+        and strafed people and edifices. They left behind a harrowing scene of ruins and death.
+        On December 30, 1941 General Susuma  Morioka arrived and took over San Pablo in the name
+        of the invading Japanese Imperial Forces. \n \n
+
+       \t \t World War II brought extensive damage to the city in terms of lives lost and property
+        destroyed. It brought out the worst and the best in men – from the dreaded notoriety
+        of the local kempetai and makapili collaborators  to the admirable heroism of the local
+        guerillas and freedom fighters one of whom was Cipriano B. Colago who became the first elected
+        City Mayor of San Pablo. Japanese occupation ended when the American troops marched into
+        the city on April 4, 1945. \n
+
+    </string>
+
+   <string name="marcos">
+      \t \t On September 21, 1972 President Ferdinand E. Marcos issued Proclamation No. 1081 which placed
+       the entire Philippine archipelago under Martial Law.  Among others, it paved the way for the
+       issuance of Presidential Decree No. 86 dated December 31, 1972; Presidential Decree No. 86-A
+       dated January 5, 1973 and Presidential Decree No. 86-B dated January 7, 1973.  All these decrees
+       were contributory to the creation of Citizen Assemblies or Barangays. Under  these decrees 80
+       barangays were created in the city. \n \n
+
+       \t \t  On February 25, 1986 the so-called EDSA Revolution or People Power Revolution broke
+       out following withdrawal of support by Defense Minister Enrile and Philippine Constabulary
+       Chief Fidel V. Ramos to the martial law government. President Marcos fled the country and went
+       to Hawaii were he died on September 28,1989.  \n \n
+
+       \t \t  A Revolutionary Government was established by President Corazon C. Aquino who was catapulted to
+       power by the EDSA revolution and local government executives all over the country were either
+       booted out of office or retained.  In San Pablo City, Mayor Cesar P. Dizon was replaced by
+       long-time political rival, former City Mayor Zacarias A. Ticzon as OIC Mayor. \n \n
+
+       \t \t  Upon filing of his certificate of candidacy Ticzon was replaced by OIC Jose de Roma who was later on replaced
+       by OIC Ruben Adarlo of the MILG.  Upon ratification of the Philippine Constitution of 1986
+       normalcy in governance returned and so did the electoral process. \n
+
+   </string>
+
+    <string name="history2">
+      \t \t  In ancient times, San Pablo was known as the village of Sampalok. It was an upland
+        realm surrounded by mountain ranges and quiescent volcanic peaks. Belief was that
+        mountain making movements or orogeny  had thrust lower lying areas to uplands and low
+        rolling plains after extensive volcanisms took place millions of years ago and
+        where caesal piniaceus tamarind  or sampalok trees grew  in wild abundance. This
+        upland realm became our hometown, San Pablo de los Montes. \n
+
+    </string>
+
+    <string name="sanpablos">
+
+       \t \t San Pablo City is host to diverse culture, customs and traditions. This is attributed
+        to the city’s location, being inland, that makes it accessible from neighboring towns,
+        cities and provinces. Settlers from Batangas, Quezon and the Bicolandia, to mention a
+        few, have been integrated in the mainstream of city life. They were the products of
+        inter-marriage, business or related interest, professional calling or occupational
+        pursuits, simple transfer of residence and others. \n \n
+
+        \t \t Tagalog is the most widely used dialect in the city. However, other dialects like Bikol,
+        Kapampangan, Cebuano, Waray, Ilocano and Maguindanao  are also spoken by migrants. \n \n
+
+        \t \t As Filipino and English are both the official languages of the Philippines they are
+        spoken in the city with the latter being used as a medium of instructions in the
+        academe and in most government communications. Outside of the two mentioned languages,
+        Chinese and Sanskrit are also noticeably used. \n \n
+
+        \t \t Roman Catholic is the biggest religious denomination in San Pablo City. This is
+        followed by Iglesia ni Kristo, Aglipayans, Evangelical and other minor denominations. \n
+
+
+    </string>
+
+    <string name="postwarmayor">
+        \t \t Alfonso Farcon - 1945-1946 \n
+        \t \t Tomas Dizon - 1946 \n
+        \t \t Fernando Bautista - 1947-1949 \n
+        \t \t Marciano Brion - 1950-1951 \n
+        \t \t Artemio Fule - 1951-1953 \n
+        \t \t Tomas Dizon - 1953-1955 \n
+
+    </string>
+    <string name="education">
+
+       \t \t In San Pablo City, there are sixty three (63) public elementary schools offering
+        elementary and pre – elementary education which are distributed in the seven (7)
+        districts of the city; seventy six (76) day care centers, fifty one (51) private
+        pre-elemetary schools, twenty seven (27) private elementary schools, fourteen (14)
+        public secondary schools, fifteen (15) private secondary schools, six (6) tertiary
+        school and ten (10) vocational school, offering short term courses. \n \n
+
+        \t \t Paaralang Pag-ibig at Pag-asa, established since 1970’s as permanent special
+        education center with the aim of providing the needs of differently able and
+        special children with autism, hearing impairment, visual impairment, intellectual
+        disabilities and multiple handicaps. It helps the handicapped to be functionally
+        literate and economically productive. \n \n
+
+        \t \t As per record of the Department of Education, the average teacher-student ratio in
+        public elementary schools for school year 2008-2009 is 1.33 and average classroom-pupil
+        ratio is 1.35 which conforms with the DECS standard which is 1:40. \n
+
+    </string>
+
+    <string name="population">
+        \t \t San Pablo City is the fifth most populous local government unit in the Province of Laguna.
+        In 2007 it has a population of 237,259 or 9.69% of the total provincial population.
+        As reckoned in the same year, the Annual Growth Rate of the city’s population is 1.84%.
+        Based on this the city’s projected population for 2010 is 250,575.  \n \n
+
+        \t \t Historically, the Annual Growth Rate during the period 1960-1970 posted  an all time high
+        of 4.08%. This was influenced by the influx of migrant workers together with their families
+        as the motor works ( jeepney body-building) industries and agri-based oil refineries boomed. \n \n
+
+        \t \t In 1975-1995 the AGR teetered (2.01%, 2.45%, 2.07% and 2.43%) as labor demand from
+        Calamba and Sta Rosa, which are now cities, and the Municipality of San Pedro sharply
+        increased due to construction and  subsequent operation of a number of industrial parks
+        or manufacturing companies in those areas. Out-migration then was inevitable. \n
+
+
+    </string>
+
+    <string name="livelihood">
+
+   \t \t The City of San Pablo is self sufficient in terms of fish, poultry eggs, corn, assorted
+        vegetables, pineapple and root crops. However, it is not so when it comes to basic food
+        commodities such as rice, livestock and poultry meat products. Low production of these
+        commodities is attributed to limited areas for rice. Some quarters believe though that
+        strict guidelines of the city for the operation and establishment of swine farms also is
+        one of the reasons for non-expansion of the business. Few poultry raisers are re-investing
+        for the construction of broiler poultry buildings. \n
+
+
+    </string>
+
+    <string name="homes">\t \t The earliest historical record of the City of San
+        Pablo dates back to pre-Spanish times when four (4) big barrios bounded
+        by Mt. Banahaw and Mt. Makiling composed Sampaloc. \n
+        \n
+        \t \t In 1521, Sampaloc was changed to San Pablo De Los Montes,
+        which became a parish in 1556 and then a municipality in 1647.
+        In 1899, a Municipal Government was established with Inocente
+        Martinez as Municipal President in 1902 when the Civil Government
+        was granted independence from the Province of Laguna.  On May 7, 1940,
+        the charter bill sponsored by Congressman Tomas Dizon was approved.
+        The bill became known as the City Charter of San Pablo or Commonwealth
+        Act No. 520.  The City was inaugurated on March 30, 1941 with Dr. Potenciano Malvar
+        as the appointed City Mayor. \n
+    </string>
+    <string name="Reps"> Republic of the Philippines \n
+
+    </string>
+    <string name="Rep">
+        All content in the public \n
+        domain unless otherwise stated
+    </string>
+
+<string name="home2">
+        \t \t In 1521, Sampaloc was changed to San Pablo De Los Montes,
+        which became a parish in 1556 and then a municipality in 1647.
+        In 1899, a Municipal Government was established with Inocente
+        Martinez as Municipal President in 1902 when the Civil Government
+        was granted independence from the Province of Laguna.  On May 7, 1940,
+        the charter bill sponsored by Congressman Tomas Dizon was approved.
+        The bill became known as the City Charter of San Pablo or Commonwealth
+        Act No. 520.  The City was inaugurated on March 30, 1941 with Dr. Potenciano Malvar
+        as the appointed City Mayor. \n
+    </string>
+    <string name="Mission"> \t \t To implement the City development programs through sustainable and efficient delivery of
+        public services in partnership with the private sector \n</string>
+    <string name="Vision"> \t \t San Pablo, the City of Seven Lakes a premier
+        agricultural and light industrial zone, education hub and tourist destination in CALABARZON \n</string>
+
+<string name="city_info_frontline">	ISSUANCE OF OATH OF OFFICE AND APPOINTMENT OF ELECTIVE / APPOINTIVE BARANGAY OFFICIALS AND BARANGAY   TANODS.
+
+</string>
+
+    <string name="city_info_frontline_four"> MAKES ANNOUNCEMENT OF THE FOLLOWING: \n
+        -	BARANGAY AND CITY GOVERNMENT PROGRAMS/ACTIVITIES \n
+        -	VEHICULAR ACCIDENT \n
+        -	ASSISTANCE (MERALCO, WATER DISTRICT, AMBULANCE, FIRE INCIDENT) \n
+        -	MISSING ANIMAL / PERSON \n
+        -	CARNAPED / ABANDONED VEHICLE \n
+        -	ROBBERY / HOLD-UP \n
+        -	PSAF / POLICE ASSISTANCE \n
+
+
+    </string>
+    
+    <string name="education_shoolphilosophy">
+        \t\t The school is deeply committed towards the integral formation
+        of the human person, with a profound faith in God, in his fellow men and himself by providing its
+        students the full development of their physical, intellectual, social and cultural endowment for
+        effective participation in various professions and industrial occupations and to enable them to
+        enjoy reasonable quality of life to be able to contribute to the upliftment of the human society. \n </string>
+
+    <string name="education_visionstatement">
+        \t\t Dalubhasaan ng Lunsod ng San Pablo shall emerge
+        as one of the best locally funded universities in the country and a center of excellence
+        in Education. The College foresees its graduates with strong moral fiber, proud of his race
+        and prepared for exemplary global participation in the arts, sciences, humanities, education
+        and business, enjoying a quality of life and abundance;  graduates who are living in peace
+        and in harmony with nature and their fellowmen and above all, God-fearing. \n </string>
+
+    <string name="education_missionstatement">
+        \t\t The mission of DLSP is to provide for the total development
+        of all the members of the academic community particularly its students through balanced and relevant
+        program of activities in its curricular and co-curricular offerings fortified by strong Filipino values and ideals. \n  \n
+
+        \t\t Through its educational program, the college seeks to develop academic excellence,
+        professional competence, social awareness, social upliftment and appreciation of Philippine heritage. \n \n
+
+        \t\t  More specifically, DLSP’s establishment is to render educational services to the poor residents of the community. \n
+    </string>
+
+    <string name="population_population">
+       \t \t San Pablo City is the fifth most populous local government unit in the Province of Laguna.
+        In 2007 it has a population of 237,259 or 9.69% of the total provincial population.
+        As reckoned in the same year, the Annual Growth Rate of the city’s population is 1.84%.
+        Based on this the city’s projected population for 2010 is 250,575. \n \n
+
+
+        \t \t  Historically, the Annual Growth Rate during the period 1960-1970 posted  an all time high
+        of 4.08%. This was influenced by the influx of migrant workers together with their families
+        as the motor works ( jeepney body-building) industries and agri-based oil refineries boomed. \n \n
+
+        \t \t  In 1975-1995 the AGR teetered (2.01%, 2.45%, 2.07% and 2.43%) as labor demand from Calamba
+        and Sta Rosa, which are now cities, and the Municipality of San Pedro sharply increased due
+        to construction and  subsequent operation of a number of industrial parks or manufacturing
+        companies in those areas. Out-migration then was inevitable. \n \n
+
+        \t \t  The AGR continued to drop during the period 2000-2007 to 1.84% World-wide recession was looming
+        and the pursuit for gainful employment became naturally acute. Diaspora ensued and soon enough
+        a sizable number of city residents moved to foreign lands in search of greener pastures. Another
+        aspect worth considering is the change in the lifestyle and outlook of the people. Young
+        professionals or couples are more inclined to raise a smaller family usually with one or two kids.
+        Still others prefer to find mates on live-in and childless basis for a certain period of time. \n
+
+    </string>
+
+    <string name="population_censusdata">
+        1903 \n
+        1918 \n
+        1939 \n
+        1948 \n
+        1960 \n
+        1970 \n
+        1975 \n
+        1980 \n
+        1990 \n
+        1995 \n
+        2000 \n
+        2007
+    </string>
+
+    <string name="population_tp_laguna">
+        148,606 \n
+        195,546 \n
+        279,505 \n
+        321,247 \n
+        472,064 \n
+        699,736 \n
+        803,750 \n
+        973,104 \n
+        1,370,232 \n
+        1,631,082 \n
+        1,965,872 \n
+        2,473,530
+    </string>
+
+    <string name="population_tp_spc">
+        22,612 \n
+        31,399 \n
+        46,311 \n
+        50,435 \n
+        70,680 \n
+        105,517 \n
+        116,607 \n
+        131,655 \n
+        161,630 \n
+        183,757 \n
+        207,927 \n
+        237,262
+    </string>
+
+    <string name="population_agr_laguna">
+        - \n
+        - \n
+        - \n
+        - \n
+        - \n
+        - \n
+        - \n
+        - \n
+        3.32 \n
+        4.08 \n
+        4.08 \n
+        3.22
+    </string>
+    <string name="population_agr_spc">
+        - \n
+        2.21% \n
+        1.86% \n
+        .95% \n
+        .17% \n
+        4.08% \n
+        2.01% \n
+        2.45% \n
+        2.07% \n
+        2.43% \n
+        2.68% \n
+        1.84%
+    </string>
+
+    <string name="population_migration">
+       \t \t Five years ago, out of 215,288  household population (five years old and over )
+        94.24 percent never leave nor transfer their residence to other place. On the
+        hand, 0.43 percent of the household population moved from other municipalities
+        of Laguna , 2.58 percent moved from other province and 0.25 percent migrated
+        from foreign country. \n \n
+       \t \t In the three migratory movements, there were more females than males, larger
+        by about 2.17 percent in the inter-municipality migration within the province,
+        by 1.99 percent among migrants from other provinces and 2.05 percent among former
+        residents of foreign lands. \n
+
+    </string>
+
+    <string name="population_density">
+        \t \t San  Pablo City has a total land area of 21,400 hectares. Is is estimated that
+        the gross density of the city was 8.78 persons per hectare in 2009. By area
+        classification, the gross urban density is 29.28 persons per hectare while
+        there are 11 persons in rural areas per hectare. It is expected that by year
+        2010 the population density of the city will be 12 persons per hectare. \n \n
+
+       \t \t Among the urban barangays, Brgy. II-A has the highest density with 666 persons per
+        hectare while the least density is in Brgy. Atisan and  Brgy. San Cristobal, Brgy.
+        San Jose as these barangays have a larger land areas. \n \n
+
+       \t \t While it is heavily congested in the urban areas, rural barangays of the city have
+        vast land areas to settle its inhabitants in  Brgy. San Cristobal the biggest barangay in
+        terms of land area has the least population density of 2.00 per hectare as it is a
+        mountainous area. \n
+    </string>
+
+    <string name="population_household">
+
+       \t \t San Pablo City has 80 barangays-39 urban and 41 rural barangays. San Pablo although
+        classified as chartered city is predominantly rural. Based on the year 2007 census,
+        more than one-half (52.90%) of its population reside in the rural areas while 47.10
+        percent are in the urban areas. \n \n
+
+        \t \t Further, in 2009, the number of household population is 243,759 of which 46,715 reside
+        in the urban areas while 197,044 are in the rural areas, with an average household size
+        of 4.7, total number of household is 52,352. Of the total household population, Barangay
+        Del Remedio has the biggest number of populace with a total of 13,975 with 4.7 members
+        for every household. This can be attributed to numerous subdivisions developed in barangay
+        Del Remedio as a result of in-immigration and natural increase. The smallest number of
+        household population is in Brgy. VII-D with 19 households. \n
+    </string>
+
+    <string name="population_age">
+        \t \t San Pablo City has a young age structure. Thirty four percent
+        (34%) of the population is below age fifteen (15) years old.
+        Just over sixty four percent (64%) of the population is in the
+        economically productive age (15-64) and those over sixty five
+        (65) years of age constitute 4.04%. This young age structure
+        has two  (2) primary effects: \n \n
+
+       \t \t(1)	A young age structure regardless of the total fertility
+        rate or the average number of children born to a woman in her
+        life time, presupposes that the population will continue to grow for
+        a long time. This is because of the large number of women currently
+        in their reproductive ages. This phenomenon is called population momentum. \n \n
+
+        \t \t(2) The dependency ratio, the number of dependents (young
+        people aged 0-14 and old people aged 65 and over) are being
+        supported by the economically  productive age group ( 15-64 years old). \n \n
+
+
+        \t \t In San Pablo City, the age dependency ratio is 61.3/100persons which is
+        considered high. A high dependency ratio means greater consumption and
+        less saving. A youth population (0-14 years old) needs food, health care
+        and education. Meeting this demand places a  strain in the city government’s
+        ability to provide resources for their dependent population. \n \n
+
+        \t \t The sex ratio is 98:1 meaning there are 98 males for every 100 females.
+        By age group, it is observed that under 14 years old there are more boys
+        than girls while ages 15 years old and over there are more women, particularly
+        in the productive age, than that of their male counterpart, implying that
+        if family planning will not be fully implemented it will aggravate the
+        population growth, therefore, sustain the current social and economic conjuncture. \n
+    </string>
+
+    <string name="education_grade">
+       \t \t Residents of San Pablo with ages 5 years old and over who have completed elementary
+        education showed marked preponderance with 39.71% (96,796). Of the the total household
+        population 3.17% (7,727) finished pre-school; 29.75% (72,567) reached  secondary school;
+        3.39 (8,264) attended vocational school; 18.89 (45,778) enrolled in college. \n \n
+
+        \t \t In the high school or secondary level only 46.39% (33,663) graduated while 53.61%
+        (38,879) finished vocational course. \n \n
+
+        \t \t There are 59.05% (27,033) became academic degree holders 40.95% (18,745) 18,745 became
+        undergraduates and 293 finished post baccalaureate. \n \n
+
+        \t \t Those who have no grade completed comprise 4.25% (10,360) and there are about 0.81 (1,9974)
+        who did not disclose their educational attainment. \n
+
+
+    </string>
+
+    <string name="city_info_procedure_one">	1.   Checks  the  completeness
+        of  the requirements submitted by the client/s and verifies
+        the same against records on  file.
+    </string>
+
+    <string name="city_info_procedure_two">	2.   Prepares, types or encodes the name  and other
+        necessary data of  the concerned barangay official in the pre – printed form
+        “Panunumpa sa Katungkulan, Paghirang, and Appointment”.
+    </string>
+
+    <string name="city_info_procedure_three">3.   Reviews, validates and initials the Document.
+    </string>
+
+    <string name="city_info_procedure_four"> 4.   Forwards the document  to the City Mayor  for approval.
+    </string>
+
+    <string name="city_info_procedure_five"> 5.   Approves and signs the document.
+    </string>
+
+    <string name="city_info_procedure_six"> 6.   Records to logbook and release  the  document
+         to client or concerned Barangay Official.
+    </string>
+
+    <string name="city_info_procedure_two_one"> 1.   Checks  the  completeness  of  the requirements submitted by the client/s and verifies the same against records on  file.
+    </string>
+    <string name="city_info_procedure_two_two"> 2.   Prepares the Certification
+    </string>
+    <string name="city_info_procedure_two_three"> 3.   Reviews, validates and initials the Certification.
+    </string>
+    <string name="city_info_procedure_two_four"> 4.   Forwards the Certification  to the City Mayor for  approval.
+    </string>
+    <string name="city_info_procedure_two_five"> 5.   Approves and signs the Certification.
+    </string>
+    <string name="city_info_procedure_two_six"> 6.   Records to logbook and release  the document  to client or concerned Barangay Official.
+    </string>
+
+    <string name="city_info_procedure_three_one"> 1.   Verbal / written request received  by  the staff-in-charge
+    </string>
+    <string name="city_info_procedure_three_two"> 2.  Staff-in-Charge will verifies if information/data requested by client  is available
+    </string>
+    <string name="city_info_procedure_three_three"> 3.   If available, the information is shared, printed or photocopied for the client.
+        Otherwise, client will be referred to other offices or other sources where information requested can be obtained.
+    </string>
+
+    <string name="city_info_procedure_four_one"> 1.  Go directly to the Radio Room (5th Floor,  City Governance Bldg.) or call 5623-086
+    </string>
+    <string name="city_info_procedure_four_two">2.   Talk/Explain to the  Radio Operator on Duty the announcement that needs to be disseminated.
+
+    </string>
+    <string name="city_info_frontline_two">ISSUANCE OF THE CERTIFICATION / CLEARANCE FOR THE FOLLOWING PURPOSES: \n
+        -	NO PENDING ADMINISTRATIVE CASE FOR FIDELITY BOND \n
+        -	APPLICATION FOR CIVIL SERVICE ELIGIBILITY \n
+        -	APPLICATION FOR SCHOLARSHIP GRANT OF THE BARANGAY OFFICIALS CHILDREN \n
+        -	APPLICATION TO CARRY FIRE-ARMS \n
+        -	APLICATION FOR THE DEPARTMENT OF FOREIGN AFFAIRS  (DFA) AUTHENTICATION AND RED RIBBON PURPOSES * \n
+    </string>
+
+    <string name="tab_govphil">The Integrated Government Philippines (iGovPhil) is a joint program \n of the
+        Department of Information and Communications Technology \n (DICT) and the
+        Advanced Science and Technology Institute of the \n Department of Science and Technology (DOST-ASTI)\n
+    </string>
+    <string name="form">I DECLARE UNDER PENALTY OF PERJURY that the
+        forgoing information are true based on my personal knowledge and authentic records.
+        Further, I agree to comply with the regulatory requirements and other deficiencies within thirty
+        (30) days from release of the business permit.
+    </string>
+    <string name="gallery_">San Pablo, officially the City of San Pablo, (Tagalog: Lungsod ng San Pablo), or simply
+        known as San Pablo City, is a 1st class city in the province of Laguna, Philippines. According to the 2015
+        census, it has a population of 266,068 peopl
+    </string>
+    <string name="back"><![CDATA[<]]></string>
+    <string name="forward"><![CDATA[>]]></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Lakbay San Pablo</string>
+    <string name="title_activity_maps2">Map</string>
+</resources>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:id="@+id/linera">
+
+
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="270dp"
+                   android:src="@drawable/slake4"
+                   android:fitsSystemWindows="true"
+                   android:layout_gravity="center"
+                   android:scaleType="centerCrop"
+                   android:padding="10dp"
+
+
+        />
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+        <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:layout_width="400dp"-->
+        <!--android:layout_height="90dp"-->
+        <!--android:layout_gravity="center">-->
+
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="80dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="80dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/spc_logo"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginStart="160dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="4dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/imageView2"&ndash;&gt;-->
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Republic of the Philippines"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@color/white"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/textView15"&ndash;&gt;-->
+        <!--&lt;!&ndash;tools:layout_editor_absoluteY="24dp" tools:layout_editor_absoluteX="116dp"/>&ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="CITY GOVERMENT OF SAN PABLO"-->
+        <!--android:textSize="25dp"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textStyle="bold" android:id="@+id/textView16"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textView15"-->
+        <!--android:layout_marginEnd="4dp"/>-->
+
+
+        <!--</android.support.constraint.ConstraintLayout>-->
+
+        <TextView
+                android:paddingLeft="20dp"
+                android:text="History"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingBottom="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+        />
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_marginStart="35dp"
+        />
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:gravity="center"
+
+                      android:layout_margin="5dp">
+            <LinearLayout android:layout_width="400dp"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:gravity="center"
+                          android:background="@drawable/text_border"
+                          android:layout_margin="5dp">
+
+
+                <TextView
+                        android:textAlignment="center"
+                        android:text="EVENTS AND ANNOUNCEMENT"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="0dp"/>
+
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:layout_width="400dp"
+                        android:layout_height="120dp"
+                        android:text="@string/Vision"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="400dp"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:gravity="center"
+                          android:background="@drawable/text_border"
+                          android:layout_margin="5dp">
+                <TextView
+                        android:textAlignment="center"
+                        android:text="SERVICES"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="0dp"/>
+
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:layout_width="400dp"
+                        android:layout_height="122dp"
+                        android:text="@string/Vision"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="400dp"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:gravity="center"
+                          android:background="@drawable/text_border"
+                          android:layout_margin="5dp">
+
+                <TextView
+                        android:textAlignment="center"
+                        android:text="MISSION"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"/>
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:layout_width="400dp"
+                        android:layout_height="120dp"
+                        android:text="@string/Mission"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="400dp"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:gravity="center"
+                          android:background="@drawable/text_border"
+                          android:layout_margin="5dp">
+
+                <TextView
+                        android:textAlignment="center"
+                        android:text="VISION"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="0dp"/>
+
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:layout_width="400dp"
+                        android:layout_height="120dp"
+                        android:text="@string/Vision"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginTop="168dp"
+
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                android:id="@+id/constraintLayout">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/tab_govphil"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintHorizontal_bias="0.535"
+                    android:textSize="11sp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:id="@+id/textView3"
+                    android:layout_marginStart="4dp"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintVertical_bias="1.0"
+                    android:id="@+id/linearLayout">
+
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/asti"
+                        android:id="@+id/imageView5"
+                        android:layout_weight="1"/>
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/dict"
+                        android:id="@+id/imageView6"
+                        android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+                android:text="© 2019 San Pablo City Goverment"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:textSize="13dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:id="@+id/textView8"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

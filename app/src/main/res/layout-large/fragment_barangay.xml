@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+        >
+
+            <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/spc_logo"
+                    android:id="@+id/imageView2"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Republic of the Philippines"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"
+                />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CITY OF SEVEN LAKES"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:layout_marginTop="3dp"
+
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="270dp"
+                   android:src="@drawable/slake5"
+                   android:fitsSystemWindows="true"
+                   android:layout_gravity="center"
+                   android:scaleType="centerCrop"
+                   android:padding="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+        >
+            <LinearLayout
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/text_border"
+                    android:layout_marginRight="5dp">
+
+                <Button android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/citys"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:text="The City"
+                        android:paddingTop="5dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                />
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/text_border"
+                    android:layout_marginRight="5dp">
+
+
+                <Button android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/sanpablenos"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+                        android:textSize="13sp"
+                        android:text="San Pableños"
+                        android:textColor="@color/white"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/text_border"
+                    android:layout_marginRight="5dp">
+
+                <Button android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/barangays"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:text="Barangay"
+                        android:paddingTop="5dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/text_border">
+
+
+                <Button android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/hymn2"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:text="Hymn"
+                        android:textSize="13sp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <ListView
+                    android:id="@+id/listview_barangay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

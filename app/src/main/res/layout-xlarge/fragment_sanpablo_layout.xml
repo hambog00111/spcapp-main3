@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+    >
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="105dp"
+                        android:src="@drawable/spc_logo"
+                        android:id="@+id/imageView2"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"/>
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingLeft="15dp">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Republic of the Philippines"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="20dp"
+                            android:textSize="19dp"
+                    />
+
+                    <TextView
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:text="CITY OF SEVEN LAKES"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="30dp"
+                            android:layout_marginTop="3dp"
+
+                    />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="420dp"
+                   android:src="@drawable/slake5"
+                   android:fitsSystemWindows="true"
+                   android:layout_gravity="center"
+                   android:scaleType="centerCrop"
+                   android:padding="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+        >
+            <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/text_border"
+                    android:layout_marginRight="25dp">
+
+                <Button
+                        android:id="@+id/btn_historycity"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/citys"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:text="The City"
+                        android:paddingTop="5dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/text_border"
+                    android:layout_marginRight="25dp">
+
+                <Button
+                        android:id="@+id/btn_sanpablosscity"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/sanpablenos"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:text="San Pableños"
+                        android:paddingTop="5dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/text_border"
+                    android:layout_marginRight="25dp">
+
+                <Button
+                        android:id="@+id/btn_barangaycity"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/barangays"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:text="Barangays"
+                        android:paddingTop="5dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/text_border"
+                    android:layout_marginRight="10dp">
+
+                <Button
+                        android:id="@+id/btn_hymncity"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/hymn2"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:text="Hymn"
+                        android:paddingTop="5dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="San Pableños"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="23dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sanpablos"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="27dp"
+                    android:textSize="15dp"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Awardees"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="23dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contributions"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="23dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Education"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="23dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="27dp"
+                    android:textSize="15dp"
+            />
+
+            <Button
+                    android:id="@+id/btn_education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="View more>>"
+                    android:background="@drawable/text_border2"
+                    android:textColor="@color/white"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"/>
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Population"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="23dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/population"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="27dp"
+                    android:textSize="15dp"
+            />
+
+            <Button
+                    android:id="@+id/btn_population"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="View more>>"
+                    android:background="@drawable/text_border2"
+                    android:textColor="@color/white"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Livelihood"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="23dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/livelihood"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="27dp"
+                    android:textSize="15dp"
+            />
+
+            <Button
+                    android:id="@+id/btn_livelihood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="View more>>"
+                    android:background="@drawable/text_border2"
+                    android:textColor="@color/white"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="79dp"
+                    android:text="@string/tab_govphil"
+                    android:layout_marginTop="8dp"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+
+            />
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="8dp"
+            >
+
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/asti"
+                        android:id="@+id/imageView5"
+                        android:layout_weight="1"
+                        android:layout_marginRight="7dp"/>
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/dict"
+                        android:id="@+id/imageView6"
+                        android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/phlogo"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="15dp"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:text="@string/Reps"
+                        android:textSize="10dp"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:textStyle="bold"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Rep"
+                        android:textSize="10dp"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="2dp"/>
+
+                <TextView
+                        android:text="© 2019 San Pablo City Goverment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+
+                        android:id="@+id/textView8"/>
+
+            </LinearLayout>
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/transpa"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
