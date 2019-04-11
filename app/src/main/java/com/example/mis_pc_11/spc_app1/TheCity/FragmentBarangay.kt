@@ -1,6 +1,7 @@
 package com.example.mis_pc_11.spc_app1.TheCity
 
 import android.annotation.SuppressLint
+import android.os.AsyncTask
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -12,6 +13,7 @@ import android.widget.Toast
 import com.example.mis_pc_11.spc_app1.BarangayAdapter
 import com.example.mis_pc_11.spc_app1.BarangayModel
 import com.example.mis_pc_11.spc_app1.R
+import java.lang.ref.WeakReference
 
 class FragmentBarangay : Fragment() {
 
@@ -29,6 +31,8 @@ class FragmentBarangay : Fragment() {
 
         listView = rootview.findViewById(R.id.listview_barangay)
         ListBrgy(listView)
+
+        GetBrgyLs(this).execute()
 
 
         listView.onItemClickListener = object : AdapterView.OnItemClickListener {
@@ -63,6 +67,19 @@ class FragmentBarangay : Fragment() {
         lsView.adapter = adapter
 
 
+    }
+
+    companion object {
+        class GetBrgyLs internal constructor(mContext: FragmentBarangay): AsyncTask<Void, Void, String>(){
+
+            private var resp: String? = null
+            private val fragRef: WeakReference<FragmentBarangay> = WeakReference(mContext)
+
+            override fun doInBackground(vararg params: Void?): String {
+                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            }
+
+        }
     }
 }
 
