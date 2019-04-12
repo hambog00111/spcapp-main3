@@ -1,4 +1,4 @@
-package com.example.mis_pc_11.spc_app1.TheCity
+package com.example.mis_pc_11.spc_app1.TheCity.Barangay
 
 import android.annotation.SuppressLint
 import android.app.ProgressDialog
@@ -10,8 +10,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
 import com.example.mis_pc_11.spc_app1.R
-import com.example.mis_pc_11.spc_app1.TheCity.Barangay.BarangayAdapter
-import com.example.mis_pc_11.spc_app1.TheCity.Barangay.BarangayModel
 import org.json.JSONArray
 import org.json.JSONObject
 import java.lang.ref.WeakReference
