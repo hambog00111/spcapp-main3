@@ -13,8 +13,13 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import com.example.mis_pc_11.spc_app1.TheCity.FragmentBarangay
+import com.example.mis_pc_11.spc_app1.Goverment.FragmentEconomy
+import com.example.mis_pc_11.spc_app1.Goverment.FragmentGoverment
+import com.example.mis_pc_11.spc_app1.Links.*
+import com.example.mis_pc_11.spc_app1.TheCity.Barangay.FragmentBarangay
 import com.example.mis_pc_11.spc_app1.TheCity.FragmentTheCity
+import com.example.mis_pc_11.spc_app1.Tourism.FragmentGallery
+import com.example.mis_pc_11.spc_app1.Tourism.FragmentTourism
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
@@ -176,23 +181,31 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_home -> {
                 supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentHome()).commit()
             }
-            R.id.nav_thecity -> {
+//            R.id.nav_thecity -> {
+//                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+//                    FragmentTheCity()
+//                ).commit()
+//            }
+            R.id.nav_goverment ->{
                 supportFragmentManager.beginTransaction().replace(R.id.frag_container,
-                    FragmentTheCity()
+                    FragmentGoverment()
                 ).commit()
             }
-            R.id.nav_goverment ->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentGoverment()).commit()
-            }
             R.id.nav_economy ->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentEconomy()).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentEconomy()
+                ).commit()
             }
 
             R.id.nav_tourism->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentTourism()).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentTourism()
+                ).commit()
             }
             R.id.nav_gallery->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentGallery()).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentGallery()
+                ).commit()
             }
             R.id.nav_barangay->{
                 supportFragmentManager.beginTransaction().replace(R.id.frag_container,
@@ -208,35 +221,55 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
 
             R.id.nav_govph->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentGOV()).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentGOV()
+                ).commit()
             }
             R.id.nav_open_data->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentOpenData()).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentOpenData()
+                ).commit()
             }
             R.id.nav_official_gazette->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentOfficialGazette()).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentOfficialGazette()
+                ).commit()
             }
 
             R.id.nav_president->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentOfficePresident()).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentOfficePresident()
+                ).commit()
             }
             R.id.nav_vice_president->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentOfficeVice()).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentOfficeVice()
+                ).commit()
             }
             R.id.nav_senate->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentSenate()).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentSenate()
+                ).commit()
             }
             R.id.nav_representatives->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentRepresentatives()).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentRepresentatives()
+                ).commit()
             }
             R.id.nav_supreme_court->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentSupremeCourt()).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentSupremeCourt()
+                ).commit()
             }
             R.id.nav_court->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentCourtAppeals()).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentCourtAppeals()
+                ).commit()
             }
             R.id.nav_sandiganbayan->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentSandiganbayan()).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentSandiganbayan()
+                ).commit()
             }
 
             else -> {

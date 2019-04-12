@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
@@ -14,66 +15,59 @@
                   android:orientation="vertical"
     >
 
-
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="90dp"
                 android:orientation="horizontal"
-                android:layout_marginBottom="7dp">
+        >
 
-
-
+            <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/spc_logo"
+                    android:id="@+id/imageView2"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"/>
 
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:gravity="center">
-                <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/spc_logo"
-                        android:id="@+id/imageView2"
-                        android:layout_marginStart="4dp"
-                        android:layout_marginTop="4dp"/>
-                <LinearLayout
+
+                <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:paddingLeft="15dp">
-                    <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Republic of the Philippines"
-                            android:textColor="@color/white"
-                            android:layout_marginTop="20dp"
-                            android:textSize="17dp"
-                    />
+                        android:text="Republic of the Philippines"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"
+                />
 
-                    <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="CITY OF SEVEN LAKES"
-                            android:textColor="@color/white"
-                            android:textStyle="bold"
-                            android:textSize="23sp"
-                            android:layout_marginTop="3dp"
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CITY OF SEVEN LAKES"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:layout_marginTop="3dp"
 
-                    />
-                </LinearLayout>
+                />
 
             </LinearLayout>
+
         </LinearLayout>
+
         <ImageView android:layout_width="match_parent"
-                   android:layout_height="300dp"
+                   android:layout_height="270dp"
                    android:src="@drawable/slake0"
                    android:fitsSystemWindows="true"
                    android:layout_gravity="center"
                    android:scaleType="centerCrop"
-                   android:padding="10dp"
+                   android:padding="5dp"
                    android:layout_marginLeft="10dp"
                    android:layout_marginRight="10dp"
+                   android:layout_marginBottom="15dp"
         />
 
         <LinearLayout
@@ -81,19 +75,18 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_marginTop="10dp"
         >
             <LinearLayout
-                    android:layout_width="115dp"
-                    android:layout_height="115dp"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
                     android:orientation="vertical"
                     android:background="@drawable/text_border"
-                    android:layout_marginRight="10dp">
+                    android:layout_marginRight="5dp">
 
                 <Button
-                        android:id="@+id/btn_sanpablo_population"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:id="@+id/btn_sanpablo_education"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
                         android:background="@drawable/sanpablenos"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"/>
@@ -105,21 +98,23 @@
                         android:textStyle="bold"
                         android:text="San Pableños"
                         android:paddingTop="5dp"
-                        android:textSize="15sp"
-                        android:textColor="@color/white"/>
-            </LinearLayout>
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                />
 
+            </LinearLayout>
             <LinearLayout
-                    android:layout_width="115dp"
-                    android:layout_height="115dp"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
                     android:orientation="vertical"
                     android:background="@drawable/text_border"
-                    android:layout_marginRight="10dp">
+                    android:layout_marginRight="5dp">
+
 
                 <Button
                         android:id="@+id/btn_education_education"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
                         android:background="@drawable/education"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"/>
@@ -129,23 +124,24 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textStyle="bold"
-                        android:text="Education"
                         android:paddingTop="5dp"
-                        android:textSize="15sp"
-                        android:textColor="@color/white"/>
+                        android:textSize="13sp"
+                        android:text="Education"
+                        android:textColor="@color/white"
+                />
             </LinearLayout>
 
             <LinearLayout
-                    android:layout_width="115dp"
-                    android:layout_height="115dp"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
                     android:orientation="vertical"
                     android:background="@drawable/text_border"
-                    android:layout_marginRight="10dp">
+                    android:layout_marginRight="5dp">
 
                 <Button
-                        android:id="@+id/btn_population_population"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:id="@+id/btn_population_education"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
                         android:background="@drawable/population"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"/>
@@ -157,21 +153,22 @@
                         android:textStyle="bold"
                         android:text="Population"
                         android:paddingTop="5dp"
-                        android:textSize="15sp"
-                        android:textColor="@color/white"/>
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                />
             </LinearLayout>
 
             <LinearLayout
-                    android:layout_width="115dp"
-                    android:layout_height="115dp"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
                     android:orientation="vertical"
-                    android:background="@drawable/text_border"
-                    android:layout_marginRight="5dp">
+                    android:background="@drawable/text_border">
+
 
                 <Button
                         android:id="@+id/btn_livelihood_education"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
                         android:background="@drawable/livelihood"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"/>
@@ -182,11 +179,10 @@
                         android:layout_gravity="center"
                         android:textStyle="bold"
                         android:text="Livelihood"
+                        android:textSize="13sp"
                         android:paddingTop="5dp"
-                        android:textSize="15sp"
                         android:textColor="@color/white"/>
             </LinearLayout>
-
 
         </LinearLayout>
 
@@ -198,12 +194,12 @@
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="POPULATION"
+                    android:text="LIVELIHOOD"
                     android:textStyle="bold"
                     android:paddingLeft="20dp"
                     android:paddingBottom="5dp"
                     android:paddingTop="5dp"
-                    android:textSize="28sp"
+                    android:textSize="23dp"
                     android:textColor="@color/white"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="10dp"
@@ -215,8 +211,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/population_population"
                     android:textColor="@color/white"
-                    android:layout_marginStart="35dp"
-                    android:textSize="17sp"
+                    android:layout_marginStart="27dp"
+                    android:textSize="15dp"
             />
 
             <TextView
@@ -227,7 +223,7 @@
                     android:paddingLeft="20dp"
                     android:paddingBottom="5dp"
                     android:paddingTop="5dp"
-                    android:textSize="28sp"
+                    android:textSize="23dp"
                     android:textColor="@color/white"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="10dp"
@@ -238,9 +234,9 @@
                     android:textAlignment="center"
                     android:gravity="center"
                     android:text="TABLE: Population Size and Average Annual Growth Rate San Pablo City, Laguna"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
+                    android:textSize="15sp"
                     android:textColor="@color/white"
                     android:paddingBottom="12dp"
             />
@@ -252,17 +248,16 @@
                     android:paddingBottom="5dp">
 
                 <LinearLayout
-                        android:layout_width="150dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                     <TextView
-                            android:layout_width="150dp"
+                            android:layout_width="80dp"
                             android:layout_height="wrap_content"
                             android:text="Census Data"
                             android:textColor="@color/white"
                             android:gravity="center"
-                            android:textSize="20dp"
                             android:paddingBottom="15dp"/>
 
 
@@ -274,12 +269,11 @@
                         android:orientation="vertical">
 
                     <TextView
-                            android:layout_width="215dp"
+                            android:layout_width="155dp"
                             android:layout_height="wrap_content"
                             android:text="Total Population"
                             android:textColor="@color/white"
                             android:gravity="center"
-                            android:textSize="20sp"
                     />
 
                     <LinearLayout
@@ -288,20 +282,18 @@
                             android:orientation="horizontal">
 
                         <TextView
-                                android:layout_width="95dp"
+                                android:layout_width="75dp"
                                 android:layout_height="wrap_content"
                                 android:text="Laguna"
                                 android:textColor="@color/white"
                                 android:gravity="center"
-                                android:textSize="20sp"
                         />
                         <TextView
-                                android:layout_width="120dp"
+                                android:layout_width="80dp"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/white"
                                 android:text="San Pablo"
                                 android:gravity="center"
-                                android:textSize="20sp"
                         />
                     </LinearLayout>
 
@@ -314,12 +306,11 @@
                         android:orientation="vertical">
 
                     <TextView
-                            android:layout_width="215dp"
+                            android:layout_width="155dp"
                             android:layout_height="wrap_content"
                             android:text="Annual Growth Rate"
                             android:textColor="@color/white"
                             android:gravity="center"
-                            android:textSize="20sp"
                     />
 
                     <LinearLayout
@@ -327,20 +318,18 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
                         <TextView
-                                android:layout_width="95dp"
+                                android:layout_width="75dp"
                                 android:layout_height="wrap_content"
                                 android:text="Laguna"
                                 android:textColor="@color/white"
                                 android:gravity="center"
-                                android:textSize="20sp"
                         />
                         <TextView
-                                android:layout_width="120dp"
+                                android:layout_width="80dp"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/white"
                                 android:text="San Pablo"
                                 android:gravity="center"
-                                android:textSize="20sp"
                         />
 
                     </LinearLayout>
@@ -355,103 +344,198 @@
                     android:paddingBottom="5dp">
 
                 <LinearLayout
-                        android:layout_width="150dp"
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                     <TextView
-                            android:layout_width="150dp"
+                            android:layout_width="80dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/white"
                             android:gravity="center"
                             android:text="@string/population_censusdata"
-                            android:textSize="20sp"
+
                     />
 
                 </LinearLayout>
 
                 <LinearLayout
-                        android:layout_width="95dp"
+                        android:layout_width="75dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                     <TextView
-                            android:layout_width="95dp"
+                            android:layout_width="75dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/white"
                             android:gravity="center"
                             android:text="@string/population_tp_laguna"
-                            android:textSize="20sp"
+
                     />
 
                 </LinearLayout>
 
                 <LinearLayout
-                        android:layout_width="120dp"
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                     <TextView
-                            android:layout_width="120dp"
+                            android:layout_width="80dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/white"
                             android:gravity="center"
                             android:text="@string/population_tp_spc"
-                            android:textSize="20sp"
+
                     />
 
                 </LinearLayout>
 
                 <LinearLayout
-                        android:layout_width="95dp"
+                        android:layout_width="75dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                     <TextView
-                            android:layout_width="95dp"
+                            android:layout_width="75dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/white"
                             android:gravity="center"
                             android:text="@string/population_agr_laguna"
-                            android:textSize="20sp"
+
                     />
 
                 </LinearLayout>
 
                 <LinearLayout
-                        android:layout_width="120dp"
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                     <TextView
-                            android:layout_width="120dp"
+                            android:layout_width="80dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/white"
                             android:gravity="center"
                             android:text="@string/population_agr_spc"
-                            android:textSize="20sp"
+
                     />
 
                 </LinearLayout>
 
             </LinearLayout>
 
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MIGRATION"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="23dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/population_migration"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="27dp"
+                    android:textSize="15dp"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="POPULATION DENSITY"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="23dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/population_density"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="27dp"
+                    android:textSize="15dp"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HOUSEHOLD POPULATION AND NUMBER OF HOUSEHOLD"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="23dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/population_household"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="27dp"
+                    android:textSize="15dp"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AGE-SEX STRUCTURE"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="23dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/population_age"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="27dp"
+                    android:textSize="15dp"
+            />
 
         </LinearLayout>
 
 
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="130dp"
                 android:layout_marginTop="10dp"
                 android:orientation="vertical">
 
             <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="79dp"
+                    android:layout_height="61dp"
                     android:text="@string/tab_govphil"
                     android:layout_marginTop="8dp"
-                    android:textSize="15sp"
+                    android:textSize="11sp"
                     android:textAlignment="center"
                     android:gravity="center"
                     android:textColor="@color/white"
@@ -518,7 +602,6 @@
                         android:textSize="10dp"
                         android:textColor="@color/white"
                         android:textAlignment="center"
-                        android:gravity="center"
                         android:layout_marginBottom="2dp"/>
 
                 <TextView
@@ -527,7 +610,6 @@
                         android:layout_height="wrap_content"
                         android:textSize="10dp"
                         android:textColor="@color/white"
-                        android:gravity="center"
                         android:textAlignment="center"
                         android:id="@+id/textView8"/>
 
@@ -535,7 +617,7 @@
 
             <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     app:srcCompat="@drawable/transpa"
                     android:layout_weight="1"
                     android:layout_marginBottom="15dp"/>

@@ -311,14 +311,6 @@
         As reckoned in the same year, the Annual Growth Rate of the city’s population is 1.84%.
         Based on this the city’s projected population for 2010 is 250,575.  \n \n
 
-        \t \t Historically, the Annual Growth Rate during the period 1960-1970 posted  an all time high
-        of 4.08%. This was influenced by the influx of migrant workers together with their families
-        as the motor works ( jeepney body-building) industries and agri-based oil refineries boomed. \n \n
-
-        \t \t In 1975-1995 the AGR teetered (2.01%, 2.45%, 2.07% and 2.43%) as labor demand from
-        Calamba and Sta Rosa, which are now cities, and the Municipality of San Pedro sharply
-        increased due to construction and  subsequent operation of a number of industrial parks
-        or manufacturing companies in those areas. Out-migration then was inevitable. \n
 
 
     </string>
@@ -609,13 +601,220 @@
         \t \t Those who have no grade completed comprise 4.25% (10,360) and there are about 0.81 (1,9974)
         who did not disclose their educational attainment. \n
 
+    </string>
+
+
+
+    <string name="agricultural_corps">
+       \t \t  There are several crops grown in San Pablo City (SPC). These are classified into
+        seasonal crops and permanent crops. Seasonal crops are dominated by assorted lowland
+        vegetable including legumes. Other seasonal crops grown are irrigated rice, pineapple,
+        corn and root crops. Permanent crops are dominated by coconut followed by fruit
+        bearing trees like lanzones, rambutan and citrus. Banana is also grown as permanent crop. \n
+    </string>
+
+    <string name="agricultural_corplands">
+       \t \t The total area planted to crops by the end of 2009 was estimated at a little
+        more than 20,000.00 hectares. (Table 28). Although established as a city, San
+        Pablo has vast rural areas for agricultural production such as crops and livestock.
+        Coconut area is estimated to be ¾ of the total hectarage followed by fruit bearing
+        trees then lowland vegetables. \n
+    </string>
+    <string name="crop">
+        1. Seasonal Crop \n
+        \t a. Irrigated rice \n
+        \t b. Non-irrigated rice \n
+        \t c. Pineapple \n
+        \t d. Corn \n
+        \t e. Lowland vegetables, Legumes \n
+        \t f. Rootcrops \n
+        \t 2.  Permanent Crops \n
+        \t a.  Coconut \n
+        \t b.  Lanzones \n
+        \t c.  Rambutan \n
+        \t d.  Citrus \n
+        \t e.  Banana
+    </string>
+    <string name="area_planted">
+        - \n
+        554.83 \n
+        - \n
+        293.95 \n
+        191.00 \n
+        1,008.67 \n
+        45.50 \n
+        - \n
+        15,154.00 \n
+        1,916.06 \n
+        433.08 \n
+        133.06 \n
+        332.47
+    </string>
+
+    <string name="total_area">
+        2,093.95 \n
+        - \n
+        -\n
+        -\n
+        -\n
+        -\n
+        -\n
+        17,968.67\n
+        -\n
+        -\n
+        -\n
+        -\n
+        -\n
+    </string>
+
+    <string name="percent_crop">
+        10.44 \n
+        (2.77)\n
+        -\n
+        -\n
+        -\n
+        -\n
+        -\n
+        89.56\n
+        (75.53)\n
+        -\n
+        -\n
+        -\n
+        -\n
+    </string>
+
+
+    <string name="crop_production">
+       \t \t The total volume of production of all crops in SPC is estimated at close to 74,000 m.t.
+        (Table 29). Of this total yield, coconut accounted for more than one-half of the produce
+        followed by vegetables of all types. Rice and pineapple follows, both with a 5% contribution
+        to the total crop production in 2009. \n
+    </string>
+
+    <string name="crop2">
+        1.  Rice, all types \n
+        2.  Coconut \n
+        3.  Banana \n
+        4.  Fruit Trees, all types \n
+        5.  Vegetables, all types (Legumes) \n
+        6.  Root crops \n
+        7.  Pineapple \n
+        8.  Corn
+    </string>
+    <string name="production">
+        4,946.51\n
+        49,098.96\n
+        1,547.40\n
+        1,013.69\n
+        11,045.02\n
+        682.50\n
+        3,858.08\n
+        1,146.00
+    </string>
+    <string name="percent_crop2">
+        6.75\n
+        66.95\n
+        2.11\n
+        1.38\n
+        15.06\n
+        0.93\n
+        5.26\n
+        1.56
+    </string>
+    <string name="carabao">
+        \t \t Carabao in San Pablo City is very important for draft purposes. Carabao population in 2005 to
+        2009 was observed to slightly decline from 1,731 to just around 1,300. This can be attributed
+        to the decrease in rice irrigated areas a little less than 100 hectares. Some farmers also sell
+        the animals for financial needs and lack of area where the animal is tethered.
+        Although not shown in data, breeds of carabao are being upgraded to dairy types for future
+        development of the animal for milk purposes. The population appeared to be highest in Barangay
+        Sta. Maria and Santissimo Rosario. \n
+    </string>
+    <string name="cattle">
+       \t \t Cattle population in the rural areas of the city is observed to be steady from 2005 to
+        2009 with a population of around 4,000 heads. Cattle are popularly being raised for
+        meat purposes. The animal is observed to be highest in Barangay Sta. Maria and Soledad. \n
+    </string>
+    <string name="pigs">
+       \t \t The swine population is observed to be steady from 2005 to 2009 with a population of around
+        5,000 heads and 25,000 heads for backyard and commercial raisers respectively. The backyard
+        swine population is observed to be highest in San Crispin followed by Sta. Felomina then
+        San Miguel. \n
+    </string>
+    <string name="goat">
+       \t \t There is a great increase in goat population from 2005 to 2009. The number doubled from 990
+        to 2,564 heads. These are attributed to the introduction of imported breeds by private growers.
+        There is also an increase in the number of individuals who ventured into goat farming due to
+        its popularity in other areas and upgrading activities. \n
+    </string>
+    <string name="horse">
+        \t \t The horse population is also steady for the year  2005 to 2009. The animal is observed to be
+        highest in number in Barangays Sta. Isabel and San Jose. \n
+    </string>
+    <string name="poultry">
+       \t \t Backyard population decreased from 2005 to 2007 (38,583-> 36,475)
+        and then increased from 2007 to 2009 (36,475->38,378). There is a
+        steady increase in population in commercial farms from around 2,000,000
+        to 2,500,000. Backyard broiler operation is
+        observed to be highest in Barangays San Lorenzo and Sto. Angel. \n
+    </string>
+    <string name="ducks">
+        \t \t Duck population remained to be steady with a number
+        of around 11,500. It is observed
+        to be highest in Barangays San Isidro and Santissimo Rosario. \n </string>
+    <string name="fisheries">
+        \t \t San Pablo City is also known as “City of Seven Lakes”. The names of the lakes are Sampaloc,
+        Pandin, Yambo, Mohicap, Palakpakin, Calibato and Bunot Lakes. The lakes have for many generations
+        provided food and livelihood, leisure and respite for the citizens of the city. \n \n
+
+        \t \t  The fishery sector is very significant economic resource in San Pablo City due to
+        the presence of these lakes where large quantities of fish are being harvested. It
+        is estimated that a total of 4,437.92 metric tons is being harvested in all the lakes
+        of San Pablo City according to CAO’s data as reported by Fisheries and Aquatic Resource
+        Management Council (FARMC). The main species being produced and grown is the tilapia
+        supplemented by other species.  \n \n
+
+        \t \t  The methods of growing tilapia are mainly through fish cages being set up in all
+        the lakes. The fisher folks are generally organized into a group called FARMC. \n
+    </string>
+    <string name="lakes">
+        Sampalok Lake\n
+        Bunot Lake\n
+        Pandin Lake\n
+        Palakpakin Lake\n
+        Mohicap Lake\n
+        Yambo Lake\n
+        Calibato Lake\n
+    </string>
+    <string name="total_area_lake">
+        104\n
+        29.60\n
+        24\n
+        43\n
+        14\n
+        30.50\n
+        43
+    </string>
+    <string name="area_2008">
+        15.33
+        6.48
+        0.53
+        8.56
+        2.02
+        0.90
+        8.20
 
     </string>
+
+
+
+
 
     <string name="city_info_procedure_one">	1.   Checks  the  completeness
         of  the requirements submitted by the client/s and verifies
         the same against records on  file.
     </string>
+
 
     <string name="city_info_procedure_two">	2.   Prepares, types or encodes the name  and other
         necessary data of  the concerned barangay official in the pre – printed form

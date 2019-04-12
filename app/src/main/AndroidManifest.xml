@@ -32,11 +32,11 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
 
-        <activity android:name=".ActivityVideos"
+        <activity android:name=".Tourism.ActivityVideos"
             android:screenOrientation="portrait"
         />
 
-        <activity android:name=".ActivityPictures"
+        <activity android:name=".Tourism.ActivityPictures"
             android:screenOrientation="portrait"
         />
 
@@ -63,7 +63,7 @@
         </activity>
 
         <activity
-                android:name=".ActivityVideoDetail"
+                android:name=".Tourism.ActivityVideoDetail"
                 android:label="Videos"
                 android:screenOrientation="portrait"
                 android:launchMode="singleTop">

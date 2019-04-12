@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import com.example.mis_pc_11.spc_app1.R
+import com.example.mis_pc_11.spc_app1.TheCity.Barangay.FragmentBarangay
 
 class FragmentHistory : Fragment() {
 
@@ -27,7 +28,9 @@ class FragmentHistory : Fragment() {
 
         val rdbtn3 = view.findViewById<Button>(R.id.btn_barangayhistory)
         rdbtn3?.setOnClickListener{
-            activity!!.supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentBarangay()).commit()
+            activity!!.supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                FragmentBarangay()
+            ).commit()
         }
 
         val rdbtn4 = view.findViewById<Button>(R.id.btn_hymnhistory)

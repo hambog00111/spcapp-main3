@@ -9,22 +9,38 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_home"
             android:title="Home"/>
-        <item
-            android:id="@+id/nav_thecity"
-            android:icon="@drawable/ic_city"
-            android:title="The City" />
+
+        <item android:title="The City">
+            <menu>
+
+                <item
+                        android:id="@+id/nav_history"
+                        android:icon="@drawable/ic_goverment"
+                        android:title="History" />
+                <item
+                        android:id="@+id/nav_sanpablo"
+                        android:icon="@drawable/ic_people"
+                        android:title="San Pableños" />
+                <item
+                        android:id="@+id/nav_barangay"
+                        android:icon="@drawable/ic_barangay"
+                        android:title="Barangay"
+                />
+                <item
+                        android:id="@+id/nav_hymn"
+                        android:title="Hymn"/>
+            </menu>
+        </item>
+
         <item
             android:id="@+id/nav_goverment"
             android:icon="@drawable/ic_goverment"
-            android:title="Goverment" />
+            android:title="History" />
         <item
             android:id="@+id/nav_economy"
             android:icon="@drawable/ic_economy"
             android:title="Economy" />
-        <item
-                android:id="@+id/nav_sanpablo"
-                android:icon="@drawable/ic_people"
-                android:title="San Pableños" />
+
         <item
                 android:id="@+id/nav_tourism"
                 android:icon="@drawable/ic_tourist"
@@ -33,11 +49,7 @@
                 android:id="@+id/nav_gallery"
                 android:icon="@drawable/ic_gallery"
                 android:title="Gallery" />
-        <item
-                android:id="@+id/nav_barangay"
-                android:icon="@drawable/ic_barangay"
-                android:title="Barangay"
-                />
+
         <item
                 android:id="@+id/nav_webview"
                 android:title="Browser"
