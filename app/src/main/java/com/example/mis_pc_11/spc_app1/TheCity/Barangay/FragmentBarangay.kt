@@ -1,78 +1,113 @@
-package com.example.mis_pc_11.spc_app1.TheCity.Barangay
+package com.example.mis_pc_11.spc_app1.TheCity
 
 import android.annotation.SuppressLint
+import android.app.ProgressDialog
+import android.os.AsyncTask
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
 import android.widget.ListView
-import android.widget.Toast
 import com.example.mis_pc_11.spc_app1.R
+import com.example.mis_pc_11.spc_app1.TheCity.Barangay.BarangayAdapter
+import com.example.mis_pc_11.spc_app1.TheCity.Barangay.BarangayModel
+import org.json.JSONArray
+import org.json.JSONObject
+import java.lang.ref.WeakReference
+import java.net.HttpURLConnection
+import java.net.URL
 
 class FragmentBarangay : Fragment() {
 
-    lateinit var listView : ListView
+    private lateinit var listView : ListView
 
-    val brgys = arrayOf("I-A","I-B","I-C","II-A","II-B","II-C","II-D","II-E","II-F")
-    val dists = arrayOf("1","1","1","1","1","1","1","1","1")
-    val codes = arrayOf("1","2","3","4","5","6","7","8","9")
-    val chairman = arrayOf("chingchong","mingmong","chingchong","mingmong","chingchong","mingmong","chingchong","mingmong","chingchong")
-    val contact  = arrayOf("0909090999","111111111","0909090999","111111111","0909090999","111111111","0909090999","111111111","0909090999")
     @SuppressLint("RestrictedApi")
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val rootview = inflater.inflate(R.layout.fragment_barangay, null)
 
         listView = rootview.findViewById(R.id.listview_barangay)
-        ListBrgy(listView)
 
+        GetBrgyLs(this).execute()
 
-        listView.onItemClickListener = object : AdapterView.OnItemClickListener {
-            override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+//        listView.onItemClickListener = object : AdapterView.OnItemClickListener {
+//            override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+//
+//                val itemValue = listView.getItemAtPosition(position) as String
+//
+//                Toast.makeText(
+//                    requireContext(),
+//                    "Position :$position\nItem Value : $itemValue", Toast.LENGTH_LONG
+//                )
+//                    .show()
+//            }
+//
+//        }
+        return rootview
+    }
+    @SuppressWarnings("deprecation")
+    inner class GetBrgyLs internal constructor(mContext: FragmentBarangay): AsyncTask<Void, Void, String>(){
 
-                val itemValue = listView.getItemAtPosition(position) as String
+        private var resp: String? = null
+        lateinit var pLoading: ProgressDialog
+        private val fragRef: WeakReference<FragmentBarangay> = WeakReference(mContext)
+        var mView: ListView = fragRef.get()!!.listView
 
-                Toast.makeText(
-                    requireContext(),
-                    "Position :$position\nItem Value : $itemValue", Toast.LENGTH_LONG
-                )
-                    .show()
+        override fun onPreExecute(){
+            pLoading = ProgressDialog(fragRef.get()!!.context)
+            pLoading.setMessage("\t Loading, please wait")
+            pLoading.setCancelable(false)
+            pLoading.show()
+        }
+
+        override fun doInBackground(vararg params: Void?): String {
+            var xhr: String = ""
+            val conn = URL("http://192.168.100.82:4000/api/get-brgy-list").openConnection() as HttpURLConnection
+            try {
+                xhr = conn.inputStream.bufferedReader().readText()
+            } catch(e: Exception){
+                e.printStackTrace()
+            } finally {
+                conn.disconnect()
             }
+            return xhr
+        }
+
+        override fun onPostExecute(res: String){
+            pLoading.dismiss()
+            resp = res
+            ListBrgy(resp!!)
 
         }
 
+        fun ListBrgy(jsonStr: CharSequence){
+            val list = mutableListOf<BarangayModel>()
 
-                return rootview
+            try{
+                val bLs: JSONArray = JSONObject(jsonStr.toString()).getJSONArray("brgys")
+                for(i in 0 until bLs.length() step 1){
+                    val post: JSONObject = bLs.getJSONObject(i)
+                    list.add(BarangayModel(post.getString("brgy_name"), "", "", post.getString("brgy_chairman"), ""))
+                }
+
+                val adapter = BarangayAdapter(
+                    fragRef.get()!!.requireContext(),
+                    R.layout.row_barangay,
+                    list)
+                mView.adapter = adapter
+
+            } catch (e: Exception){
+                e.printStackTrace()
+            }
+        }
+
     }
 
 
-    fun ListBrgy(lsView: ListView){
-        val list = mutableListOf<BarangayModel>()
-        for(i in 0 until brgys.size step 1){
-            list.add(
-                BarangayModel(
-                    brgys[i],
-                    dists[i],
-                    codes[i],
-                    chairman[i],
-                    contact[i]
-                )
-            )
-        }
-        val adapter = BarangayAdapter(
-            requireContext(),
-            R.layout.row_barangay,
-            list
-        )
-        lsView.adapter = adapter
 
+
+    companion object {
 
     }
 }
-
-
-
-
-
