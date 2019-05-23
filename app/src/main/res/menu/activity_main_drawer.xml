@@ -7,53 +7,84 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_home"
             android:title="Home"/>
 
         <item android:title="The City">
             <menu>
-
                 <item
                         android:id="@+id/nav_history"
-                        android:icon="@drawable/ic_goverment"
                         android:title="History" />
                 <item
                         android:id="@+id/nav_sanpablo"
-                        android:icon="@drawable/ic_people"
                         android:title="San Pableños" />
                 <item
                         android:id="@+id/nav_barangay"
-                        android:icon="@drawable/ic_barangay"
                         android:title="Barangay"
                 />
                 <item
                         android:id="@+id/nav_hymn"
                         android:title="Hymn"/>
+                <item
+                        android:id="@+id/nav_location"
+                        android:title="Location"/>
+                <item
+                        android:id="@+id/nav_mission"
+                        android:title="Mission and Vision"/>
+            </menu>
+        </item>
+
+        <item android:title="The Goverment">
+            <menu>
+                    <item
+                            android:id="@+id/nav_official_map"
+                            android:title="Official Vicinity Map" />
+                    <item
+                            android:id="@+id/nav_local_officials"
+                            android:title="Local Officials" />
+
+                    <item
+                            android:id="@+id/nav_department_head"
+                            android:title="Department Head and Assistant"/>
+                    <item
+                            android:id="@+id/nav_standing_committees"
+                            android:title="Standing Committees"/>
+                    <item
+                            android:id="@+id/nav_ordinances"
+                            android:title="Ordinances"/>
+                    <item
+                            android:id="@+id/nav_ela"
+                            android:title="Executive Legislative Agenda"/>
+                    <item
+                            android:id="@+id/nav_economy"
+                            android:title="Economy"/>
+
+            </menu>
+        </item>
+
+        <item android:title="Toursim">
+            <menu>
+
+                    <item
+                            android:id="@+id/nav_tourism_plan"
+                            android:title="Tourism Master Plan" />
+                    <item
+                            android:id="@+id/nav_festival"
+                            android:title="Festival" />
+
+                    <item
+                            android:id="@+id/nav_gallery"
+                            android:title="Gallery"/>
+                    <item
+                            android:id="@+id/nav_landmarks"
+                            android:title="Landmarks"/>
+
             </menu>
         </item>
 
         <item
-            android:id="@+id/nav_goverment"
-            android:icon="@drawable/ic_goverment"
-            android:title="History" />
-        <item
-            android:id="@+id/nav_economy"
-            android:icon="@drawable/ic_economy"
-            android:title="Economy" />
-
-        <item
-                android:id="@+id/nav_tourism"
-                android:icon="@drawable/ic_tourist"
-                android:title="Tourism" />
-        <item
-                android:id="@+id/nav_gallery"
-                android:icon="@drawable/ic_gallery"
-                android:title="Gallery" />
-
-        <item
                 android:id="@+id/nav_webview"
                 android:title="Browser"
-                android:icon="@drawable/ic_webview"/>
+               />
 
 
     <item android:title="Fill up Forms  ">
@@ -61,7 +92,7 @@
 
             <item
                 android:id="@+id/nav_bplo"
-                android:icon="@drawable/ic_fill_up"
+
                 android:title="BPLO Fill Up" />
         </menu>
     </item>
@@ -79,7 +110,6 @@
                     android:id="@+id/nav_official_gazette"
                     android:title="Official Gazette"/>
         </menu>
-
     </item>
 
     <item android:title="Goverment Links">

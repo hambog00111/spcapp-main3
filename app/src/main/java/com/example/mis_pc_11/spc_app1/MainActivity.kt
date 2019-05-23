@@ -14,12 +14,14 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import com.example.mis_pc_11.spc_app1.Goverment.FragmentEconomy
-import com.example.mis_pc_11.spc_app1.Goverment.FragmentGoverment
 import com.example.mis_pc_11.spc_app1.Links.*
 import com.example.mis_pc_11.spc_app1.TheCity.Barangay.FragmentBarangay
-import com.example.mis_pc_11.spc_app1.TheCity.FragmentTheCity
-import com.example.mis_pc_11.spc_app1.Tourism.FragmentGallery
-import com.example.mis_pc_11.spc_app1.Tourism.FragmentTourism
+import com.example.mis_pc_11.spc_app1.TheCity.FragmentHistory
+import com.example.mis_pc_11.spc_app1.TheCity.FragmentHymn
+import com.example.mis_pc_11.spc_app1.TheCity.FragmentLocationTopology
+import com.example.mis_pc_11.spc_app1.TheCity.MissionVision
+import com.example.mis_pc_11.spc_app1.TheCity.SanPablenos.FragmentSanPablo
+import com.example.mis_pc_11.spc_app1.Tourism.Gallery.FragmentGallery
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
@@ -33,7 +35,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            var show: Any = Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
 
@@ -130,9 +132,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
 
 
-
-
-
         else -> {
             // If we got here, the user's action was not recognized.
             // Invoke the superclass to handle it.
@@ -181,30 +180,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_home -> {
                 supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentHome()).commit()
             }
-//            R.id.nav_thecity -> {
-//                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
-//                    FragmentTheCity()
-//                ).commit()
-//            }
-            R.id.nav_goverment ->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
-                    FragmentGoverment()
-                ).commit()
-            }
+
             R.id.nav_economy ->{
                 supportFragmentManager.beginTransaction().replace(R.id.frag_container,
                     FragmentEconomy()
                 ).commit()
             }
-
-            R.id.nav_tourism->{
+            R.id.nav_history->{
                 supportFragmentManager.beginTransaction().replace(R.id.frag_container,
-                    FragmentTourism()
-                ).commit()
-            }
-            R.id.nav_gallery->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
-                    FragmentGallery()
+                    FragmentHistory()
                 ).commit()
             }
             R.id.nav_barangay->{
@@ -212,6 +196,39 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     FragmentBarangay()
                 ).commit()
             }
+            R.id.nav_location->{
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentLocationTopology()
+                ).commit()
+            }
+            R.id.nav_hymn->{
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentHymn()
+                ).commit()
+            }
+            R.id.nav_sanpablo->{
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentSanPablo()
+                ).commit()
+            }
+            R.id.nav_mission->{
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    MissionVision()
+                ).commit()
+            }
+
+//            R.id.nav_tourism->{
+//                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+//                    FragmentTourism()
+//                ).commit()
+//            }
+            R.id.nav_gallery->{
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentGallery()
+                ).commit()
+            }
+
+
             R.id.nav_webview->{
                 supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentBrowser()).commit()
             }

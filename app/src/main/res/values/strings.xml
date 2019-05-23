@@ -806,66 +806,56 @@
 
     </string>
 
+<string name="location_geographical">
+    \t \t San Pablo City is located at the southern tip of the Province of  Laguna in the
+    island of Luzon at geographic coordinates, 140 4’ north latitude and 1210 19’
+    east longtitude.  It is bounded by 6 municipalities and 1 city  namely Calauan,
+    Laguna in the northwest;  Nagcarlan, Laguna in the northeast; Alaminos, Laguna
+    in the west;  Rizal, Laguna in the east; Lipa City, Batangas in the southeastern
+    tip;  and the municipalities of Tiaong and Dolores, Quezon  in the south.
+    All adjoining municipalities and city have entry points making San Pablo
+    accessible from virtually all directions. \n \n
 
+    \t \t Kilometerage distance from the National Capital Region is about 82 kilometers
+    and located southwesterly of Manila. \n
+</string>
 
-
-
-    <string name="city_info_procedure_one">	1.   Checks  the  completeness
-        of  the requirements submitted by the client/s and verifies
-        the same against records on  file.
-    </string>
-
-
-    <string name="city_info_procedure_two">	2.   Prepares, types or encodes the name  and other
-        necessary data of  the concerned barangay official in the pre – printed form
-        “Panunumpa sa Katungkulan, Paghirang, and Appointment”.
-    </string>
-
-    <string name="city_info_procedure_three">3.   Reviews, validates and initials the Document.
-    </string>
-
-    <string name="city_info_procedure_four"> 4.   Forwards the document  to the City Mayor  for approval.
-    </string>
-
-    <string name="city_info_procedure_five"> 5.   Approves and signs the document.
-    </string>
-
-    <string name="city_info_procedure_six"> 6.   Records to logbook and release  the  document
-         to client or concerned Barangay Official.
-    </string>
-
-    <string name="city_info_procedure_two_one"> 1.   Checks  the  completeness  of  the requirements submitted by the client/s and verifies the same against records on  file.
-    </string>
-    <string name="city_info_procedure_two_two"> 2.   Prepares the Certification
-    </string>
-    <string name="city_info_procedure_two_three"> 3.   Reviews, validates and initials the Certification.
-    </string>
-    <string name="city_info_procedure_two_four"> 4.   Forwards the Certification  to the City Mayor for  approval.
-    </string>
-    <string name="city_info_procedure_two_five"> 5.   Approves and signs the Certification.
-    </string>
-    <string name="city_info_procedure_two_six"> 6.   Records to logbook and release  the document  to client or concerned Barangay Official.
-    </string>
-
-    <string name="city_info_procedure_three_one"> 1.   Verbal / written request received  by  the staff-in-charge
-    </string>
-    <string name="city_info_procedure_three_two"> 2.  Staff-in-Charge will verifies if information/data requested by client  is available
-    </string>
-    <string name="city_info_procedure_three_three"> 3.   If available, the information is shared, printed or photocopied for the client.
-        Otherwise, client will be referred to other offices or other sources where information requested can be obtained.
-    </string>
-
-    <string name="city_info_procedure_four_one"> 1.  Go directly to the Radio Room (5th Floor,  City Governance Bldg.) or call 5623-086
-    </string>
-    <string name="city_info_procedure_four_two">2.   Talk/Explain to the  Radio Operator on Duty the announcement that needs to be disseminated.
+    <string name="location_municipality">
+        Calauan, Laguna \n
+        Alaminos, Laguna \n
+        Nagcarlan, Laguna \n
+        Rizal, Laguna \n
+        Dolores, Quezon \n
+        Tiaong, Quezon \n
+        Lipa City, Batangas
 
     </string>
-    <string name="city_info_frontline_two">ISSUANCE OF THE CERTIFICATION / CLEARANCE FOR THE FOLLOWING PURPOSES: \n
-        -	NO PENDING ADMINISTRATIVE CASE FOR FIDELITY BOND \n
-        -	APPLICATION FOR CIVIL SERVICE ELIGIBILITY \n
-        -	APPLICATION FOR SCHOLARSHIP GRANT OF THE BARANGAY OFFICIALS CHILDREN \n
-        -	APPLICATION TO CARRY FIRE-ARMS \n
-        -	APLICATION FOR THE DEPARTMENT OF FOREIGN AFFAIRS  (DFA) AUTHENTICATION AND RED RIBBON PURPOSES * \n
+    <string name="location_distance">
+        9.5 \n
+        10.00 \n
+        14.00 \n
+        9.00 \n
+        11.00 \n
+        14.00 \n
+        36
+    </string>
+    <string name="location_topography">
+        \t\t Topography is generally plain  to gently sloping with small portions
+        of rolling  to very steep hills on the northern, eastern and southern
+        edges.  It is bounded by the mountain ranges of Kalusungan and Calauan
+        Hills in the north;  Mabilog on the northeast; San Cristobal and Banahaw
+        Mountains in the east; and Susong Dalaga, Napayong and Masalukot Hills
+        in the south to southeast. \n
+    </string>
+    <string name="location_climate">
+       \t \t In San Pablo City, the months from January to April constitute the dry
+        season and the remaining months as wet season.  The relatively dry season
+        makes the pattern closest to Type III in the Corona classification.
+        Warm temperature and high humidity is experienced in the city throughout
+        the year with small seasonal variation.  And because of its tropical
+        climate precipitation within the city occurs only as rain.  It is affected
+        however, by the Southwest Monsoon and cyclonic storms which subject
+        it to wet climate.\n
     </string>
 
     <string name="tab_govphil">The Integrated Government Philippines (iGovPhil) is a joint program \n of the
@@ -881,6 +871,81 @@
         known as San Pablo City, is a 1st class city in the province of Laguna, Philippines. According to the 2015
         census, it has a population of 266,068 peopl
     </string>
+
+    <string name="point_service">
+        1.When we go to work, we will come in complete uniform and display our identification cards. \n\n
+
+        2.We will greet our clients with a sincere smile. \n\n
+
+        3.When you enter our offce premises,we will introduce ourselves to you so that you can address usback in an apporiate manner. \n\n
+
+        4.We will attend our clients’ inquiries within three(3)minutes. \n\n
+
+        5.Approriate action will immediately follow your queries and you will be referred accordinly. \n\n
+
+        6.We will make you comfortable inside our facilities while you wait for your service request. \n\n
+
+        7.Express/special lanes are provided for Senior Citivens, pregnant women and People with Disablilites. \n\n
+
+        8.We will teach the clients, needed requiremnts that can expedite their service request. \n\n
+
+        9.We will promplty return your denied request and explain to you the reason forsuch, which in turn will allow us to reprocess it. \n\n
+
+        10.Our service stations will be properly labeled that will include our organizational chart and service flow chart. \n\n
+
+        11.Directional signs will be displayed conspicuously as guide so that you can establish familiarity with our work place. \n\n
+
+        12.Information and complaint desk is at your service in strategic locations. \n\n
+
+        13.An information and hotline service is available 24/7 for anyone who has queries. \n\n
+
+        14.No noon-break policy is followed and we are to serve beyond office hours if need. \n\n
+
+        15. A satisfied client is our happiness in the government service. \n
+    </string>
+    <string name="performance_pledge1">
+        We, the offcials and employees of the City Government of San Pablocommit to:
+    </string>
+    <string name="performance_pledge2">
+        ssist every client and visitors with utmost courtesy and smile.\n
+    </string>
+    <string name="performance_pledge3">
+        onitor our own ranks to ensure that services are delivered ontime \n
+    </string>
+    <string name="performance_pledge4">
+        dequate care shall be accorded to Senior Citizens, pregnant women, children and Persons with Disabilities(PWDs) that comes our door.  \n
+    </string>
+    <string name="performance_pledge5">
+        urture each day as a gift of opportunity to serve others.  \n
+    </string>
+    <string name="performance_pledge6">
+        rustworthiness shall be epitome of our service delays with explanations.  \n
+    </string>
+    <string name="performance_pledge7">
+        nsure happy clients by addressing service delays with explanations.
+        To all this we pledge and commit,
+        keeping in mind that we are at all times accountable
+        to the people that we serve. \n
+    </string>
+    <string name="agency_mandate">
+        \t \t All employees both rank and file and personnel holding key positions
+        in different departments of the local governmaent are mandated to deliver quality service
+        through the implementation of tits programs to make them effcient
+        and sustainable that have been developed in partnership with the private sector. \n </string>
+    <string name="strategic_directions">
+        These directions can be realized by strictly following: \n\n
+
+        1. Existing policies of the city/ agency have to be reviewed and revisited by the implementing offce.\n\n
+
+        2. Implementation of recuitment, selection and promotion plan, along with the performance management plan,
+        learningand development strategy and rewards and recognition policies have to be strictly
+        observed by the city and to be upheldby the city’s implementing offcials/offcers at all times.\n\n
+
+        3. Monitor day-to-day activities of all employees.\n\n
+
+        4. Public service has to be the topmost priority of all employees.\n
+    </string>
+
     <string name="back"><![CDATA[<]]></string>
     <string name="forward"><![CDATA[>]]></string>
 

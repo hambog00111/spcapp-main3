@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:focusable="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:clickable="true"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+    <TextView
+            android:text="Assistant Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:textSize="18sp" android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/nav_contact_dept" android:layout_marginTop="56dp"
+            app:layout_constraintStart_toEndOf="@+id/nav_dept_assistant_pic" android:layout_marginStart="12dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:text="Contact Number"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/contact_barangay2"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="@+id/nav_dept_head_name"
+            app:layout_constraintTop_toBottomOf="@+id/nav_dept_head_name"
+            android:layout_marginTop="20dp"/>
+
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:id="@+id/nav_dept_head_name"
+            android:textAlignment="textStart"
+            android:text="Amben D. Amante"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            android:layout_marginEnd="4dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:id="@+id/nav_dept_assistant"
+            android:textAlignment="textStart"
+            android:text="Amben D. Amante"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView9"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:text="Contact Number"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:id="@+id/nav_contact_dept"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="@+id/contact_barangay2"
+            app:layout_constraintTop_toBottomOf="@+id/contact_barangay2" android:layout_marginTop="4dp"/>
+    <TextView
+            android:text="Department Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nav_dept_name" android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="4dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.004"/>
+    <TextView
+            android:text="Department Head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:layout_marginStart="12dp" android:textSize="18sp" android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/nav_dept_head_pic"
+            app:layout_constraintTop_toBottomOf="@+id/nav_dept_name"
+            android:layout_marginTop="12dp"/>
+    <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp" app:srcCompat="@drawable/amben_amante"
+            android:id="@+id/nav_dept_head_pic"
+            app:layout_constraintTop_toBottomOf="@+id/nav_dept_name" android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"/>
+    <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp" app:srcCompat="@drawable/amben_amante"
+            android:id="@+id/nav_dept_assistant_pic"
+            android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/nav_dept_head_pic"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"/>
+
+
+</android.support.constraint.ConstraintLayout>

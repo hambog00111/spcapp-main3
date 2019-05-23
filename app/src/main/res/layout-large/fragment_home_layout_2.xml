@@ -14,7 +14,7 @@
 
 
         <ImageView android:layout_width="match_parent"
-                   android:layout_height="270dp"
+                   android:layout_height="350dp"
                    android:src="@drawable/slake4"
                    android:fitsSystemWindows="true"
                    android:layout_gravity="center"
@@ -71,14 +71,13 @@
         </LinearLayout>
 
 
-
         <me.biubiubiu.justifytext.library.JustifyTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/home2"
                 android:textColor="@color/white"
                 android:layout_marginStart="50dp"
-                android:textSize="15dp"
+                android:textSize="15sp"
         />
 
 
@@ -96,10 +95,10 @@
             <ScrollView android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                 
-                <LinearLayout 
-                        android:layout_width="match_parent" 
-                        android:layout_height="wrap_content"
-                >
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
 <LinearLayout android:layout_width="wrap_content"
               android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -108,9 +107,8 @@
     <TextView
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:text="ANNOUNCEMENTS"
+            android:text="EVENTS AND ANNOUNCEMENTS"
             android:textStyle="bold"
-            android:paddingLeft="20dp"
             android:paddingBottom="5dp"
             android:paddingTop="5dp"
             android:textSize="25dp"
@@ -121,24 +119,26 @@
             android:layout_gravity="center"
     />
 
-    <me.biubiubiu.justifytext.library.JustifyTextView
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:text="@string/home2"
-            android:textColor="@color/white"
-            android:layout_marginStart="25dp"
-            android:textSize="15dp"/>
+
+    <ImageView
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:src="@drawable/events2"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitCenter"/>
 
 
     <TextView
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:text="EVENTS"
+            android:text="JOBS OFFER"
             android:textStyle="bold"
-            android:paddingLeft="20dp"
+
             android:paddingBottom="5dp"
             android:paddingTop="5dp"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:layout_marginBottom="5dp"
@@ -146,17 +146,136 @@
             android:layout_gravity="center"
     />
 
-    <ImageView
-            android:layout_width="350dp"
-            android:layout_height="250dp"
-            android:src="@drawable/events"
+
+    <LinearLayout
+            android:layout_height="300dp"
+            android:layout_width="320dp"
+            android:orientation="vertical"
+            android:gravity="center"
             android:layout_gravity="center"
-            android:layout_marginBottom="20dp"
-            android:fitsSystemWindows="true"
-            android:scaleType="fitCenter"/>
+            android:background="@drawable/text_border">
 
 
-</LinearLayout>
+        <Button
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:background="@drawable/csc"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/csc_home"/>
+
+        <Button
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:background="@drawable/philjob"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:id="@+id/phil_home"/>
+
+
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="FEATURED LINKS"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"/>
+
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_gravity="center"
+            >
+
+<LinearLayout   android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+        <Button android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/facebook"
+                android:layout_marginRight="10dp"
+                android:id="@+id/nav_CIO"/>
+
+    <TextView   android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CIO San Pablo FB Page"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+    </LinearLayout>
+        <LinearLayout   android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp">
+
+            <Button android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/facebook"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/nav_tourism_office"/>
+
+            <TextView   android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tourism Office San Pablo FB page"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+        </LinearLayout><LinearLayout   android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:orientation="horizontal"
+                                       android:layout_marginBottom="5dp">
+
+        <Button android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/facebook"
+                android:layout_marginRight="10dp"
+                android:id="@+id/nav_lgu"/>
+
+        <TextView   android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="San Pablo LGU FB Page"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+    </LinearLayout><LinearLayout   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="horizontal"
+                                   android:layout_marginBottom="5dp">
+
+        <Button android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/facebook"
+                android:layout_marginRight="10dp"
+                android:id="@+id/nav_cdrrmo"/>
+
+        <TextView   android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CDRRMO San Pablo FB Page"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
             android:layout_height="wrap_content"
@@ -164,13 +283,41 @@
             android:orientation="vertical">
 
         <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="time"
+                android:textStyle="bold"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+        android:id="@+id/time"/>
+        <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="date"-->
+                <!--android:id="@+id/date"-->
+                <!--android:textStyle="bold"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:textSize="25sp"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_gravity="center"/>-->
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="HOTLINE"
             android:textStyle="bold"
             android:paddingBottom="5dp"
             android:paddingTop="5dp"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:layout_marginBottom="5dp"
@@ -305,98 +452,290 @@
 
         </LinearLayout>
 
-            </LinearLayout>
 
+
+
+        <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="SERVICES OFFER"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="440dp"
+                      android:orientation="vertical"
+                     >
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BPLO Fill up Forms"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/text_border2"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    />
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Business Tax Payment"
+                    android:background="@drawable/text_border2"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="4dp"
+                    />
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FRANCHISE TAX PAYMENT"
+                    android:background="@drawable/text_border2"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    />
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="REAL PROPERTY TAX PAYMENT"
+                    android:background="@drawable/text_border2"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MARKET ONLINE PAYMENT"
+                    android:background="@drawable/text_border2"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ONLINE BIR REGISTRATION"
+                    android:background="@drawable/text_border2"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ONLINE DTI BUSINESS REGISTARTION"
+                    android:background="@drawable/text_border2"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PASSPORT ONLINE APPLICATION"
+                    android:background="@drawable/text_border2"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+
+        </LinearLayout>
+
+
+                    </LinearLayout>
                 </LinearLayout>
             </ScrollView>
         </LinearLayout>
 
-        </LinearLayout>
-
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="wrap_content">
-
-        <LinearLayout
-                android:layout_width="wrap_content"
-                      android:orientation="vertical"
-                android:layout_height="wrap_content">
-
-        <TextView
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="MISSION"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:padding="5dp"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:layout_marginBottom="5dp"
-        />
-
-        <LinearLayout android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:layout_gravity="center"
-                      android:gravity="center">
-
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                    android:layout_width="270dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Mission"
-                    android:textColor="@color/white"
-                    android:layout_marginStart="15dp"/>
-
-        </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_width="wrap_content"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
-
             <TextView
-                    android:layout_width="300dp"
+                    android:layout_width="350dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:text="VISION"
+                    android:text="DISCLOSURE"
                     android:textStyle="bold"
-                    android:textSize="20dp"
-                    android:padding="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="25sp"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:layout_marginBottom="5dp"
-            />
+                    android:layout_gravity="center"/>
 
-            <LinearLayout android:layout_width="match_parent"
-                          android:layout_height="wrap_content"
-                          android:layout_gravity="center"
-                          android:gravity="center">
-
-                <me.biubiubiu.justifytext.library.JustifyTextView
-                        android:layout_width="270dp"
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    >
+                <LinearLayout
+                        android:layout_width="180dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/Vision"
-                        android:textColor="@color/white"
-                        android:layout_marginStart="15dp"/>
+                        android:orientation="vertical"
+                        android:layout_margin="5dp">
 
+                    <Button android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/text_border2"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:id="@+id/disclosure_1"
+                            android:text="4th-quarter-SPP"/>
+                    <Button android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/text_border2"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+
+                            android:text="4th-utilization-2018\n4th-Quarter"/>
+                    <Button android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/text_border2"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:text="app-2019"/>
+                    <Button android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/text_border2"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:text="bid-results 2018\n4th quarter"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp">
+
+                    <Button android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/text_border2"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:text="cdrrmf-12.31.18"/>
+                    <Button android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/text_border2"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:text="manpower\ncomplement(dilg)"/>
+
+                    <Button android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/text_border2"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:text="PDAF UTILIZATION"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp">
+
+
+                    <Button android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/text_border2"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:text="SCF-4TH-QUARTER"/>
+                    <Button android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/text_border2"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:text="SEF-UTILIZATION\n2018"/>
+                    <Button android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/text_border2"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:text="statement of debt\nservices 03.24.14"/>
+                    <Button android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/text_border2"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:text="unliquidated\n2018"/>
+                </LinearLayout>
             </LinearLayout>
+
+            <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="VIDEOS"
+                    android:textStyle="bold"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"/>
+
+            <VideoView
+                    android:layout_width="550dp"
+                    android:layout_height="330dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:id="@+id/video_home1"
+                 />
+
         </LinearLayout>
-    </LinearLayout>
 
-        <!--<RelativeLayout-->
-        <!--android:layout_height="300dp"-->
-        <!--android:layout_width="400dp">-->
-
-        <!--<android.support.v4.view.ViewPager-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="250dp"-->
-        <!--android:id="@+id/view_pager_image">-->
-
-        <!--</android.support.v4.view.ViewPager>-->
-
-        <!--</RelativeLayout>-->
 
         <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
@@ -498,11 +837,10 @@
     <TextView
     android:text="© 2019 San Pablo City Goverment"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:textSize="13dp"
     android:textColor="@color/white"
     android:textAlignment="center"
-    android:paddingTop="14dp"
     android:layout_marginEnd="8dp"
     android:layout_marginStart="8dp"
     android:id="@+id/textView8"
@@ -513,30 +851,70 @@
 
     <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             app:srcCompat="@drawable/transpa"
-
             android:layout_weight="1"
             android:layout_marginBottom="10dp"/>
 
 </LinearLayout>
-        <!--<TextView-->
-                <!--android:text="© 2019 San Pablo City Goverment"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="41dp"-->
-                <!--android:textSize="13dp"-->
-                <!--android:textColor="@color/white"-->
-                <!--android:textAlignment="center"-->
-                <!--app:layout_constraintEnd_toEndOf="parent"-->
-                <!--app:layout_constraintStart_toStartOf="parent"-->
-                <!--app:layout_constraintTop_toBottomOf="@+id/constraintLayout"-->
-                <!--android:layout_marginBottom="8dp"-->
-                <!--app:layout_constraintBottom_toBottomOf="parent"-->
-                <!--android:layout_marginEnd="8dp"-->
-                <!--android:layout_marginStart="8dp"-->
-                <!--android:id="@+id/textView8"/>-->
 
+        <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
 
+            <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="Developed by:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:layout_marginEnd="3dp"
+                />
+                <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/pylon"
+                        android:layout_marginRight="13dp"/>
+            </LinearLayout>
+            <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="Developer: "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                />
+                <TextView
+                        android:text="Chris Velasco"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:gravity="center"
+
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                />
+            </LinearLayout>
+
+        </LinearLayout>
     </LinearLayout>
 
 </ScrollView>

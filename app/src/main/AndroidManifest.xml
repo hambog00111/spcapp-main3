@@ -15,7 +15,6 @@
             android:largeScreens="true"
             android:xlargeScreens="true"
             android:anyDensity="true"
-
         />
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
@@ -32,13 +31,16 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
 
-        <activity android:name=".Tourism.ActivityVideos"
+        <activity android:name=".Tourism.Gallery.Videos.ActivityVideos"
             android:screenOrientation="portrait"
         />
 
-        <activity android:name=".Tourism.ActivityPictures"
+        <activity android:name=".Tourism.Gallery.Pictures.ActivityPictures"
             android:screenOrientation="portrait"
         />
+
+        <activity android:name=".Tourism.Gallery.Videos.ActivityVideoView"
+            android:screenOrientation="portrait"/>
 
         <activity
                 android:name=".MainActivity"
@@ -63,7 +65,7 @@
         </activity>
 
         <activity
-                android:name=".Tourism.ActivityVideoDetail"
+                android:name=".Tourism.Gallery.Videos.ActivityVideoDetail"
                 android:label="Videos"
                 android:screenOrientation="portrait"
                 android:launchMode="singleTop">
