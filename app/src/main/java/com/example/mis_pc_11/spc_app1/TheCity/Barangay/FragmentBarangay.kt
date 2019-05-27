@@ -1,15 +1,20 @@
 package com.example.mis_pc_11.spc_app1.TheCity.Barangay
-
 import android.annotation.SuppressLint
-import android.app.ProgressDialog
+//import android.app.ProgressDialog
 import android.os.AsyncTask
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ListView
 import com.example.mis_pc_11.spc_app1.R
+import com.example.mis_pc_11.spc_app1.TheCity.FragmentHistory
+import com.example.mis_pc_11.spc_app1.TheCity.FragmentHymn
+import com.example.mis_pc_11.spc_app1.TheCity.FragmentLocationTopology
+import com.example.mis_pc_11.spc_app1.TheCity.SanPablenos.FragmentSanPablo
+
 import org.json.JSONArray
 import org.json.JSONObject
 import java.lang.ref.WeakReference
@@ -22,6 +27,7 @@ class FragmentBarangay : Fragment() {
 
     @SuppressLint("RestrictedApi")
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+
 
         val rootview = inflater.inflate(R.layout.fragment_barangay, null)
 
@@ -42,26 +48,30 @@ class FragmentBarangay : Fragment() {
 //            }
 //
 //        }
+
+
         return rootview
     }
+
+
     @SuppressWarnings("deprecation")
     inner class GetBrgyLs internal constructor(mContext: FragmentBarangay): AsyncTask<Void, Void, String>(){
 
         private var resp: String? = null
-        lateinit var pLoading: ProgressDialog
+//        lateinit var pLoading: ProgressDialog
         private val fragRef: WeakReference<FragmentBarangay> = WeakReference(mContext)
         var mView: ListView = fragRef.get()!!.listView
 
         override fun onPreExecute(){
-            pLoading = ProgressDialog(fragRef.get()!!.context)
-            pLoading.setMessage("\t Loading, please wait")
-            pLoading.setCancelable(false)
-            pLoading.show()
+//            pLoading = ProgressDialog(fragRef.get()!!.context)
+//            pLoading.setMessage("\t Loading, please wait")
+//            pLoading.setCancelable(false)
+//            pLoading.show()
         }
 
         override fun doInBackground(vararg params: Void?): String {
             var xhr: String = ""
-            val conn = URL("http://192.168.100.82:4000/api/get-brgy-list").openConnection() as HttpURLConnection
+            val conn = URL("http://www.sanpablocitygov.ph/api/get-brgy-list").openConnection() as HttpURLConnection
             try {
                 xhr = conn.inputStream.bufferedReader().readText()
             } catch(e: Exception){
@@ -73,7 +83,7 @@ class FragmentBarangay : Fragment() {
         }
 
         override fun onPostExecute(res: String){
-            pLoading.dismiss()
+//            pLoading.dismiss()
             resp = res
             ListBrgy(resp!!)
 
@@ -86,7 +96,7 @@ class FragmentBarangay : Fragment() {
                 val bLs: JSONArray = JSONObject(jsonStr.toString()).getJSONArray("brgys")
                 for(i in 0 until bLs.length() step 1){
                     val post: JSONObject = bLs.getJSONObject(i)
-                    list.add(BarangayModel(post.getString("brgy_name"), "", "", post.getString("brgy_chairman"), ""))
+                    list.add(BarangayModel(post.getString("brgy_name"), post.getString("brgy_district"), post.getString("brgy_code"), post.getString("brgy_chairman"), post.getString("brgy_contact")))
                 }
 
                 val adapter = BarangayAdapter(

@@ -60,114 +60,50 @@
                             android:textStyle="bold"
                             android:textSize="23sp"
                             android:layout_marginTop="3dp"
+                            android:layout_marginBottom="5dp"
 
                     />
                 </LinearLayout>
 
             </LinearLayout>
         </LinearLayout>
+        <!--<ImageView android:layout_width="match_parent"-->
+                   <!--android:layout_height="300dp"-->
+                   <!--android:src="@drawable/lights"-->
+                   <!--android:fitsSystemWindows="true"-->
+                   <!--android:layout_gravity="center"-->
+                   <!--android:scaleType="centerCrop"-->
+                   <!--android:padding="10dp"-->
+                   <!--android:layout_marginLeft="10dp"-->
+                   <!--android:layout_marginRight="10dp"-->
+        <!--/>-->
         <ImageView android:layout_width="match_parent"
-                   android:layout_height="300dp"
-                   android:src="@drawable/slake5"
+                   android:layout_height="350dp"
+                   android:src="@drawable/goverment_sanpablo"
                    android:fitsSystemWindows="true"
                    android:layout_gravity="center"
                    android:scaleType="centerCrop"
-                   android:padding="10dp"
-                   android:layout_marginLeft="10dp"
-                   android:layout_marginRight="10dp"
+                   android:padding="5dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="5dp"
         />
+<TextView android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="SAN PABLO CITY\nGOVERMENT OFFICES"
+          android:textStyle="bold"
+          android:textColor="@color/white"
+          android:textSize="30sp"
+          android:textAlignment="center"
+          android:layout_marginTop="15dp"/>
+
+
+<ListView
+        android:id="@+id/listview_department"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"/>
 
 
 
-
-
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginTop="15dp">
-
-            <Button
-                    android:layout_width="450dp"
-                    android:layout_height="wrap_content"
-                    android:text="Administrative System and Procedures"
-                    android:background="@drawable/text_border2"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
-                    android:padding="7dp"
-                    android:textSize="18sp"
-                    android:layout_gravity="center"
-                    android:id="@+id/nav_admin_system_procedures"
-                    android:layout_marginBottom="10dp"/>
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp">
-                <Button
-                        android:layout_width="250dp"
-                        android:layout_height="70dp"
-                        android:text="economic developement"
-                        android:background="@drawable/text_border2"
-                        android:textStyle="bold"
-                        android:textColor="@color/white"
-                        android:padding="7dp"
-                        android:id="@+id/economic_development"
-                        android:layout_marginEnd="8dp"
-                        android:layout_gravity="center"
-                        android:textSize="18sp"/>
-                <Button
-                        android:layout_width="250dp"
-                        android:layout_height="70dp"
-                        android:text="Environmental management"
-                        android:background="@drawable/text_border2"
-                        android:textStyle="bold"
-                        android:textColor="@color/white"
-                        android:padding="7dp"
-                        android:textSize="18sp"
-                        android:id="@+id/nav_environmental_management"
-                        android:layout_gravity="center"/>
-            </LinearLayout>
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center"
-                    android:layout_gravity="center">
-                <Button
-                        android:layout_width="250dp"
-                        android:layout_height="70dp"
-                        android:text="legislative services"
-                        android:background="@drawable/text_border2"
-                        android:textStyle="bold"
-                        android:textColor="@color/white"
-                        android:padding="7dp"
-                        android:id="@+id/nav_legislative_services"
-                        android:layout_marginEnd="8dp"
-                        android:layout_gravity="center"
-                        android:textSize="18sp"/>
-                <Button
-                        android:layout_width="250dp"
-                        android:layout_height="70dp"
-                        android:text="social services"
-                        android:background="@drawable/text_border2"
-                        android:textStyle="bold"
-                        android:textColor="@color/white"
-                        android:padding="7dp"
-                        android:textSize="18sp"
-                        android:id="@+id/nav_social_services"
-                        android:layout_gravity="center"/>
-            </LinearLayout>
-        </LinearLayout>
-        <ListView
-                android:layout_marginTop="10dp"
-                android:contextClickable="true"
-                android:id="@+id/listview_department"
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
-        />
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"

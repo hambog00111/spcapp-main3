@@ -6,14 +6,14 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
 import android.support.design.widget.NavigationView
-import android.support.design.widget.Snackbar
 import android.support.v4.app.ActivityCompat
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import com.example.mis_pc_11.spc_app1.Goverment.FragmentEconomy
+import com.example.mis_pc_11.spc_app1.Goverment.Department.FragmentDepartment
+import com.example.mis_pc_11.spc_app1.Goverment.FragmentOfficeMap
 import com.example.mis_pc_11.spc_app1.Links.*
 import com.example.mis_pc_11.spc_app1.TheCity.Barangay.FragmentBarangay
 import com.example.mis_pc_11.spc_app1.TheCity.FragmentHistory
@@ -34,10 +34,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         setSupportActionBar(toolbar)
 
-        fab.setOnClickListener { view ->
-            var show: Any = Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+//        fab.setOnClickListener { view ->
+//            var show: Any = Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                .setAction("Action", null).show()
+//        }
 
         val toggle = ActionBarDrawerToggle(
             this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
@@ -66,9 +66,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         return super.onCreateOptionsMenu(menu)
     }
 
-    val police = "8004503"
-    val emergency = "171"
-    val fire = "801-8955"
+    val police = "09081930819"
+    val emergency = "09089078124"
+    val fire = "09995784943"
     val PHONE_REQ = 1
 
     // actions on click menu items
@@ -180,12 +180,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_home -> {
                 supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentHome()).commit()
             }
-
-            R.id.nav_economy ->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
-                    FragmentEconomy()
-                ).commit()
-            }
+//
             R.id.nav_history->{
                 supportFragmentManager.beginTransaction().replace(R.id.frag_container,
                     FragmentHistory()
@@ -211,6 +206,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     FragmentSanPablo()
                 ).commit()
             }
+            R.id.nav_department_head->{
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentDepartment()
+                ).commit()
+            }
             R.id.nav_mission->{
                 supportFragmentManager.beginTransaction().replace(R.id.frag_container,
                     MissionVision()
@@ -225,6 +225,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_gallery->{
                 supportFragmentManager.beginTransaction().replace(R.id.frag_container,
                     FragmentGallery()
+                ).commit()
+            }
+            R.id.nav_official_map->{
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentOfficeMap()
                 ).commit()
             }
 

@@ -123,10 +123,12 @@
     <ImageView
             android:layout_width="350dp"
             android:layout_height="200dp"
-            android:src="@drawable/events2"
+            android:src="@drawable/app"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
             android:fitsSystemWindows="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
             android:scaleType="fitCenter"/>
 
 
@@ -164,7 +166,7 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
-                android:id="@+id/csc_home"/>
+                android:id="@+id/btn_home_csc"/>
 
         <Button
                 android:layout_width="300dp"
@@ -172,7 +174,7 @@
                 android:background="@drawable/philjob"
                 android:layout_gravity="center"
                 android:padding="10dp"
-                android:id="@+id/phil_home"/>
+                android:id="@+id/btn_home_phil_job"/>
 
 
     </LinearLayout>
@@ -207,7 +209,7 @@
                 android:layout_height="40dp"
                 android:background="@drawable/facebook"
                 android:layout_marginRight="10dp"
-                android:id="@+id/nav_CIO"/>
+                android:id="@+id/btn_fb_cio"/>
 
     <TextView   android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -215,7 +217,8 @@
                 android:textColor="@color/white"
                 android:textSize="15sp"
                 android:layout_gravity="center"
-                android:gravity="center"/>
+                android:gravity="center"
+    android:id="@+id/text_fb_cio"/>
     </LinearLayout>
         <LinearLayout   android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -226,7 +229,7 @@
                     android:layout_height="40dp"
                     android:background="@drawable/facebook"
                     android:layout_marginRight="10dp"
-                    android:id="@+id/nav_tourism_office"/>
+                    android:id="@+id/btn_fb_tourism"/>
 
             <TextView   android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -234,7 +237,8 @@
                         android:textColor="@color/white"
                         android:textSize="15sp"
                         android:layout_gravity="center"
-                        android:gravity="center"/>
+                        android:gravity="center"
+                        android:id="@+id/text_fb_tourism"/>
         </LinearLayout><LinearLayout   android:layout_width="wrap_content"
                                        android:layout_height="wrap_content"
                                        android:orientation="horizontal"
@@ -244,7 +248,7 @@
                 android:layout_height="40dp"
                 android:background="@drawable/facebook"
                 android:layout_marginRight="10dp"
-                android:id="@+id/nav_lgu"/>
+                android:id="@+id/btn_fb_lgu"/>
 
         <TextView   android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -252,7 +256,8 @@
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     android:layout_gravity="center"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:id="@+id/text_fb_lgu"/>
     </LinearLayout><LinearLayout   android:layout_width="wrap_content"
                                    android:layout_height="wrap_content"
                                    android:orientation="horizontal"
@@ -262,7 +267,7 @@
                 android:layout_height="40dp"
                 android:background="@drawable/facebook"
                 android:layout_marginRight="10dp"
-                android:id="@+id/nav_cdrrmo"/>
+                android:id="@+id/btn_fb_cdrrmo"/>
 
         <TextView   android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -270,7 +275,8 @@
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     android:layout_gravity="center"
-                    android:gravity="center"/>
+                    android:gravity="center"
+        android:id="@+id/text_fb_cdrrmo"/>
     </LinearLayout>
 
 
@@ -487,6 +493,7 @@
                     android:layout_gravity="center"
                     android:textColor="@color/white"
                     android:gravity="center"
+                    android:id="@+id/btn_home_bplo"
                     />
 
             <Button
@@ -501,6 +508,7 @@
                     android:layout_marginRight="6dp"
                     android:layout_marginLeft="6dp"
                     android:layout_marginBottom="4dp"
+                    android:id="@+id/btn_home_business_tax"
                     />
             <Button
                     android:layout_width="match_parent"
@@ -514,6 +522,7 @@
                     android:layout_gravity="center"
                     android:textColor="@color/white"
                     android:gravity="center"
+                    android:id="@+id/btn_home_franchise"
                     />
             <Button
                     android:layout_width="match_parent"
@@ -526,7 +535,8 @@
                     android:textSize="14sp"
                     android:layout_gravity="center"
                     android:textColor="@color/white"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:id="@+id/btn_home_real"/>
             <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -538,7 +548,8 @@
                     android:textSize="14sp"
                     android:layout_gravity="center"
                     android:textColor="@color/white"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:id="@+id/btn_home_market"/>
 
             <Button
                     android:layout_width="match_parent"
@@ -551,7 +562,8 @@
                     android:textSize="14sp"
                     android:layout_gravity="center"
                     android:textColor="@color/white"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:id="@+id/btn_home_bir"/>
 
             <Button
                     android:layout_width="match_parent"
@@ -564,7 +576,8 @@
                     android:textSize="14sp"
                     android:layout_gravity="center"
                     android:textColor="@color/white"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:id="@+id/btn_home_dti"/>
 
             <Button
                     android:layout_width="match_parent"
@@ -577,7 +590,8 @@
                     android:textSize="14sp"
                     android:layout_gravity="center"
                     android:textColor="@color/white"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:id="@+id/btn_home_passport"/>
 
         </LinearLayout>
 

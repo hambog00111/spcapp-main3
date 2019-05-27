@@ -82,7 +82,7 @@
         />
         <ImageView android:layout_width="match_parent"
                    android:layout_height="480dp"
-                   android:src="@drawable/office_vicinity_map"
+                   android:src="@drawable/office_vicinity_map2"
                    android:fitsSystemWindows="true"
                    android:layout_gravity="center"
                    android:scaleType="fitXY"

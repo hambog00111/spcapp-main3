@@ -11,33 +11,68 @@
               android:layout_height="wrap_content"
               android:orientation="vertical">
 
+    <LinearLayout android:layout_height="wrap_content"
+                  android:layout_width="match_parent"
+                  android:gravity="center">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+            <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/spc_logo"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_marginTop="13dp"
+                        android:gravity="center"
+                        android:text="Republic of the Philippines"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="20dp"
+                        android:textStyle="bold"
+                        android:text="CITY GOVERMENT OF SAN PABLO"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<TextView-->
+            <!--android:textAlignment="center"-->
+            <!--android:text="GALLERY"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingTop="3dp"-->
+            <!--android:paddingBottom="5dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:textColor="@color/white"-->
+        <!--android:textStyle="bold"-->
+            <!--android:textSize="25sp"-->
+            <!--android:layout_marginTop="20dp"-->
+    <!--/>-->
 
 
-    <TextView
-            android:paddingLeft="20dp"
-            android:text="Gallery"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="3dp"
-            android:paddingBottom="5dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:textColor="@color/white"
-            android:background="@drawable/text_border"
-            android:textSize="35dp"
-            android:layout_marginTop="20dp"
-    />
-
-    <me.biubiubiu.justifytext.library.JustifyTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/home"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="8dp"
-    />
     <TextView
             android:paddingLeft="20dp"
             android:text="Pictures"
@@ -48,8 +83,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:textColor="@color/white"
-            android:background="@drawable/text_border"
-            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
             android:layout_marginTop="8dp"
     />
 
@@ -217,7 +252,8 @@
             android:layout_marginEnd="8dp"
             android:textColor="@color/white"
             android:background="@drawable/text_border"
-            android:textSize="35dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
             android:layout_marginTop="20dp"
     />
 

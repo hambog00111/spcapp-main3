@@ -1,5 +1,6 @@
 package com.example.mis_pc_11.spc_app1.TheCity.Barangay
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -13,19 +14,20 @@ class BarangayAdapter(var mcontext: Context , var resource:Int,var items:List<Ba
 
 
 
+    @SuppressLint("ViewHolder")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
 
         val layoutInflater :LayoutInflater = LayoutInflater.from(mcontext)
 
         val view : View = layoutInflater.inflate(resource , null )
         val title : TextView = view.findViewById(R.id.title_barangay)
-        var district: TextView = view.findViewById(R.id.district_brangay)
-        var code : TextView = view.findViewById(R.id.code_barangay)
-        var chairman : TextView = view.findViewById(R.id.chairman_barangay)
-        var contact : TextView = view.findViewById(R.id.contact_barangay)
+        val district: TextView = view.findViewById(R.id.nav_dept_head_name)
+        val code : TextView = view.findViewById(R.id.code_barangay)
+        val chairman : TextView = view.findViewById(R.id.chairman_barangay)
+        val contact : TextView = view.findViewById(R.id.nav_contact_dept)
 
 
-        var person : BarangayModel = items[position]
+        val person : BarangayModel = items[position]
 
         title.text = person.ivtitle
         district.text = person.ivdistrict

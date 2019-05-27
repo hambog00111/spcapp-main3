@@ -40,11 +40,11 @@
                 android:id="@+id/spc_map"
                 app:showAsAction="always"
                 android:title=""/>
-        <item
-                android:icon="@drawable/ic_photo_camera"
-                android:id="@+id/camera"
-                app:showAsAction="always"
-                android:title=""/>
+        <!--<item-->
+                <!--android:icon="@drawable/ic_photo_camera"-->
+                <!--android:id="@+id/camera"-->
+                <!--app:showAsAction="always"-->
+                <!--android:title=""/>-->
 
 
 

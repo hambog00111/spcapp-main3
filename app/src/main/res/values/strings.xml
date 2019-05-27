@@ -6,7 +6,34 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_bpo">BPLO Fill Up</string>
-    
+
+
+    <string name="hymn">
+        Titik ni : Celso Al Carunungan \n
+        Tugtugin ni : Antonino Buenaventura \n
+        Inawit ni : Oyayi Choir \n \n
+
+
+        I\n\n
+
+        Lunsod na dakila\n
+        Bayan ng Maykapal\n
+        Lupang pinagyaman\n
+        Ng puri at dangal\n\n
+
+        II\n\n
+
+        Lunsod ng San Pablo\n
+        Bayang minamahal,\n
+        Buhay naming ay iyo\n
+        Magpakailan pa man\n
+
+
+    </string>
+
+
+
+
     <string name="history1">
 
         \t \t The earliest historical record of the City of San Pablo dates
@@ -270,7 +297,7 @@
         Chinese and Sanskrit are also noticeably used. \n \n
 
         \t \t Roman Catholic is the biggest religious denomination in San Pablo City. This is
-        followed by Iglesia ni Kristo, Aglipayans, Evangelical and other minor denominations. \n
+        followed by Iglesia ni Cristo, Aglipayans, Evangelical and other minor denominations. \n
 
 
     </string>
