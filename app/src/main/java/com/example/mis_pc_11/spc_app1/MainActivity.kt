@@ -13,7 +13,9 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import com.example.mis_pc_11.spc_app1.Goverment.Department.FragmentDepartment
+import com.example.mis_pc_11.spc_app1.Goverment.FragmentLocalOfficials
 import com.example.mis_pc_11.spc_app1.Goverment.FragmentOfficeMap
+import com.example.mis_pc_11.spc_app1.Home.FragmentHome
 import com.example.mis_pc_11.spc_app1.Links.*
 import com.example.mis_pc_11.spc_app1.TheCity.Barangay.FragmentBarangay
 import com.example.mis_pc_11.spc_app1.TheCity.FragmentHistory
@@ -46,7 +48,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         nav_view.setNavigationItemSelectedListener(this)
 
-       supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentHome()).commit()
+       supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+           FragmentHome()
+       ).commit()
 
 
     }
@@ -176,52 +180,66 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        when (item.itemId){
+        when (item.itemId) {
             R.id.nav_home -> {
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentHome()).commit()
+                supportFragmentManager.beginTransaction().replace(
+                    R.id.frag_container,
+                    FragmentHome()
+                ).commit()
             }
 //
-            R.id.nav_history->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+            R.id.nav_history -> {
+                supportFragmentManager.beginTransaction().replace(
+                    R.id.frag_container,
                     FragmentHistory()
                 ).commit()
             }
-            R.id.nav_barangay->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+            R.id.nav_barangay -> {
+                supportFragmentManager.beginTransaction().replace(
+                    R.id.frag_container,
                     FragmentBarangay()
                 ).commit()
             }
-            R.id.nav_location->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+            R.id.nav_location -> {
+                supportFragmentManager.beginTransaction().replace(
+                    R.id.frag_container,
                     FragmentLocationTopology()
                 ).commit()
             }
-            R.id.nav_hymn->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+            R.id.nav_hymn -> {
+                supportFragmentManager.beginTransaction().replace(
+                    R.id.frag_container,
                     FragmentHymn()
                 ).commit()
             }
-            R.id.nav_sanpablo->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+            R.id.nav_sanpablo -> {
+                supportFragmentManager.beginTransaction().replace(
+                    R.id.frag_container,
                     FragmentSanPablo()
                 ).commit()
             }
-            R.id.nav_department_head->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+            R.id.nav_department_head -> {
+                supportFragmentManager.beginTransaction().replace(
+                    R.id.frag_container,
                     FragmentDepartment()
                 ).commit()
             }
-            R.id.nav_mission->{
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+            R.id.nav_mission -> {
+                supportFragmentManager.beginTransaction().replace(
+                    R.id.frag_container,
                     MissionVision()
                 ).commit()
             }
 
-//            R.id.nav_tourism->{
-//                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
-//                    FragmentTourism()
-//                ).commit()
-//            }
+            R.id.nav_local_officials -> {
+                supportFragmentManager.beginTransaction().replace(
+                    R.id.frag_container,
+                    FragmentLocalOfficials()
+                ).commit()
+            }
+
+
+
             R.id.nav_gallery->{
                 supportFragmentManager.beginTransaction().replace(R.id.frag_container,
                     FragmentGallery()
@@ -295,7 +313,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
 
             else -> {
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentHome()).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                    FragmentHome()
+                ).commit()
             }
         }
         drawer_layout.closeDrawer(GravityCompat.START)

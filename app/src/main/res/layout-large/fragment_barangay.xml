@@ -47,14 +47,14 @@
                         android:layout_height="wrap_content"
                         android:text="Republic of the Philippines"
                         android:textColor="@color/white"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="10dp"
                         android:textSize="17dp"
                 />
 
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="CITY OF SEVEN LAKES"
+                        android:text="CITY GOVERNMENT OF SAN PABLO"
                         android:textColor="@color/white"
                         android:textStyle="bold"
                         android:textSize="23sp"
@@ -96,7 +96,9 @@
             <ListView
                     android:id="@+id/listview_barangay"
                     android:layout_width="match_parent"
-
+                    android:scrollbarSize="5dp"
+                    android:scrollbarStyle="insideInset"
+                    android:nestedScrollingEnabled="true"
                     android:layout_height="500dp"/>
 
 

@@ -48,14 +48,14 @@
                             android:layout_height="wrap_content"
                             android:text="Republic of the Philippines"
                             android:textColor="@color/white"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="10dp"
                             android:textSize="17dp"
                     />
 
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="CITY OF SEVEN LAKES"
+                            android:text="CITY GOVERNMENT OF SAN PABLO"
                             android:textColor="@color/white"
                             android:textStyle="bold"
                             android:textSize="23sp"
@@ -66,6 +66,18 @@
 
             </LinearLayout>
         </LinearLayout>
+
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="480dp"
+                   android:src="@drawable/office_vicinity_map2"
+                   android:fitsSystemWindows="true"
+                   android:layout_gravity="center"
+                   android:scaleType="fitXY"
+                   android:padding="5dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="5dp"
+        />
+
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -80,18 +92,6 @@
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center"
         />
-        <ImageView android:layout_width="match_parent"
-                   android:layout_height="480dp"
-                   android:src="@drawable/office_vicinity_map2"
-                   android:fitsSystemWindows="true"
-                   android:layout_gravity="center"
-                   android:scaleType="fitXY"
-                   android:padding="5dp"
-                   android:layout_marginLeft="5dp"
-                   android:layout_marginRight="5dp"
-        />
-
-
 
     <LinearLayout
             android:layout_width="match_parent"

@@ -6,56 +6,58 @@
             android:layout_height="match_parent"
             android:background="@drawable/background"
             android:paddingTop="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp">
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
 
     <LinearLayout android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:orientation="vertical"
     >
 
+        <LinearLayout android:layout_height="wrap_content"
+                      android:layout_width="match_parent"
+                      android:gravity="center">
         <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="90dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
-        >
+                android:layout_gravity="center"
+                android:gravity="center">
 
             <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:src="@drawable/spc_logo"
-                    android:id="@+id/imageView2"
-                    android:layout_marginStart="4dp"
+                    android:layout_marginStart="6dp"
                     android:layout_marginTop="4dp"/>
 
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:orientation="vertical">
 
                 <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Republic of the Philippines"
                         android:textColor="@color/white"
-                        android:layout_marginTop="20dp"
-                />
+                        android:textSize="15sp"
+                        android:layout_marginTop="13dp"
+                        android:gravity="center"
+                        android:text="Republic of the Philippines"/>
 
                 <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="CITY OF SEVEN LAKES"
                         android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="20dp"
                         android:textStyle="bold"
-                        android:textSize="25dp"
-                        android:layout_marginTop="3dp"
-
-                />
-
+                        android:text="CITY GOVERMENT OF SAN PABLO"/>
             </LinearLayout>
-
         </LinearLayout>
+    </LinearLayout>
 
 
         <LinearLayout
@@ -100,7 +102,7 @@
                 <TextView
                          android:layout_width="match_parent"
                          android:layout_height="wrap_content"
-                         android:text="HON. AMBEN B.AMANTE"
+                         android:text="HON. LORETO S. AMANTE"
                          android:textStyle="bold"
                          android:layout_marginTop="8dp"
                          android:textSize="15sp"
@@ -127,7 +129,7 @@
                 <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/amben_amante"
+                        android:src="@drawable/ic_human"
                         android:fitsSystemWindows="true"
                         android:scaleType="fitCenter"
                         android:layout_gravity="center"/>
@@ -135,7 +137,7 @@
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="HON. AMBEN B.AMANTE"
+                        android:text="ANGELITA E. YANG"
                         android:textStyle="bold"
                         android:layout_marginTop="8dp"
                         android:textSize="15sp"
@@ -145,7 +147,41 @@
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="City Vice-Mayor"
+                        android:text="City Viice-Mayor"
+                        android:layout_marginTop="4dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_human"
+                        android:fitsSystemWindows="true"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GENER B. AMANTE "
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="@color/white"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ABC President"
                         android:layout_marginTop="4dp"
                         android:textSize="15sp"
                         android:textAlignment="center"
@@ -161,14 +197,14 @@
                     android:orientation="horizontal">
             <LinearLayout
                     android:layout_marginTop="10dp"
-                    android:layout_width="190dp"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                 <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/amben_amante"
+                        android:src="@drawable/ic_human"
                         android:fitsSystemWindows="true"
                         android:scaleType="fitCenter"
                         android:layout_gravity="center"/>
@@ -176,10 +212,10 @@
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="HON. AMBEN B.AMANTE"
+                        android:text="JUSTIN COLAGO"
                         android:textStyle="bold"
                         android:layout_marginTop="8dp"
-                        android:textSize="15sp"
+                        android:textSize="13sp"
                         android:textAlignment="center"
                         android:gravity="center"
                         android:textColor="@color/white"/>
@@ -188,7 +224,8 @@
                         android:layout_height="wrap_content"
                         android:text="City Councilor"
                         android:layout_marginTop="4dp"
-                        android:textSize="15sp"
+                        android:paddingBottom="3dp"
+                        android:textSize="13sp"
                         android:textAlignment="center"
                         android:gravity="center"
                         android:textColor="@color/white"/>
@@ -196,14 +233,14 @@
 
                 <LinearLayout
                         android:layout_marginTop="10dp"
-                        android:layout_width="190dp"
+                        android:layout_width="180dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                     <ImageView
                             android:layout_width="150dp"
                             android:layout_height="150dp"
-                            android:src="@drawable/amben_amante"
+                            android:src="@drawable/ic_human"
                             android:fitsSystemWindows="true"
                             android:scaleType="fitCenter"
                             android:layout_gravity="center"/>
@@ -211,10 +248,10 @@
                     <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="HON. AMBEN B.AMANTE"
+                            android:text="KARLA MONICA ADAJAR"
                             android:textStyle="bold"
                             android:layout_marginTop="8dp"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
                             android:textAlignment="center"
                             android:gravity="center"
                             android:textColor="@color/white"/>
@@ -223,7 +260,8 @@
                             android:layout_height="wrap_content"
                             android:text="City Councilor"
                             android:layout_marginTop="4dp"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
+                            android:paddingBottom="3dp"
                             android:textAlignment="center"
                             android:gravity="center"
                             android:textColor="@color/white"/>
@@ -239,14 +277,14 @@
                     android:orientation="horizontal">
                 <LinearLayout
                         android:layout_marginTop="10dp"
-                        android:layout_width="190dp"
+                        android:layout_width="180dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                     <ImageView
                             android:layout_width="150dp"
                             android:layout_height="150dp"
-                            android:src="@drawable/amben_amante"
+                            android:src="@drawable/ic_human"
                             android:fitsSystemWindows="true"
                             android:scaleType="fitCenter"
                             android:layout_gravity="center"/>
@@ -254,10 +292,10 @@
                     <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="HON. AMBEN B.AMANTE"
+                            android:text="RONDEL DIAZ"
                             android:textStyle="bold"
                             android:layout_marginTop="8dp"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
                             android:textAlignment="center"
                             android:gravity="center"
                             android:textColor="@color/white"/>
@@ -266,7 +304,8 @@
                             android:layout_height="wrap_content"
                             android:text="City Councilor"
                             android:layout_marginTop="4dp"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
+                            android:paddingBottom="3dp"
                             android:textAlignment="center"
                             android:gravity="center"
                             android:textColor="@color/white"/>
@@ -274,14 +313,14 @@
 
                 <LinearLayout
                         android:layout_marginTop="10dp"
-                        android:layout_width="190dp"
+                        android:layout_width="180dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                     <ImageView
                             android:layout_width="150dp"
                             android:layout_height="150dp"
-                            android:src="@drawable/amben_amante"
+                            android:src="@drawable/ic_human"
                             android:fitsSystemWindows="true"
                             android:scaleType="fitCenter"
                             android:layout_gravity="center"/>
@@ -289,10 +328,10 @@
                     <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="HON. AMBEN B.AMANTE"
+                            android:text="ENRICO GALICIA"
                             android:textStyle="bold"
                             android:layout_marginTop="8dp"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
                             android:textAlignment="center"
                             android:gravity="center"
                             android:textColor="@color/white"/>
@@ -301,9 +340,10 @@
                             android:layout_height="wrap_content"
                             android:text="City Councilor"
                             android:layout_marginTop="4dp"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
                             android:textAlignment="center"
                             android:gravity="center"
+                            android:paddingBottom="3dp"
                             android:textColor="@color/white"/>
                 </LinearLayout>
 
@@ -317,14 +357,14 @@
                     android:orientation="horizontal">
                 <LinearLayout
                         android:layout_marginTop="10dp"
-                        android:layout_width="190dp"
+                        android:layout_width="180dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                     <ImageView
                             android:layout_width="150dp"
                             android:layout_height="150dp"
-                            android:src="@drawable/amben_amante"
+                            android:src="@drawable/ic_human"
                             android:fitsSystemWindows="true"
                             android:scaleType="fitCenter"
                             android:layout_gravity="center"/>
@@ -332,10 +372,10 @@
                     <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="HON. AMBEN B.AMANTE"
+                            android:text="DIOSDADO BIGLETE"
                             android:textStyle="bold"
                             android:layout_marginTop="8dp"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
                             android:textAlignment="center"
                             android:gravity="center"
                             android:textColor="@color/white"/>
@@ -344,7 +384,88 @@
                             android:layout_height="wrap_content"
                             android:text="City Councilor"
                             android:layout_marginTop="4dp"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/ic_human"
+                            android:fitsSystemWindows="true"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="EDUARDO DIZON"
+                            android:textStyle="bold"
+                            android:layout_marginTop="8dp"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textColor="@color/white"/>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="City Councilor"
+                            android:layout_marginTop="4dp"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/ic_human"
+                            android:fitsSystemWindows="true"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ARNEL C.TICZON"
+                            android:textStyle="bold"
+                            android:layout_marginTop="8dp"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textColor="@color/white"/>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="City Councilor"
+                            android:layout_marginTop="4dp"
+                            android:textSize="13sp"
+                            android:paddingBottom="3dp"
                             android:textAlignment="center"
                             android:gravity="center"
                             android:textColor="@color/white"/>
@@ -352,14 +473,14 @@
 
                 <LinearLayout
                         android:layout_marginTop="10dp"
-                        android:layout_width="190dp"
+                        android:layout_width="180dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                     <ImageView
                             android:layout_width="150dp"
                             android:layout_height="150dp"
-                            android:src="@drawable/amben_amante"
+                            android:src="@drawable/ic_human"
                             android:fitsSystemWindows="true"
                             android:scaleType="fitCenter"
                             android:layout_gravity="center"/>
@@ -367,10 +488,10 @@
                     <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="HON. AMBEN B.AMANTE"
+                            android:text="ELSIE PAVICO"
                             android:textStyle="bold"
                             android:layout_marginTop="8dp"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
                             android:textAlignment="center"
                             android:gravity="center"
                             android:textColor="@color/white"/>
@@ -379,14 +500,94 @@
                             android:layout_height="wrap_content"
                             android:text="City Councilor"
                             android:layout_marginTop="4dp"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
                             android:textAlignment="center"
                             android:gravity="center"
+                            android:paddingBottom="3dp"
                             android:textColor="@color/white"/>
                 </LinearLayout>
 
             </LinearLayout>
+            <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
+                    <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/ic_human"
+                            android:fitsSystemWindows="true"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="DANDI C. MEDINA"
+                            android:textStyle="bold"
+                            android:layout_marginTop="8dp"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textColor="@color/white"/>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="City Councilor"
+                            android:layout_marginTop="4dp"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/ic_human"
+                            android:fitsSystemWindows="true"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="NAPOLEON C. CALATRABA"
+                            android:textStyle="bold"
+                            android:layout_marginTop="8dp"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textColor="@color/white"/>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="City Councilor"
+                            android:layout_marginTop="4dp"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -400,7 +601,7 @@
                     android:layout_height="61dp"
                     android:text="@string/tab_govphil"
                     android:layout_marginTop="8dp"
-                    android:textSize="12sp"
+                    android:textSize="11sp"
                     android:textAlignment="center"
                     android:gravity="center"
                     android:textColor="@color/white"
@@ -411,7 +612,8 @@
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
-                    android:layout_marginBottom="8dp">
+                    android:layout_marginBottom="8dp"
+            >
 
 
                 <ImageView
@@ -433,6 +635,8 @@
 
         </LinearLayout>
 
+
+
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
@@ -444,7 +648,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
                 <ImageView
-                        android:layout_width="130dp"
+                        android:layout_width="100dp"
                         android:layout_height="70dp"
                         android:src="@drawable/phlogo"
                 />
@@ -495,7 +699,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
                 <ImageView
-                        android:layout_width="130dp"
+                        android:layout_width="100dp"
                         android:layout_height="70dp"
                         android:src="@drawable/transpa"
                 />

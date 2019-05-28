@@ -73,20 +73,20 @@
                                             android:layout_marginBottom="10dp"
                                             android:layout_marginStart="20dp"
                                             android:textStyle="bold"
-                                            android:text="CITY GOVERMENT OF SAN PABLO"/>
+                                            android:text="CITY GOVERNMENT OF SAN PABLO"/>
                                 </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
 
-                        <ImageView android:layout_width="match_parent"
+                        <android.support.v4.view.ViewPager
+                                android:layout_width="match_parent"
                                    android:layout_height="230dp"
-                                   android:src="@drawable/slake4"
+                                android:id="@+id/home_viewpager"
                                    android:fitsSystemWindows="true"
                                    android:layout_gravity="center"
                                    android:scaleType="centerCrop"
-                                   android:layout_marginTop="5dp"
-                                   android:layout_marginLeft="5dp"
-                                   android:layout_marginRight="5dp"
+                                   android:layout_marginTop="8dp"
+
                         />
 
                         <TextView
@@ -95,18 +95,21 @@
                                 android:text="EVENTS AND ANNOUNCEMENTS"
                                 android:textStyle="bold"
                                 android:gravity="center"
-                                android:textSize="24sp"
+                                android:textSize="20sp"
                                 android:textAlignment="center"
                                 android:textColor="@color/white"
-                                android:layout_marginTop="20dp"
+                                android:layout_marginTop="15dp"
                                 android:layout_gravity="center"/>
 
 
-                        <ImageView
+                        <android.support.v4.view.ViewPager
+                                android:layout_marginTop="5dp"
                                 android:layout_width="match_parent"
-                                android:layout_height="150dp"
+                                android:layout_height="200dp"
                                 android:src="@drawable/app"
+                                android:id="@+id/events_viewpager"
                                 android:layout_gravity="center"
+                                android:scaleType="centerCrop"
                                 android:layout_marginBottom="20dp"/>
 
                         <TextView android:layout_width="match_parent"
@@ -400,6 +403,9 @@
                                   android:background="@drawable/line_border"/>
 
 
+
+
+
                             <LinearLayout android:layout_width="match_parent"
                                           android:layout_height="wrap_content"
                                           android:orientation="vertical"
@@ -436,7 +442,7 @@
                                     <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="(049) 300-0065"
+                                            android:text="(049)3000-065"
                                             android:textColor="@color/white"
                                             android:textSize="14sp"
                                             android:layout_marginBottom="3dp"/>
@@ -453,7 +459,7 @@
                                     <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="5626-474/5210-610"
+                                            android:text="(049)5626-474/(049)5210-610"
                                             android:textColor="@color/white"
                                             android:textSize="14sp"
                                             android:layout_marginBottom="3dp"
@@ -469,7 +475,7 @@
                                     <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="5624-025"
+                                            android:text="(049)5624-025"
                                             android:textColor="@color/white"
                                             android:textSize="14sp"
                                             android:layout_marginBottom="3dp"/>
@@ -484,7 +490,7 @@
                                     <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="(049) 503-1351/503-1432"
+                                            android:text="(049)5031-351/(049)5031-432"
                                             android:textColor="@color/white"
                                             android:textSize="14sp"
                                             android:layout_marginBottom="3dp"/>
@@ -499,7 +505,8 @@
                                     <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text=" (049) 503-1351/503-1431 503-1432"
+
+                                            android:text="(049)5031-351/(049)5031-431"
                                             android:textColor="@color/white"
                                             android:textSize="14sp"
                                             android:layout_marginBottom="3dp"/>
@@ -516,7 +523,7 @@
                                     <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="8000-405"
+                                            android:text="(049)8000-405"
                                             android:textColor="@color/white"
                                             android:textSize="14sp"
                                             android:layout_marginBottom="3dp"/>
@@ -533,7 +540,7 @@
                                     <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="(049) 562-1575"
+                                            android:text="(049)5621-575"
                                             android:textColor="@color/white"
                                             android:textSize="14sp"
                                             android:layout_marginBottom="3dp"/>
@@ -549,7 +556,7 @@
                                     <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="5627-654"
+                                            android:text="(049)5627-654"
                                             android:textColor="@color/white"
                                             android:textSize="14sp"
                                             android:layout_marginBottom="3dp"/>
@@ -563,6 +570,27 @@
 
                                 </LinearLayout>
                         </LinearLayout>
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="BIDS AND AWARDS"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textSize="24sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"/>
+                        <Button
+
+                                android:layout_width="300dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/philgeps"
+                                android:gravity="center"
+                                android:id="@+id/btn_home_philgeps"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"/>
 
 <LinearLayout android:layout_width="match_parent"
               android:layout_height="wrap_content"
@@ -738,13 +766,14 @@ android:layout_gravity="center">
                                 android:layout_marginTop="20dp"
                                 android:layout_gravity="center"/>
 
-                        <VideoView
+                        <WebView
                                 android:layout_width="380dp"
-                                android:padding="10dp"
+                                android:padding="5dp"
                                 android:layout_gravity="center"
                                 android:foregroundGravity="center"
                                 android:layout_height="250dp"
-                        />
+                                android:id="@+id/video_home2"
+                                tools:ignore="WebViewLayout"/>
 
 
                     </LinearLayout>

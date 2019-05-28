@@ -44,7 +44,7 @@
 
                     <item
                             android:id="@+id/nav_department_head"
-                            android:title="Department Head and Assistant"/>
+                            android:title="Departments"/>
                     <item
                             android:id="@+id/nav_standing_committees"
                             android:title="Standing Committees"/>

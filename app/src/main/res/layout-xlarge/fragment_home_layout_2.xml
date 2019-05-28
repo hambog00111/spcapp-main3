@@ -13,9 +13,10 @@
                   android:id="@+id/linera">
 
 
-        <ImageView android:layout_width="match_parent"
+        <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
                    android:layout_height="450dp"
-                   android:src="@drawable/slake4"
+                android:id="@+id/home_viewpager"
                    android:fitsSystemWindows="true"
                    android:layout_gravity="center"
                    android:scaleType="centerCrop"
@@ -74,16 +75,6 @@
 
 
 
-        <me.biubiubiu.justifytext.library.JustifyTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/home2"
-                android:textColor="@color/white"
-                android:layout_marginStart="50dp"
-                android:textSize="18dp"
-        />
-
-
         <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
@@ -123,10 +114,10 @@
             android:layout_gravity="center"
     />
 
-    <ImageView
+    <android.support.v4.view.ViewPager
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:src="@drawable/events2"
+            android:id="@+id/events_viewpager"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
             android:fitsSystemWindows="true"
@@ -166,7 +157,7 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
-                android:id="@+id/csc_home"/>
+                android:id="@+id/btn_home_csc"/>
 
         <Button
                 android:layout_width="330dp"
@@ -174,7 +165,7 @@
                 android:background="@drawable/philjob"
                 android:layout_gravity="center"
                 android:padding="10dp"
-                android:id="@+id/phil_home"/>
+                android:id="@+id/btn_home_phil_job"/>
 
     </LinearLayout>
 
@@ -209,13 +200,14 @@
                     android:layout_height="60dp"
                     android:background="@drawable/facebook"
                     android:layout_marginRight="10dp"
-                    android:id="@+id/nav_CIO"/>
+                    android:id="@+id/btn_fb_cio"/>
 
             <TextView   android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="CIO San Pablo FB Page"
                         android:textColor="@color/white"
                         android:textSize="20sp"
+                        android:id="@+id/text_fb_cio"
                         android:layout_gravity="center"
                         android:gravity="center"/>
         </LinearLayout>
@@ -228,13 +220,14 @@
                     android:layout_height="60dp"
                     android:background="@drawable/facebook"
                     android:layout_marginRight="10dp"
-                    android:id="@+id/nav_tourism_office"/>
+                    android:id="@+id/btn_fb_tourism"/>
 
             <TextView   android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Tourism Office San Pablo FB page"
                         android:textColor="@color/white"
                         android:textSize="20sp"
+                        android:id="@+id/text_fb_tourism"
                         android:layout_gravity="center"
                         android:gravity="center"/>
         </LinearLayout><LinearLayout   android:layout_width="wrap_content"
@@ -246,13 +239,14 @@
                 android:layout_height="60dp"
                 android:background="@drawable/facebook"
                 android:layout_marginRight="10dp"
-                android:id="@+id/nav_lgu"/>
+                android:id="@+id/btn_fb_lgu"/>
 
         <TextView   android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="San Pablo LGU FB Page"
                     android:textColor="@color/white"
                     android:textSize="20sp"
+                    android:id="@+id/text_fb_lgu"
                     android:layout_gravity="center"
                     android:gravity="center"/>
 
@@ -318,7 +312,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="345-1000"
+                    android:text="(049)3000-065"
                     android:textColor="@color/white"
                     android:textSize="20dp"/>
 
@@ -333,14 +327,14 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="345-1000"
+                    android:text="(049)5626-474/ (049)5210-610"
                     android:textColor="@color/white"
                     android:textSize="20dp"
             />
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="San Pablo City Rescue Unit: "
+                    android:text="Red Cross San Pablo"
                     android:textColor="@color/white"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
@@ -348,7 +342,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="345-1000"
+                    android:text="(049)5624-025"
                     android:textColor="@color/white"
                     android:textSize="20dp"/>
 
@@ -364,7 +358,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="345-1000"
+                    android:text="(049)5031-351/ (049)5031-432"
                     android:textColor="@color/white"
                     android:textSize="20dp"/>
 
@@ -380,7 +374,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="345-1000"
+                    android:text="(049)5031-351/ (049)5031-431"
                     android:textColor="@color/white"
                     android:textSize="20dp"/>
 
@@ -388,7 +382,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="San Pablo City Command and Coordinating Service: "
+                    android:text="City Disaster Risk Reduction Management Office "
                     android:textColor="@color/white"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
@@ -396,7 +390,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="345-1000"
+                    android:text="(049)8000-405"
                     android:textColor="@color/white"
                     android:textSize="20dp"/>
 
@@ -413,10 +407,24 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="345-1000"
+                    android:text="(049)5621-575"
                     android:textColor="@color/white"
                     android:textSize="20dp"/>
 
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bureau of Fire Protection: "
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(049)5627-654"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
@@ -692,9 +700,11 @@
                     android:layout_gravity="center"
             />
 
-            <VideoView   android:layout_width="700dp"
-                         android:layout_height="450dp"
-                         android:layout_gravity="center"/>
+            <WebView android:layout_width="750dp"
+                     android:layout_height="450dp"
+                     android:id="@+id/video_home2"
+                     android:layout_gravity="center"
+                     tools:ignore="WebViewLayout"/>
         </LinearLayout>
 
 

@@ -612,7 +612,8 @@
                                 android:layout_gravity="center"
                                 android:foregroundGravity="center"
                                 android:layout_height="250dp"
-                        />
+                                android:id="@+id/video_home2"
+                                />
 
 
                     </LinearLayout>
