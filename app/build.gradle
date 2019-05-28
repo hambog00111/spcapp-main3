@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.mis_pc_11.spc_app1"
+        applicationId "ph.sanpablocitygov.iSanPablo"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
@@ -18,6 +18,12 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig getSigningConfig()
+            applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "iSanPablo.apk"
+                }
+            }
         }
     }
 }

@@ -747,26 +747,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <TextView
-                    android:layout_width="350dp"
-                    android:layout_height="wrap_content"
-                    android:text="VIDEOS"
-                    android:textStyle="bold"
-                    android:paddingBottom="5dp"
-                    android:paddingTop="5dp"
-                    android:textSize="25sp"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:layout_marginBottom="5dp"
-                    android:layout_gravity="center"/>
 
-            <WebView
-                    android:layout_width="550dp"
-                    android:layout_height="330dp"
-                    android:layout_gravity="center"
-                    android:padding="10dp"
-                    android:id="@+id/video_home2"
-                    tools:ignore="WebViewLayout"/>
 
         </LinearLayout>
 

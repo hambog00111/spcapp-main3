@@ -2,15 +2,15 @@
   "project_info": {
     "project_number": "47319585523",
     "firebase_url": "https://spc-app1.firebaseio.com",
-    "project_id": "spc-app1",
-    "storage_bucket": "spc-app1.appspot.com"
+    "project_id": "iSanPablo",
+    "storage_bucket": "iSanPablo.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:47319585523:android:c356f2289f73424d",
         "android_client_info": {
-          "package_name": "com.example.mis_pc_11.spc_app1"
+          "package_name": "ph.sanpablocitygov.iSanPablo"
         }
       },
       "oauth_client": [
