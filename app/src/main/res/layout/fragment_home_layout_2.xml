@@ -15,7 +15,8 @@
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="wrap_content"
-        >
+
+                app:layout_constraintEnd_toEndOf="parent">
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -72,20 +73,20 @@
                                             android:layout_marginBottom="10dp"
                                             android:layout_marginStart="20dp"
                                             android:textStyle="bold"
-                                            android:text="CITY GOVERMENT OF SAN PABLO"/>
+                                            android:text="CITY GOVERNMENT OF SAN PABLO"/>
                                 </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
 
-                        <ImageView android:layout_width="match_parent"
-                                   android:layout_height="250dp"
-                                   android:src="@drawable/slake4"
-                                   android:fitsSystemWindows="true"
-                                   android:layout_gravity="center"
-                                   android:scaleType="centerCrop"
-                                   android:layout_marginTop="5dp"
-                                   android:layout_marginLeft="5dp"
-                                   android:layout_marginRight="5dp"
+                        <android.support.v4.view.ViewPager
+                                android:layout_width="match_parent"
+                                android:layout_height="230dp"
+                                android:id="@+id/home_viewpager"
+                                android:fitsSystemWindows="true"
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="8dp"
+
                         />
 
                         <TextView
@@ -94,18 +95,21 @@
                                 android:text="EVENTS AND ANNOUNCEMENTS"
                                 android:textStyle="bold"
                                 android:gravity="center"
-                                android:textSize="24sp"
+                                android:textSize="20sp"
                                 android:textAlignment="center"
                                 android:textColor="@color/white"
-                                android:layout_marginTop="20dp"
+                                android:layout_marginTop="15dp"
                                 android:layout_gravity="center"/>
 
 
-                        <ImageView
+                        <android.support.v4.view.ViewPager
+                                android:layout_marginTop="5dp"
                                 android:layout_width="match_parent"
-                                android:layout_height="250dp"
-                                android:src="@drawable/events2"
+                                android:layout_height="200dp"
+                                android:src="@drawable/app"
+                                android:id="@+id/events_viewpager"
                                 android:layout_gravity="center"
+                                android:scaleType="centerCrop"
                                 android:layout_marginBottom="20dp"/>
 
                         <TextView android:layout_width="match_parent"
@@ -113,13 +117,10 @@
                                   android:background="@drawable/line_border"/>
 
 
-
-
-
                         <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="SERVICES OFFER"
+                                android:text="ONLINE SERVICES"
                                 android:textStyle="bold"
 
                                 android:paddingBottom="5dp"
@@ -140,6 +141,7 @@
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
                                     android:text="BPLO Fill up Forms"
+                                    android:id="@+id/btn_home_bplo"
                                     android:background="@drawable/text_border2"
                                     android:padding="8dp"
                                     android:textSize="14sp"
@@ -152,6 +154,7 @@
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
                                     android:text="business tax payment"
+                                    android:id="@+id/btn_home_business_tax"
                                     android:background="@drawable/text_border2"
                                     android:padding="8dp"
                                     android:textSize="14sp"
@@ -163,6 +166,7 @@
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
                                     android:text="Real Property Tax"
+                                    android:id="@+id/btn_home_real"
                                     android:background="@drawable/text_border2"
                                     android:padding="8dp"
                                     android:textSize="14sp"
@@ -174,6 +178,7 @@
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
                                     android:text="franchise tax payment"
+                                    android:id="@+id/btn_home_franchise"
                                     android:background="@drawable/text_border2"
                                     android:padding="8dp"
                                     android:textSize="14sp"
@@ -187,7 +192,7 @@
                                     android:text="market online payment"
                                     android:background="@drawable/text_border2"
                                     android:padding="8dp"
-
+                                    android:id="@+id/btn_home_market"
                                     android:textSize="14sp"
                                     android:layout_gravity="center"
                                     android:textColor="@color/white"
@@ -199,6 +204,7 @@
                                     android:text="online bir registration"
                                     android:background="@drawable/text_border2"
                                     android:padding="8dp"
+                                    android:id="@+id/btn_home_bir"
                                     android:textSize="14sp"
                                     android:layout_gravity="center"
                                     android:textColor="@color/white"
@@ -211,6 +217,7 @@
                                     android:background="@drawable/text_border2"
                                     android:padding="8dp"
                                     android:textSize="14sp"
+                                    android:id="@+id/btn_home_dti"
                                     android:layout_gravity="center"
                                     android:textColor="@color/white"
                                     android:gravity="center"
@@ -222,6 +229,7 @@
                                     android:text="passport online application"
                                     android:background="@drawable/text_border2"
                                     android:padding="8dp"
+                                    android:id="@+id/btn_home_passport"
                                     android:textSize="14sp"
                                     android:layout_gravity="center"
                                     android:textColor="@color/white"
@@ -238,26 +246,10 @@
 
 
 
-                        <!--<TextView android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:background="@drawable/line_border"/>-->
-                        <!--<TextView-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:text="HOTLINES"-->
-                        <!--android:textStyle="bold"-->
-                        <!--android:paddingBottom="5dp"-->
-                        <!--android:paddingTop="5dp"-->
-                        <!--android:textSize="24sp"-->
-                        <!--android:textAlignment="center"-->
-                        <!--android:textColor="@color/white"-->
-                        <!--android:layout_marginTop="20dp"-->
-                        <!--android:layout_gravity="center"/>-->
-
                         <TextView
                                 android:layout_width="350dp"
                                 android:layout_height="wrap_content"
-                                android:text="DISCLOSURE"
+                                android:text="FULL DISCLOSURE"
                                 android:textStyle="bold"
                                 android:paddingBottom="5dp"
                                 android:paddingTop="5dp"
@@ -395,154 +387,302 @@
                                   android:layout_height="wrap_content"
                                   android:background="@drawable/line_border"/>
 
+
+
                         <LinearLayout android:layout_width="match_parent"
                                       android:layout_height="wrap_content"
-                                      android:orientation="horizontal">
+                                      android:orientation="vertical"
+                                      android:gravity="center">
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="CITY HOTLINES"
+                                    android:textStyle="bold"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="5dp"
+                                    android:textSize="25sp"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"/>
+                            <LinearLayout
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="320dp"
+                                    android:orientation="vertical"
+                                    android:background="@drawable/text_border2"
+                                    android:padding="10dp">
 
-                            <LinearLayout android:layout_width="wrap_content"
-                                          android:layout_height="wrap_content"
-                                          android:orientation="vertical">
                                 <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="HOTLINE"
+                                        android:text="San Pablo City Goverment: "
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"
+                                />
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="(049)3000-065"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:layout_marginBottom="3dp"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="San Pablo City Police: "
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:layout_marginBottom="3dp"
+                                        android:textStyle="bold"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="(049)5626-474/(049)5210-610"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:layout_marginBottom="3dp"
+                                />
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Red Cross San Pablo: "
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="(049)5624-025"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:layout_marginBottom="3dp"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="San Pablo City Emergency Hospital: "
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="(049)5031-351/(049)5031-432"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:layout_marginBottom="3dp"/>
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="San Pablo General Hospital: "
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:text="(049)5031-351/(049)5031-431"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:layout_marginBottom="3dp"/>
+
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="City Disaster Risk Reduction Management Office: "
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="(049)8000-405"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:layout_marginBottom="3dp"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="San Pablo Welfare and Development Office: "
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"
+                                />
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="(049)5621-575"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:layout_marginBottom="3dp"/>
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Bureau of Fire Protection:"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"
+                                />
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="(049)5627-654"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:layout_marginBottom="3dp"/>
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="20dp"
+                                        android:text="View More >>"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="BIDS AND AWARDS"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textSize="24sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"/>
+                        <Button
+
+                                android:layout_width="300dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/philgeps"
+                                android:gravity="center"
+                                android:id="@+id/btn_home_philgeps"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"/>
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="horizontal"
+                                      android:layout_gravity="center">
+                            <LinearLayout android:layout_width="220dp"
+                                          android:layout_height="wrap_content"
+                                          android:orientation="vertical">
+
+                                <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="FEATURED LINKS"
                                         android:textStyle="bold"
                                         android:paddingBottom="5dp"
                                         android:paddingTop="5dp"
-                                        android:textSize="25sp"
+                                        android:textSize="20sp"
                                         android:textAlignment="center"
                                         android:textColor="@color/white"
                                         android:layout_marginBottom="5dp"
                                         android:layout_marginTop="10dp"
                                         android:layout_gravity="center"/>
-                                <LinearLayout
-                                        android:layout_height="wrap_content"
-                                        android:layout_width="wrap_content"
-                                        android:orientation="vertical"
-                                        android:background="@drawable/text_border"
-                                        android:padding="10dp">
 
-                                    <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="San Pablo City Goverment: "
-                                            android:textColor="@color/white"
-                                            android:textSize="14sp"
-                                            android:textStyle="bold"
+                                <LinearLayout android:layout_width="wrap_content"
+                                              android:layout_height="wrap_content"
+                                              android:orientation="vertical"
+                                              android:layout_gravity="center"
+                                              android:background="@drawable/text_border2"
+                                              android:padding="8dp"
+                                >
+
+                                    <LinearLayout   android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginBottom="5dp">
+
+                                        <Button android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:background="@drawable/facebook"
+                                                android:layout_marginRight="10dp"
+                                                android:id="@+id/btn_fb_cio"/>
+
+                                        <TextView   android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="CIO San Pablo FB Page"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="13sp"
+                                                    android:id="@+id/text_fb_cio"
+                                                    android:layout_gravity="center"
+                                                    android:gravity="center"/>
+                                    </LinearLayout>
+                                    <LinearLayout   android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginBottom="5dp">
+
+                                        <Button android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:background="@drawable/facebook"
+                                                android:layout_marginRight="10dp"
+                                                android:id="@+id/btn_fb_tourism"/>
+
+                                        <TextView   android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Tourism San Pablo FB page"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="13sp"
+                                                    android:id="@id/btn_fb_tourism"
+                                                    android:layout_gravity="center"
+                                                    android:gravity="center"/>
+                                    </LinearLayout><LinearLayout   android:layout_width="wrap_content"
+                                                                   android:layout_height="wrap_content"
+                                                                   android:orientation="horizontal"
+                                                                   android:layout_marginBottom="5dp">
+
+                                    <Button android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:background="@drawable/facebook"
+                                            android:layout_marginRight="10dp"
+                                            android:id="@+id/btn_fb_lgu"/>
+
+                                    <TextView   android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="San Pablo LGU FB Page"
+                                                android:textColor="@color/white"
+                                                android:textSize="13sp"
+                                                android:id="@+id/text_fb_lgu"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"/>
+                                </LinearLayout><LinearLayout   android:layout_width="wrap_content"
+                                                               android:layout_height="wrap_content"
+                                                               android:orientation="horizontal"
+                                                               android:layout_marginBottom="5dp">
+
+                                    <Button android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:background="@drawable/facebook"
+                                            android:layout_marginRight="10dp"
+                                            android:id="@+id/btn_fb_cdrrmo"/>
+
+                                    <TextView   android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="CDRRMO San Pablo FB Page"
+                                                android:textColor="@color/white"
+                                                android:textSize="13sp"
+                                                android:id="@id/btn_fb_cdrrmo"
+                                                android:layout_gravity="center"
                                     />
-
-                                    <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="345-1000"
-                                            android:textColor="@color/white"
-                                            android:textSize="14sp"
-                                            android:layout_marginBottom="3dp"/>
-
-                                    <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="San Pablo City Police: "
-                                            android:textColor="@color/white"
-                                            android:textSize="14sp"
-                                            android:textStyle="bold"/>
-
-                                    <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="345-1000"
-                                            android:textColor="@color/white"
-                                            android:textSize="14sp"
-                                            android:layout_marginBottom="3dp"
-                                    />
-                                    <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="San Pablo City Rescue Unit: "
-                                            android:textColor="@color/white"
-                                            android:textSize="14sp"
-                                            android:textStyle="bold"/>
-
-                                    <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="345-1000"
-                                            android:textColor="@color/white"
-                                            android:textSize="14sp"
-                                            android:layout_marginBottom="3dp"/>
-
-                                    <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="San Pablo City Emergency\nHospital: "
-                                            android:textColor="@color/white"
-                                            android:textSize="14sp"
-                                            android:textStyle="bold"/>
-                                    <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="345-1000"
-                                            android:textColor="@color/white"
-                                            android:textSize="14sp"
-                                            android:layout_marginBottom="3dp"/>
-                                    <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="San Pablo Medical Center: "
-                                            android:textColor="@color/white"
-                                            android:textSize="14sp"
-                                            android:textStyle="bold"/>
-
-                                    <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="345-1000"
-                                            android:textColor="@color/white"
-                                            android:textSize="14sp"
-                                            android:layout_marginBottom="3dp"/>
-
-
-                                    <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="San Pablo City Command\nand Coordinating Service: "
-                                            android:textColor="@color/white"
-                                            android:textSize="14sp"
-                                            android:textStyle="bold"/>
-
-                                    <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="345-1000"
-                                            android:textColor="@color/white"
-                                            android:textSize="14sp"
-                                            android:layout_marginBottom="3dp"/>
-
-                                    <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="San Pablo Welfare and\nDevelopment Office: "
-                                            android:textColor="@color/white"
-                                            android:textSize="14sp"
-                                            android:textStyle="bold"
-                                    />
-
-                                    <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="345-1000"
-                                            android:textColor="@color/white"
-                                            android:textSize="14sp"
-                                            android:layout_marginBottom="3dp"/>
-
-                                    <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="20dp"
-                                            android:text="View More >>"
-                                            android:textColor="@color/white"
-                                            android:textSize="14sp"
-                                            android:textStyle="bold"/>
-
+                                </LinearLayout>
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -552,11 +692,11 @@
                                 <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="JOB OFFER"
+                                        android:text="JOB OFFERS"
                                         android:textStyle="bold"
                                         android:paddingBottom="5dp"
                                         android:paddingTop="5dp"
-                                        android:textSize="25sp"
+                                        android:textSize="20sp"
                                         android:textAlignment="center"
                                         android:textColor="@color/white"
                                         android:layout_marginBottom="5dp"
@@ -564,23 +704,25 @@
                                         android:layout_gravity="center"/>
                                 <LinearLayout
                                         android:layout_width="match_parent"
-                                        android:layout_height="300dp"
+                                        android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:orientation="vertical">
 
                                     <Button
-                                            android:layout_marginTop="10dp"
-                                            android:layout_width="150dp"
-                                            android:layout_height="150dp"
+
+                                            android:layout_width="100dp"
+                                            android:layout_height="100dp"
                                             android:background="@drawable/csc"
                                             android:gravity="center"
+                                            android:id="@+id/btn_home_csc"
                                             android:layout_gravity="center"
                                             android:layout_marginBottom="20dp"/>
 
                                     <Button
-                                            android:layout_width="140dp"
-                                            android:layout_height="70dp"
+                                            android:layout_width="100dp"
+                                            android:layout_height="50dp"
                                             android:background="@drawable/philjob"
+                                            android:id="@+id/btn_home_phil_job"
                                             android:layout_gravity="center"/>
 
                                 </LinearLayout>
@@ -596,18 +738,7 @@
             </LinearLayout>
 
         </LinearLayout>
-        <!--<RelativeLayout-->
-        <!--android:layout_height="300dp"-->
-        <!--android:layout_width="400dp">-->
 
-        <!--<android.support.v4.view.ViewPager-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="250dp"-->
-        <!--android:id="@+id/view_pager_image">-->
-
-        <!--</android.support.v4.view.ViewPager>-->
-
-        <!--</RelativeLayout>-->
 
         <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"

@@ -137,7 +137,7 @@
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="ANGELITA E. YANG"
+                        android:text="HON. ANGELITA E. YANG"
                         android:textStyle="bold"
                         android:layout_marginTop="8dp"
                         android:textSize="15sp"
@@ -147,47 +147,14 @@
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="City Viice-Mayor"
+                        android:text="City Vice-Mayor"
                         android:layout_marginTop="4dp"
                         android:textSize="15sp"
                         android:textAlignment="center"
                         android:gravity="center"
                         android:textColor="@color/white"/>
             </LinearLayout>
-            <LinearLayout
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
-                <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/ic_human"
-                        android:fitsSystemWindows="true"
-                        android:scaleType="fitCenter"
-                        android:layout_gravity="center"/>
-
-                <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="GENER B. AMANTE "
-                        android:textStyle="bold"
-                        android:layout_marginTop="8dp"
-                        android:textSize="15sp"
-                        android:textAlignment="center"
-                        android:gravity="center"
-                        android:textColor="@color/white"/>
-                <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="ABC President"
-                        android:layout_marginTop="4dp"
-                        android:textSize="15sp"
-                        android:textAlignment="center"
-                        android:gravity="center"
-                        android:textColor="@color/white"/>
-            </LinearLayout>
             <LinearLayout
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
@@ -212,7 +179,7 @@
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="JUSTIN COLAGO"
+                        android:text="HON. JUSTIN COLAGO"
                         android:textStyle="bold"
                         android:layout_marginTop="8dp"
                         android:textSize="13sp"
@@ -248,7 +215,7 @@
                     <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="KARLA MONICA ADAJAR"
+                            android:text="HON. KARLA MONICA ADAJAR"
                             android:textStyle="bold"
                             android:layout_marginTop="8dp"
                             android:textSize="13sp"
@@ -292,7 +259,7 @@
                     <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="RONDEL DIAZ"
+                            android:text="HON. RONDEL DIAZ"
                             android:textStyle="bold"
                             android:layout_marginTop="8dp"
                             android:textSize="13sp"
@@ -328,87 +295,7 @@
                     <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="ENRICO GALICIA"
-                            android:textStyle="bold"
-                            android:layout_marginTop="8dp"
-                            android:textSize="13sp"
-                            android:textAlignment="center"
-                            android:gravity="center"
-                            android:textColor="@color/white"/>
-                    <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="City Councilor"
-                            android:layout_marginTop="4dp"
-                            android:textSize="13sp"
-                            android:textAlignment="center"
-                            android:gravity="center"
-                            android:paddingBottom="3dp"
-                            android:textColor="@color/white"/>
-                </LinearLayout>
-
-            </LinearLayout>
-            <LinearLayout
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:orientation="horizontal">
-                <LinearLayout
-                        android:layout_marginTop="10dp"
-                        android:layout_width="180dp"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                    <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:src="@drawable/ic_human"
-                            android:fitsSystemWindows="true"
-                            android:scaleType="fitCenter"
-                            android:layout_gravity="center"/>
-
-                    <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="DIOSDADO BIGLETE"
-                            android:textStyle="bold"
-                            android:layout_marginTop="8dp"
-                            android:textSize="13sp"
-                            android:textAlignment="center"
-                            android:gravity="center"
-                            android:textColor="@color/white"/>
-                    <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="City Councilor"
-                            android:layout_marginTop="4dp"
-                            android:textSize="13sp"
-                            android:textAlignment="center"
-                            android:gravity="center"
-                            android:paddingBottom="3dp"
-                            android:textColor="@color/white"/>
-                </LinearLayout>
-
-                <LinearLayout
-                        android:layout_marginTop="10dp"
-                        android:layout_width="180dp"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                    <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:src="@drawable/ic_human"
-                            android:fitsSystemWindows="true"
-                            android:scaleType="fitCenter"
-                            android:layout_gravity="center"/>
-
-                    <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="EDUARDO DIZON"
+                            android:text="HON. ENRICO GALICIA"
                             android:textStyle="bold"
                             android:layout_marginTop="8dp"
                             android:textSize="13sp"
@@ -452,7 +339,7 @@
                     <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="ARNEL C.TICZON"
+                            android:text="HON. DIOSDADO BIGLETE"
                             android:textStyle="bold"
                             android:layout_marginTop="8dp"
                             android:textSize="13sp"
@@ -465,9 +352,9 @@
                             android:text="City Councilor"
                             android:layout_marginTop="4dp"
                             android:textSize="13sp"
-                            android:paddingBottom="3dp"
                             android:textAlignment="center"
                             android:gravity="center"
+                            android:paddingBottom="3dp"
                             android:textColor="@color/white"/>
                 </LinearLayout>
 
@@ -488,7 +375,7 @@
                     <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="ELSIE PAVICO"
+                            android:text="HON. EDUARDO DIZON"
                             android:textStyle="bold"
                             android:layout_marginTop="8dp"
                             android:textSize="13sp"
@@ -532,7 +419,87 @@
                     <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="DANDI C. MEDINA"
+                            android:text="HON. ARNEL C.TICZON"
+                            android:textStyle="bold"
+                            android:layout_marginTop="8dp"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textColor="@color/white"/>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="City Councilor"
+                            android:layout_marginTop="4dp"
+                            android:textSize="13sp"
+                            android:paddingBottom="3dp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/ic_human"
+                            android:fitsSystemWindows="true"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="HON. ELSIE PAVICO"
+                            android:textStyle="bold"
+                            android:layout_marginTop="8dp"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textColor="@color/white"/>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="City Councilor"
+                            android:layout_marginTop="4dp"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/ic_human"
+                            android:fitsSystemWindows="true"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="HON. DANDI C. MEDINA"
                             android:textStyle="bold"
                             android:layout_marginTop="8dp"
                             android:textSize="13sp"
@@ -579,6 +546,86 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="City Councilor"
+                            android:layout_marginTop="4dp"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/ic_human"
+                            android:fitsSystemWindows="true"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="HON. ARISTON A.\nAMANTE"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textColor="@color/white"/>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ABC, President"
+                            android:layout_marginTop="4dp"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/ic_human"
+                            android:fitsSystemWindows="true"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="HON. LIBERTY PAMELA E. CAPUCHINO "
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:textSize="13sp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textColor="@color/white"/>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SK Federation President"
                             android:layout_marginTop="4dp"
                             android:textSize="13sp"
                             android:textAlignment="center"

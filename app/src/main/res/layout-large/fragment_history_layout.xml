@@ -48,7 +48,7 @@
                         android:layout_height="wrap_content"
                         android:text="Republic of the Philippines"
                         android:textColor="@color/white"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="5dp"
                         android:textSize="17dp"
                 />
 
@@ -72,9 +72,9 @@
                    android:fitsSystemWindows="true"
                    android:layout_gravity="center"
                    android:scaleType="centerCrop"
-                   android:padding="10dp"
-                   android:layout_marginLeft="10dp"
-                   android:layout_marginRight="10dp"
+                   android:padding="5dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="5dp"
         />
 
         <LinearLayout

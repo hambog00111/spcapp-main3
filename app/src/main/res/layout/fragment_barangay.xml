@@ -6,8 +6,8 @@
             android:layout_height="match_parent"
             android:background="@drawable/background"
             android:paddingTop="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp">
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
 
     <LinearLayout android:layout_width="match_parent"
                   android:layout_height="wrap_content"
@@ -69,8 +69,7 @@
                    android:layout_gravity="center"
                    android:scaleType="centerCrop"
                    android:padding="5dp"
-                   android:layout_marginLeft="5dp"
-                   android:layout_marginRight="5dp"
+
         />
 
 
@@ -93,9 +92,14 @@
             />
 
             <ListView
+                    android:layout_margin="5dp"
                     android:id="@+id/listview_barangay"
                     android:layout_width="match_parent"
-                    android:layout_height="400dp"/>
+                    android:layout_height="400dp"
+                    android:scrollbars="vertical"
+                    android:scrollbarSize="5dp"
+                    android:scrollbarStyle="insideInset"
+                    android:nestedScrollingEnabled="true"/>
 
         </LinearLayout>
 

@@ -37,7 +37,7 @@
             <menu>
                     <item
                             android:id="@+id/nav_official_map"
-                            android:title="Official Vicinity Map" />
+                            android:title="Office Vicinity Map" />
                     <item
                             android:id="@+id/nav_local_officials"
                             android:title="Local Officials" />

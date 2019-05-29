@@ -225,12 +225,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     FragmentSanPablo()
                 ).commit()
             }
-            R.id.nav_department_head -> {
-                supportFragmentManager.beginTransaction().replace(
-                    R.id.frag_container,
-                    FragmentDepartment()
-                ).commit()
-            }
+//            R.id.nav_department_head -> {
+//                supportFragmentManager.beginTransaction().replace(
+//                    R.id.frag_container,
+//                    FragmentDepartment()
+//                ).commit()
+//            }
             R.id.nav_mission -> {
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,

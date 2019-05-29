@@ -7,24 +7,19 @@
             android:layout_height="match_parent"
             android:background="@drawable/background"
             android:paddingTop="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp">
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
 
     <LinearLayout android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:orientation="vertical"
     >
 
-
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginBottom="7dp">
-
-
-
-
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -35,8 +30,8 @@
                         android:layout_height="80dp"
                         android:src="@drawable/spc_logo"
                         android:id="@+id/imageView2"
-                        android:layout_marginStart="4dp"
-                        android:layout_marginTop="4dp"/>
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"/>
                 <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -55,7 +50,7 @@
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="CITY GOVERNMENT OF SAN PABLO"
+                            android:text="CITY GOVERMENT OF SAN PABLO"
                             android:textColor="@color/white"
                             android:textStyle="bold"
                             android:textSize="23sp"
@@ -66,15 +61,16 @@
 
             </LinearLayout>
         </LinearLayout>
+
         <ImageView android:layout_width="match_parent"
                    android:layout_height="300dp"
-                   android:src="@drawable/slake5"
+                   android:src="@drawable/lights"
                    android:fitsSystemWindows="true"
                    android:layout_gravity="center"
                    android:scaleType="centerCrop"
                    android:padding="10dp"
-                   android:layout_marginLeft="10dp"
-                   android:layout_marginRight="10dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="5dp"
         />
 
 
