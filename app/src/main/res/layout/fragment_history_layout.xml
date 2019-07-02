@@ -224,54 +224,12 @@
 
     </LinearLayout>
 
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
 
-      <TextView
-              android:layout_width="match_parent"
-              android:layout_height="61dp"
-              android:text="@string/tab_govphil"
-              android:layout_marginTop="8dp"
-              android:textSize="11sp"
-              android:textAlignment="center"
-              android:gravity="center"
-              android:textColor="@color/white"
-
-      />
-
-      <LinearLayout
-              android:orientation="horizontal"
-              android:layout_width="match_parent"
-              android:layout_height="55dp"
-              android:layout_marginBottom="8dp"
-      >
-
-
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:srcCompat="@drawable/asti"
-                android:id="@+id/imageView5"
-                android:layout_weight="1"
-                android:layout_marginRight="7dp"/>
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/dict"
-                android:id="@+id/imageView6"
-                android:layout_weight="1"/>
-
-      </LinearLayout>
-
-
-    </LinearLayout>
 
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal"
             android:layout_gravity="center"
             android:gravity="center">

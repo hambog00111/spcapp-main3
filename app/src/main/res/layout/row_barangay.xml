@@ -3,7 +3,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="160dp"
         android:focusable="true"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
@@ -19,9 +19,8 @@
             android:layout_height="0dp"
             android:id="@+id/textView18" android:textSize="15sp"
             android:textColor="@color/white" android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="4dp" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView17"/>
+            app:layout_constraintStart_toStartOf="@+id/chairman_barangay" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/chairman_barangay"/>
     <TextView
             android:text="Barangay Chairman:"
             android:layout_width="wrap_content"
@@ -31,7 +30,7 @@
             android:textColor="@color/white"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="3dp" android:layout_marginTop="8dp"
+            android:layout_marginStart="4dp" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/textView13"/>
     <TextView
             android:layout_width="wrap_content"
@@ -57,15 +56,6 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Barangay Code:"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            android:id="@+id/code_barangay"
-            android:textAlignment="textStart" app:layout_constraintStart_toEndOf="@+id/textView14"
-            android:layout_marginStart="8dp" app:layout_constraintBaseline_toBaselineOf="@+id/textView14"/>
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text=" Contact Number"
             android:textColor="@color/white"
             android:textSize="15sp"
@@ -81,10 +71,8 @@
             android:textSize="15sp"
             android:id="@+id/chairman_barangay"
             android:textAlignment="textStart"
-            app:layout_constraintStart_toEndOf="@+id/textView17"
-            android:layout_marginStart="8dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView17"
-    />
+            app:layout_constraintStart_toStartOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" android:layout_marginTop="8dp"/>
     <TextView
             android:text="Barangay:"
             android:layout_width="wrap_content"
@@ -102,15 +90,6 @@
             app:layout_constraintTop_toBottomOf="@+id/nav_dept_name" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="4dp" android:textSize="15sp" android:textStyle="bold"
             android:textColor="@color/white"/>
-    <TextView
-            android:text="Barangay Code:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView14" android:textSize="15sp"
-            android:textColor="@color/white" android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/nav_dept_head_name"
-            android:layout_marginStart="12dp"
-            app:layout_constraintBottom_toBottomOf="@+id/nav_dept_head_name"/>
 
 
 </android.support.constraint.ConstraintLayout>

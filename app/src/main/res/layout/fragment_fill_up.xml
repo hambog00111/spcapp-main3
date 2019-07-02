@@ -4,7 +4,7 @@
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-android:padding="10dp">
+            android:padding="10dp">
 <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -107,45 +107,45 @@ android:padding="10dp">
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Mode of Payment:"
-                android:textSize="13dp"
+                android:textSize="13sp"
                 android:paddingTop="7dp"
                 android:textColor="@color/black"/>
 
-<RadioGroup android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:id="@+id/rg_mode_of_payment">
 
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-        <RadioButton
-                android:id="@+id/r_annually"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Annually"
-                android:textSize="12sp"/>
-
-        <RadioButton
-                android:id="@+id/r_semiannually"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Semi Annually"
-                android:textSize="12sp"/>
-
-
-        <RadioButton
-                android:id="@+id/r_quarterly"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Quarterly"
-                android:textSize="12sp"/>
 
     </LinearLayout>
-</RadioGroup>
+    <RadioGroup android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/rg_mode_of_payment">
 
-    </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <RadioButton
+                    android:id="@+id/r_annually"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Annually"
+                    android:textSize="13sp"/>
 
+            <RadioButton
+                    android:id="@+id/r_semiannually"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Semi Annually"
+                    android:textSize="12sp"/>
+
+
+            <RadioButton
+                    android:id="@+id/r_quarterly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Quarterly"
+                    android:textSize="12sp"/>
+
+        </LinearLayout>
+    </RadioGroup>
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -257,23 +257,35 @@ android:padding="10dp">
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Single"
-                android:textSize="12sp"/>
+                android:layout_marginEnd="15dp"
+                android:textSize="13sp"/>
 
 
         <RadioButton
                 android:id="@+id/r_business_partnership"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+
                 android:text="Partnership"
-                android:textSize="12sp"/>
-
-
+                android:layout_marginEnd="15dp"
+                android:textSize="13sp"/>
         <RadioButton
                 android:id="@+id/r_business_corporation"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Corporation"
-                android:textSize="12sp"/>
+                android:layout_marginEnd="15dp"
+                android:textSize="13sp"/>
+
+
+
+    </LinearLayout>
+
+    </RadioGroup>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
 
         <RadioButton
@@ -281,12 +293,9 @@ android:padding="10dp">
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Cooperative"
-                android:textSize="12sp"/>
-
+                android:textSize="13sp"/>
 
     </LinearLayout>
-
-    </RadioGroup>
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -298,9 +307,17 @@ android:padding="10dp">
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Amendment From:"
-                android:textSize="12sp"
+                android:layout_marginEnd="15dp"
+                android:textSize="13sp"
                 android:paddingTop="9dp"
                 android:textColor="@color/black"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
 
 <RadioGroup
         android:layout_height="wrap_content"
@@ -313,30 +330,35 @@ android:padding="10dp">
             android:orientation="horizontal">
 
         <RadioButton
-                android:id="@+id/r_from_single"
+                android:id="@+id/r_business_single1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Single"
-                android:textSize="12sp"/>
+                android:layout_marginEnd="15dp"
+                android:textSize="13sp"/>
 
 
         <RadioButton
-                android:id="@+id/r_from_partnership"
+                android:id="@+id/r_business_partnership1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+
                 android:text="Partnership"
-                android:textSize="12sp"/>
-
-
+                android:layout_marginEnd="15dp"
+                android:textSize="13sp"/>
         <RadioButton
-                android:id="@+id/r_from_corporation"
+                android:id="@+id/r_business_corporation1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Corporation"
-                android:textSize="12sp"/>
+                android:layout_marginEnd="15dp"
+                android:textSize="13sp"/>
+
+
 
 
     </LinearLayout>
+
 
 </RadioGroup>
 
@@ -354,6 +376,13 @@ android:padding="10dp">
                 android:textSize="13sp"
                 android:paddingTop="9dp"
                 android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
 
 <RadioGroup android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -364,26 +393,32 @@ android:padding="10dp">
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+
         <RadioButton
-                android:id="@+id/r_to_single"
+                android:id="@+id/r_business_single2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Single"
+                android:layout_marginEnd="15dp"
                 android:textSize="13sp"/>
 
+
         <RadioButton
-                android:id="@+id/r_to_partnership"
+                android:id="@+id/r_business_partnership2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Partnership"
-                android:textSize="13sp"/>
 
+                android:text="Partnership"
+                android:layout_marginEnd="15dp"
+                android:textSize="13sp"/>
         <RadioButton
-                android:id="@+id/r_to_corporation"
+                android:id="@+id/r_business_corporation2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Corporation"
+                android:layout_marginEnd="15dp"
                 android:textSize="13sp"/>
+
 
     </LinearLayout>
 
@@ -692,6 +727,13 @@ android:padding="10dp">
                 android:inputType="number"
                 android:textSize="13sp"
                 android:paddingBottom="10dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -708,7 +750,6 @@ android:padding="10dp">
                 android:inputType="number"
                 android:textSize="13sp"
                 android:paddingBottom="10dp"/>
-
     </LinearLayout>
 
     <LinearLayout
@@ -918,34 +959,73 @@ android:padding="10dp">
     </LinearLayout>
 
     <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
-        <EditText
+            android:orientation="horizontal">
+
+        <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:id="@+id/text_lessors_last"
-                android:hint="Last Name"
-                android:textSize="11dp"
-                android:paddingBottom="10dp"/>
+                android:paddingRight="15dp"
+                android:text="Last Name:"
+                android:textSize="13sp"
+                android:paddingTop="7dp"
+                android:textColor="@color/black"
+        />
         <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:id="@+id/text_lessors_first"
+                android:id="@+id/text_lessors_lastname"
+                android:hint="last Name"
+                android:textSize="13sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:text="First Name:"
+                android:textSize="13sp"
+                android:paddingTop="7dp"
+                android:textColor="@color/black"
+        />
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/text_lessors_firstname"
                 android:hint="First Name"
-                android:textSize="13sp"
-                android:paddingBottom="10dp"/>
-        <EditText
+                android:textSize="13sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:id="@+id/text_lessors_middle"
-                android:hint="Middle Name"
+                android:paddingRight="15dp"
+                android:text="Middle Name:"
                 android:textSize="13sp"
-                android:paddingBottom="10dp"/>
+                android:paddingTop="7dp"
+                android:textColor="@color/black"
+        />
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/text_lessors_middlename"
+                android:hint="Middle Name"
+                android:textSize="13sp"/>
 
     </LinearLayout>
 
