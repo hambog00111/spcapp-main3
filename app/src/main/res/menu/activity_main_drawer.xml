@@ -45,15 +45,15 @@
                     <item
                             android:id="@+id/nav_department_head"
                             android:title="Departments"/>
-                    <item
-                            android:id="@+id/nav_standing_committees"
-                            android:title="Standing Committees"/>
-                    <item
-                            android:id="@+id/nav_ordinances"
-                            android:title="Ordinances"/>
-                    <item
-                            android:id="@+id/nav_ela"
-                            android:title="Executive Legislative Agenda"/>
+                    <!--<item-->
+                            <!--android:id="@+id/nav_standing_committees"-->
+                            <!--android:title="Standing Committees"/>-->
+                    <!--<item-->
+                            <!--android:id="@+id/nav_ordinances"-->
+                            <!--android:title="Ordinances"/>-->
+                    <!--<item-->
+                            <!--android:id="@+id/nav_ela"-->
+                            <!--android:title="Executive Legislative Agenda"/>-->
                     <item
                             android:id="@+id/nav_economy"
                             android:title="Economy"/>
@@ -67,9 +67,9 @@
                     <item
                             android:id="@+id/nav_tourism_plan"
                             android:title="Tourism Master Plan" />
-                    <item
-                            android:id="@+id/nav_festival"
-                            android:title="Festival" />
+                    <!--<item-->
+                            <!--android:id="@+id/nav_festival"-->
+                            <!--android:title="Festival" />-->
 
                     <item
                             android:id="@+id/nav_gallery"
@@ -81,13 +81,19 @@
             </menu>
         </item>
 
+<item android:title="Others">
+        <menu>
+        <item
+                android:id="@+id/nav_charter"
+                android:title="Citizen's Charter"
+        />
         <item
                 android:id="@+id/nav_webview"
                 android:title="Browser"
                />
-
-
-    <item android:title="Fill up Forms  ">
+        </menu>
+</item>
+    <item android:title="Fill up Forms ">
         <menu>
 
             <item
@@ -97,7 +103,7 @@
         </menu>
     </item>
 
-    <item android:title="ABOUT GOVPH">
+    <item android:title="ABOUT GOV.PH">
         <menu>
 
             <item

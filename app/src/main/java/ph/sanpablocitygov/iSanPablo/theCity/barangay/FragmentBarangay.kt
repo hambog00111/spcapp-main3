@@ -31,18 +31,18 @@ class FragmentBarangay : Fragment() {
         GetBrgyLs(this).execute()
 
 //        listView.onItemClickListener = object : AdapterView.OnItemClickListener {
-//            override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-//
-//                val itemValue = listView.getItemAtPosition(position) as String
-//
-//                Toast.makeText(
-//                    requireContext(),
-//                    "Position :$position\nItem Value : $itemValue", Toast.LENGTH_LONG
-//                )
-//                    .show()
-//            }
-//
-//        }
+////            override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+////
+////                val itemValue = listView.getItemAtPosition(position) as String
+////
+////                Toast.makeText(
+////                    requireContext(),
+////                    "Position :$position\nItem Value : $itemValue", Toast.LENGTH_LONG
+////                )
+////                    .show()
+////            }
+////
+////        }
 
 
         return rootview

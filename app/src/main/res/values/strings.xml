@@ -373,7 +373,7 @@
 
     </string>
     <string name="Rep">
-        All content in the public \n
+        All content is in the public \n
         domain unless otherwise stated
     </string>
 
@@ -615,7 +615,7 @@
 
     <string name="education_grade">
        \t \t Residents of San Pablo with ages 5 years old and over who have completed elementary
-        education showed marked preponderance with 39.71% (96,796). Of the the total household
+        education showed marked preponderance with 39.71% (96,796). Of the total household
         population 3.17% (7,727) finished pre-school; 29.75% (72,567) reached  secondary school;
         3.39 (8,264) attended vocational school; 18.89 (45,778) enrolled in college. \n \n
 
@@ -896,7 +896,7 @@
     </string>
     <string name="gallery_">San Pablo, officially the City of San Pablo, (Tagalog: Lungsod ng San Pablo), or simply
         known as San Pablo City, is a 1st class city in the province of Laguna, Philippines. According to the 2015
-        census, it has a population of 266,068 peopl
+        census, it has a population of 266,068 people.
     </string>
 
     <string name="point_service">
@@ -908,7 +908,7 @@
 
         4.We will attend our clients’ inquiries within three(3)minutes. \n\n
 
-        5.Approriate action will immediately follow your queries and you will be referred accordinly. \n\n
+        5.Approriate action will immediately follow your queries and you will be referred accordingly. \n\n
 
         6.We will make you comfortable inside our facilities while you wait for your service request. \n\n
 
@@ -931,7 +931,7 @@
         15. A satisfied client is our happiness in the government service. \n
     </string>
     <string name="performance_pledge1">
-        We, the offcials and employees of the City Government of San Pablocommit to:
+        We, the officials and employees of the City Government of San Pablocommit to:
     </string>
     <string name="performance_pledge2">
         ssist every client and visitors with utmost courtesy and smile.\n
@@ -973,6 +973,40 @@
         4. Public service has to be the topmost priority of all employees.\n
     </string>
 
+
+    <string name="land_cath">\t\t Construction of the bricks and stones church
+        started in 1680 and finished in 1721. The detailed affluent, ecclesiastical
+        ornamentation were made by artist Juan de los Santos under Father Hernando Cabrera’s
+        direction (1618-1629) who mandated that all payments and tributes to the church be made
+        in the form of gold, silver and other metals. It was used as prison
+        /garrison during the second world war by the invading Japanese forces between 1941-1945. \n\n </string>
+
+    <string name="land_farcon">
+        \t\t Constructed in the early 1950s. Design is a fusion of Hispanic and American-Colonial
+        building styles. Home of Municipal President (1945) Don Alfonso Farcon. \n\n
+    </string>
+
+    <string name="land_plaza">
+        *Rizal Monument was installed in 1911\n
+        *Plaza fountain was constructed between 1916-1918 during the term of Don Feliano Exconde\n
+        *Lamp posts in the plaza circle and islands along Rizal Ave. were erected by Mun. President Crispin Calabia (1928-1931)\n
+        *The Mango Tree was believed to have been there since 1899.\n\n
+    </string>
+
+    <string name="land_hall">
+        \t\t The Old City Hall. Building was inaugurated in March 30, 1940. Construction was
+        undertaken during the term of MP Cristeto Brion. It was designed by Architect Antonio Toledo.
+        The 3rd and 4th floors are currently used as home of the San Pablo City Museum. \n\n
+    </string>
+
+    <string name="land_hagdang">
+       \t\t Constructed in 1915 under MP Marcial Alimario. It has five sections with a
+        total of 89 steps. It serves as an access to Sampalok Lake from the view
+        deck/Bonifacio Shrine. The lot was part of Dona Leonila Park which was donated
+        by Cabesang Sixto Bautista. \n\n
+
+
+    </string>
     <string name="back"><![CDATA[<]]></string>
     <string name="forward"><![CDATA[>]]></string>
 
@@ -980,4 +1014,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_maps">Lakbay San Pablo</string>
     <string name="title_activity_maps2">Map</string>
+    <string name="leonilla_park">Doña Leonila Park Plan San Pablo City (Official Video)</string>
 </resources>

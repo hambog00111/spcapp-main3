@@ -35,7 +35,7 @@ class FragmentGoogleMap :
             mWebView.webChromeClient = object: WebChromeClient() {
                 override fun onGeolocationPermissionsShowPrompt(origin:String, callback: GeolocationPermissions.Callback) {
                     val perm: String = android.Manifest.permission.ACCESS_FINE_LOCATION
-//             
+//
                     // ask the user for permission
                     ActivityCompat.requestPermissions(requireActivity(), arrayOf<String>(perm), 1)
                     // we will use these when user responds

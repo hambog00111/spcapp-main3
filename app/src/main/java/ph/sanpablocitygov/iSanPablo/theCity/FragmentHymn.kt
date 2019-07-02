@@ -24,6 +24,8 @@ class FragmentHymn : Fragment() {
         videohome.setMediaController(mediaController)
 
 
+
+
         return  view
 
     }
