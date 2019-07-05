@@ -96,54 +96,6 @@
                         />
 
 
-                                <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="MISSION"
-                                        android:textStyle="bold"
-                                        android:gravity="center"
-                                        android:paddingBottom="5dp"
-                                        android:paddingTop="5dp"
-                                        android:textSize="20sp"
-                                        android:textColor="@color/white"
-                                        android:layout_marginBottom="5dp"
-                                        android:layout_marginTop="10dp"
-                                        android:layout_gravity="center"
-                                />
-
-                                <me.biubiubiu.justifytext.library.JustifyTextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="@string/Mission"
-                                        android:textColor="@color/white"
-                                        android:layout_marginStart="24dp"
-                                        android:textSize="13sp"
-                                />
-
-
-                                <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="VISION"
-                                        android:textStyle="bold"
-                                        android:gravity="center"
-                                        android:paddingBottom="5dp"
-                                        android:paddingTop="5dp"
-                                        android:textSize="20sp"
-                                        android:textColor="@color/white"
-                                        android:layout_marginBottom="5dp"
-                                        android:layout_marginTop="10dp"
-                                        android:layout_gravity="center"
-                                />
-
-                                <me.biubiubiu.justifytext.library.JustifyTextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="@string/Vision"
-                                        android:textColor="@color/white"
-                                        android:layout_marginStart="24dp"
-                                        android:textSize="13sp"
-                                />
 
 
                         <TextView

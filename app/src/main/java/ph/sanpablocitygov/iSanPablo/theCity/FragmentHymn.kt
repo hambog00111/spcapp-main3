@@ -16,6 +16,7 @@ class FragmentHymn : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val view: View = inflater.inflate(R.layout.fragment_hymn_layout, container, false)
+
         val videohome = view.findViewById<View>(R.id.videohome) as VideoView
         videohome.setVideoPath(str_url)
         videohome.start()

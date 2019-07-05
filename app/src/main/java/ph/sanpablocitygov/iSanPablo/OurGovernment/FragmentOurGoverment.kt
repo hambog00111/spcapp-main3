@@ -1,4 +1,4 @@
-package ph.sanpablocitygov.iSanPablo.goverment.department
+package ph.sanpablocitygov.iSanPablo.OurGovernment
 
 import android.app.AlertDialog
 import android.os.AsyncTask
@@ -8,24 +8,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import ph.sanpablocitygov.iSanPablo.R
 import org.json.JSONArray
 import org.json.JSONObject
-import ph.sanpablocitygov.iSanPablo.OurGovernment.OurGovernmentAdapter
-import ph.sanpablocitygov.iSanPablo.OurGovernment.OurGovernmentModel
+import ph.sanpablocitygov.iSanPablo.R
+import ph.sanpablocitygov.iSanPablo.goverment.department.FragmentDepartment
 import java.lang.ref.WeakReference
 import java.net.HttpURLConnection
 import java.net.URL
 
-class FragmentDepartment : Fragment(), View.OnClickListener{
-
-    //private lateinit var listView: ListView
+class FragmentOurGoverment  : Fragment(), View.OnClickListener{
     private lateinit var data: JSONArray
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
-        val view: View = inflater.inflate(R.layout.fragment_departments, container, false)
-        //listView = view.findViewById(R.id.listview_department)
+        val view: View = inflater.inflate(R.layout.fragment_our_goverment_layout, container, false)
+
         val t1: TextView = view.findViewById(R.id.dept_mayor_office)
         t1.setOnClickListener(this)
         GetDeptLs(this).execute()
@@ -118,25 +114,24 @@ class FragmentDepartment : Fragment(), View.OnClickListener{
 
 
 
-
         return  view
 
     }
 
 
-//    fun getData() {
+    //    fun getData() {
 //        val conn: HttpURLConnection = URL("http://www.sanpablocitygov.ph/api/get-dept-list").openConnection() as HttpURLConnection
 //        val res = conn.inputStream.bufferedReader().readText()
 //        val data: JSONArray = JSONObject(res).getJSONArray("depts")
 //    }
-override fun onClick(v: View?) {
-    when(v!!.id) {
-        R.id.dept_mayor_office -> dispMyrOff()
-        R.id.dept_secretary_office -> dispSecOff()
-        R.id.dept_traffic_office -> dispTrfOff()
-        else -> dispOth(v.id)
+    override fun onClick(v: View?) {
+        when(v!!.id) {
+            R.id.dept_mayor_office -> dispMyrOff()
+            R.id.dept_secretary_office -> dispSecOff()
+            R.id.dept_traffic_office -> dispTrfOff()
+            else -> dispOth(v.id)
+        }
     }
-}
 
 
     fun dispMyrOff() {
@@ -146,11 +141,11 @@ override fun onClick(v: View?) {
             str = str + post.getString("dept_position") + "\n" + post.getString("dept_name") + "\n\n"
         }
         val builder = AlertDialog.Builder(requireContext())
-            with(builder) {
-                setMessage(str)
-                setTitle("Mayor\'s Office")
-                setPositiveButton("OK",null)
-            }
+        with(builder) {
+            setMessage(str)
+            setTitle("Mayor\'s Office")
+            setPositiveButton("OK",null)
+        }
         val alertDialog = builder.create()
         alertDialog.show()
     }
@@ -190,11 +185,11 @@ override fun onClick(v: View?) {
     fun dispOth(v: Int) {
         var str = ""
         val txt: TextView = view!!.findViewById(v)
-         for(i: Int in 0 until 37 step 1) {
-             val post: String = (data.getJSONObject(i)).getString("dept_office")
-             if(post.equals(txt.text.toString(), true)) {
-                 str = str + (data.getJSONObject(i)).getString("dept_position") + "\n" + (data.getJSONObject(i)).getString("dept_name") + "\n\n"
-             }
+        for(i: Int in 0 until 37 step 1) {
+            val post: String = (data.getJSONObject(i)).getString("dept_office")
+            if(post.equals(txt.text.toString(), true)) {
+                str = str + (data.getJSONObject(i)).getString("dept_position") + "\n" + (data.getJSONObject(i)).getString("dept_name") + "\n\n"
+            }
         }
         val builder = AlertDialog.Builder(requireContext())
         with(builder) {
@@ -212,9 +207,9 @@ override fun onClick(v: View?) {
 
 
 
-    inner class GetDeptLs internal constructor(mContext: FragmentDepartment): AsyncTask<Void,Void,String>(){
+    inner class GetDeptLs internal constructor(mContext: FragmentOurGoverment): AsyncTask<Void, Void, String>(){
         private var res: String? = null
-        private val fragRef: WeakReference<FragmentDepartment> = WeakReference(mContext)
+        private val fragRef: WeakReference<FragmentOurGoverment> = WeakReference(mContext)
         //var mView: ListView = fragRef.get()!!.listView
 
         override fun onPreExecute() {

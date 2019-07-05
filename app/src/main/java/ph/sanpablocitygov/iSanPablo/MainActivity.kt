@@ -1,9 +1,7 @@
 package ph.sanpablocitygov.iSanPablo
 
-import android.app.Activity
 import android.app.AlertDialog
 import android.app.DownloadManager
-import android.content.Context
 import android.content.DialogInterface
 import android.net.Uri
 import android.os.Bundle
@@ -20,14 +18,15 @@ import ph.sanpablocitygov.iSanPablo.goverment.FragmentOfficeMap
 import ph.sanpablocitygov.iSanPablo.home.FragmentHome
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
-import kotlinx.android.synthetic.main.dialog_bplo.view.*
+import kotlinx.android.synthetic.main.dialog_disclosure.view.*
 import kotlinx.android.synthetic.main.dialog_economy.view.*
+import ph.sanpablocitygov.iSanPablo.OurGovernment.FragmentOurGoverment
 import ph.sanpablocitygov.iSanPablo.links.*
 import ph.sanpablocitygov.iSanPablo.theCity.FragmentHistory
 import ph.sanpablocitygov.iSanPablo.theCity.FragmentHymn
 import ph.sanpablocitygov.iSanPablo.theCity.FragmentLocationTopology
 import ph.sanpablocitygov.iSanPablo.theCity.MissionVision
-import ph.sanpablocitygov.iSanPablo.theCity.barangay.FragmentBarangay
+import ph.sanpablocitygov.iSanPablo.OurBarangay.FragmentBarangay
 import ph.sanpablocitygov.iSanPablo.theCity.sanPablenos.FragmentSanPablo
 import ph.sanpablocitygov.iSanPablo.tourism.FragmentLandmarks
 //import ph.sanpablocitygov.iSanPablo.tourism.FragmentTourism
@@ -293,230 +292,294 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     FragmentHome()
                 ).commit()
             }
+            R.id.nav_our_city -> {
+                supportFragmentManager.beginTransaction().replace(
+                    R.id.frag_container,
+                    FragmentOurCity()
+                ).commit()
+            }
+            R.id.nav_our_government -> {
+                supportFragmentManager.beginTransaction().replace(
+                    R.id.frag_container,
+                    FragmentOurGoverment()
+                ).commit()
+            }
 
-            R.id.nav_history -> {
-                supportFragmentManager.beginTransaction().replace(R.id.frag_container, FragmentHistory()).commit()
-            }
-            R.id.nav_barangay -> {
-                supportFragmentManager.beginTransaction().replace(
-                    R.id.frag_container,
-                    FragmentBarangay()
-                ).commit()
-            }
-            R.id.nav_location -> {
-                supportFragmentManager.beginTransaction().replace(
-                    R.id.frag_container,
-                    FragmentLocationTopology()
-                ).commit()
-            }
-            R.id.nav_hymn -> {
-                supportFragmentManager.beginTransaction().replace(
-                    R.id.frag_container,
-                    FragmentHymn()
-                ).commit()
-            }
-            R.id.nav_sanpablo -> {
-                supportFragmentManager.beginTransaction().replace(
-                    R.id.frag_container,
-                    FragmentSanPablo()
-                ).commit()
-            }
             R.id.nav_department_head -> {
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,
                     FragmentDepartment()
                 ).commit()
             }
-            R.id.nav_mission -> {
-                supportFragmentManager.beginTransaction().replace(
-                    R.id.frag_container,
-                    MissionVision()
-                ).commit()
+
+            R.id.nav_full_disclosure -> {
+
+                    val disView = LayoutInflater.from(this).inflate(R.layout.dialog_disclosure, null)
+                    val disBuilder = AlertDialog.Builder(this)
+                        .setView(disView)
+                    val disDialog = disBuilder.show()
+
+                disView.disclosure_1.setOnClickListener {
+                    disDialog.dismiss()
+                    var str = "Would you like to download this document?"
+                    val builder = AlertDialog.Builder((this))
+                    with(builder) {
+                        setMessage(str)
+                        setTitle("4th-quarter-SPP")
+
+                        setPositiveButton("OK", DialogInterface.OnClickListener
+                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                            this@MainActivity,
+                            DownloadManager::class.java) as DownloadManager
+                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/4th-qtr-SPP.xls")
+                            val request = DownloadManager.Request(uri)
+                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                            downloadManager.enqueue(request)  })
+                        setNegativeButton("CANCEL", null)
+                    }
+                    val alertDialog = builder.create()
+
+                    alertDialog.show()
+                }
+
+                disView.disclosure_2.setOnClickListener {
+                    disDialog.dismiss()
+                    var str = "Would you like to download this document?"
+                    val builder = AlertDialog.Builder((this))
+                    with(builder) {
+                        setMessage(str)
+                        setTitle("20-utilization-2018-4th-Quarter")
+
+                        setPositiveButton("OK", DialogInterface.OnClickListener
+                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                            this@MainActivity,
+                            DownloadManager::class.java) as DownloadManager
+                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/20-Uitlization-2018-4th-Quarter.xls")
+                            val request = DownloadManager.Request(uri)
+                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                            downloadManager.enqueue(request)  })
+                        setNegativeButton("CANCEL", null)
+                    }
+                    val alertDialog = builder.create()
+
+                    alertDialog.show()
+                }
+
+
+                disView.disclosure_3.setOnClickListener {
+                    disDialog.dismiss()
+                    var str = "Would you like to download this document?"
+                    val builder = AlertDialog.Builder((this))
+                    with(builder) {
+                        setMessage(str)
+                        setTitle("APP-2019")
+
+                        setPositiveButton("OK", DialogInterface.OnClickListener
+                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                            this@MainActivity,
+                            DownloadManager::class.java) as DownloadManager
+                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/APP-2019.xlsx")
+                            val request = DownloadManager.Request(uri)
+                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                            downloadManager.enqueue(request)  })
+                        setNegativeButton("CANCEL", null)
+                    }
+                    val alertDialog = builder.create()
+
+                    alertDialog.show()
+                }
+
+
+                disView.disclosure_4.setOnClickListener {
+                    disDialog.dismiss()
+                    var str = "Would you like to download this document?"
+                    val builder = AlertDialog.Builder((this))
+                    with(builder) {
+                        setMessage(str)
+                        setTitle("BID-RESULTS 2018 4th Quarter")
+
+                        setPositiveButton("OK", DialogInterface.OnClickListener
+                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                            this@MainActivity,
+                            DownloadManager::class.java) as DownloadManager
+                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/BID-RESULTS%202018%204th%20Quarter.xlsx")
+                            val request = DownloadManager.Request(uri)
+                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                            downloadManager.enqueue(request)  })
+                        setNegativeButton("CANCEL", null)
+                    }
+                    val alertDialog = builder.create()
+
+                    alertDialog.show()
+                }
+
+
+                disView.disclosure_5.setOnClickListener {
+                    disDialog.dismiss()
+                    var str = "Would you like to download this document?"
+                    val builder = AlertDialog.Builder((this))
+                    with(builder) {
+                        setMessage(str)
+                        setTitle("SFC-4THQ")
+
+                        setPositiveButton("OK", DialogInterface.OnClickListener
+                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                            this@MainActivity,
+                            DownloadManager::class.java) as DownloadManager
+                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/SCF-4THQ.xlsx")
+                            val request = DownloadManager.Request(uri)
+                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                            downloadManager.enqueue(request)  })
+                        setNegativeButton("CANCEL", null)
+                    }
+                    val alertDialog = builder.create()
+
+                    alertDialog.show()
+                }
+
+
+                disView.disclosure_6.setOnClickListener {
+                    disDialog.dismiss()
+                    var str = "Would you like to download this document?"
+                    val builder = AlertDialog.Builder((this))
+                    with(builder) {
+                        setMessage(str)
+                        setTitle("SEF-Utilization-2018")
+
+                        setPositiveButton("OK", DialogInterface.OnClickListener
+                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                            this@MainActivity,
+                            DownloadManager::class.java) as DownloadManager
+                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/SEF-Utilization-2018.xls")
+                            val request = DownloadManager.Request(uri)
+                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                            downloadManager.enqueue(request)  })
+                        setNegativeButton("CANCEL", null)
+                    }
+                    val alertDialog = builder.create()
+
+                    alertDialog.show()
+                }
+
+
+                disView.disclosure_7.setOnClickListener {
+                    disDialog.dismiss()
+                    var str = "Would you like to download this document?"
+                    val builder = AlertDialog.Builder((this))
+                    with(builder) {
+                        setMessage(str)
+                        setTitle("Statement of Debt Service 03.24.14")
+
+                        setPositiveButton("OK", DialogInterface.OnClickListener
+                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                            this@MainActivity,
+                            DownloadManager::class.java) as DownloadManager
+                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/Statement%20of%20Debt%20Services%2003.24.14.xlsx")
+                            val request = DownloadManager.Request(uri)
+                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                            downloadManager.enqueue(request)  })
+                        setNegativeButton("CANCEL", null)
+                    }
+                    val alertDialog = builder.create()
+
+                    alertDialog.show()
+                }
+
+                disView.disclosure_8.setOnClickListener {
+                    disDialog.dismiss()
+                    var str = "Would you like to download this document?"
+                    val builder = AlertDialog.Builder((this))
+                    with(builder) {
+                        setMessage(str)
+                        setTitle("Unliquidated-2018")
+
+                        setPositiveButton("OK", DialogInterface.OnClickListener
+                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                            this@MainActivity,
+                            DownloadManager::class.java) as DownloadManager
+                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/Unliquidated-2018.xlsx")
+                            val request = DownloadManager.Request(uri)
+                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                            downloadManager.enqueue(request)  })
+                        setNegativeButton("CANCEL", null)
+                    }
+                    val alertDialog = builder.create()
+
+                    alertDialog.show()
+                }
+
+                disView.disclosure_9.setOnClickListener {
+                    disDialog.dismiss()
+                    var str = "Would you like to download this document?"
+                    val builder = AlertDialog.Builder((this))
+                    with(builder) {
+                        setMessage(str)
+                        setTitle("CDRRMF-12.31.18")
+
+                        setPositiveButton("OK", DialogInterface.OnClickListener
+                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                            this@MainActivity,
+                            DownloadManager::class.java) as DownloadManager
+                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/CDRRMF-12.31.18.xlsx")
+                            val request = DownloadManager.Request(uri)
+                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                            downloadManager.enqueue(request)  })
+                        setNegativeButton("CANCEL", null)
+                    }
+                    val alertDialog = builder.create()
+
+                    alertDialog.show()
+                }
+
+                disView.disclosure_10.setOnClickListener {
+                    disDialog.dismiss()
+                    var str = "Would you like to download this document?"
+                    val builder = AlertDialog.Builder((this))
+                    with(builder) {
+                        setMessage(str)
+                        setTitle("Manpower Complement(DILG)")
+
+                        setPositiveButton("OK", DialogInterface.OnClickListener
+                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                            this@MainActivity,
+                            DownloadManager::class.java) as DownloadManager
+                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/Manpower%20Complement%20(DILG).xlsx")
+                            val request = DownloadManager.Request(uri)
+                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                            downloadManager.enqueue(request)  })
+                        setNegativeButton("CANCEL", null)
+                    }
+                    val alertDialog = builder.create()
+
+                    alertDialog.show()
+                }
+
+                disView.disclosure_11.setOnClickListener {
+                    disDialog.dismiss()
+                    var str = "Would you like to download this document?"
+                    val builder = AlertDialog.Builder((this))
+                    with(builder) {
+                        setMessage(str)
+                        setTitle("PDAF UTILIZATION")
+
+                        setPositiveButton("OK", DialogInterface.OnClickListener
+                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                            this@MainActivity,
+                            DownloadManager::class.java) as DownloadManager
+                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/PDAF%20UTILIZATION.xls")
+                            val request = DownloadManager.Request(uri)
+                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                            downloadManager.enqueue(request)  })
+                        setNegativeButton("CANCEL", null)
+                    }
+                    val alertDialog = builder.create()
+
+                    alertDialog.show()
+                }
+
             }
 
-            R.id.nav_local_officials -> {
-                supportFragmentManager.beginTransaction().replace(
-                    R.id.frag_container,
-                    FragmentLocalOfficials()
-                ).commit()
-            }
 
-            R.id.nav_economy ->{
-                val ecoView = LayoutInflater.from(this).inflate(R.layout.dialog_economy, null)
-
-                val ecoBuilder = AlertDialog.Builder(this)
-                    .setView(ecoView)
-                    .setTitle("Economy")
-
-                val ecoDialog = ecoBuilder.show()
-
-                ecoView.btn_eco_vol1.setOnClickListener {
-                    ecoDialog.dismiss()
-                    var str = "Would you like to download this document?"
-                    val builder = AlertDialog.Builder(this)
-                    with(builder) {
-                        setMessage(str)
-                        setTitle("VOLUME 1")
-                        setPositiveButton("OK", DialogInterface.OnClickListener
-                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
-                            this@MainActivity,
-                            DownloadManager::class.java
-                        ) as DownloadManager
-                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/VOLUME%201%20The%20Comprehensive%20Land%20Use%20Plan%20San%20Pablo%20City%20as%20of%20Nov%2030%202016.pdf")
-                            val request = DownloadManager.Request(uri)
-                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-                            downloadManager.enqueue(request)  })
-                        setNegativeButton("CANCEL", null)
-                    }
-                    val alertDialog = builder.create()
-                    alertDialog.show()
-                }
-                ecoView.btn_eco_vol2.setOnClickListener {
-                    ecoDialog.dismiss()
-                    var str = "Would you like to download this document?"
-                    val builder = AlertDialog.Builder(this)
-                    with(builder) {
-                        setMessage(str)
-                        setTitle("VOLUME 2")
-
-                        setPositiveButton("OK", DialogInterface.OnClickListener
-                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
-                            this@MainActivity,
-                            DownloadManager::class.java
-                        ) as DownloadManager
-                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/VOLUME%202%20Zoning%20Ordinance%20San%20Pablo%20City%20as%20of%20Nov%2030%202016.pdf")
-                            val request = DownloadManager.Request(uri)
-                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-                            downloadManager.enqueue(request)  })
-                        setNegativeButton("CANCEL", null)
-                    }
-                    val alertDialog = builder.create()
-                    alertDialog.show()
-                }
-
-                ecoView.btn_eco_vol3.setOnClickListener {
-                    ecoDialog.dismiss()
-                    var str = "Would you like to download this document?"
-                    val builder = AlertDialog.Builder(this)
-                    with(builder) {
-                        setMessage(str)
-                        setTitle("VOLUME 3")
-
-                        setPositiveButton("OK", DialogInterface.OnClickListener
-                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
-                            this@MainActivity,
-                            DownloadManager::class.java
-                        ) as DownloadManager
-                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/VOLUME%203%20Sectoral%20Studies%20San%20Pablo%20City%20UPDATED_as%20of%20Nov%2027%202016.pdf")
-                            val request = DownloadManager.Request(uri)
-                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-                            downloadManager.enqueue(request)  })
-                        setNegativeButton("CANCEL", null)
-                    }
-                    val alertDialog = builder.create()
-                    alertDialog.show()
-                }
-
-                ecoView.btn_eco_plan.setOnClickListener {
-                    ecoDialog.dismiss()
-                    var str = "Would you like to download this document?"
-                    val builder = AlertDialog.Builder(this)
-                    with(builder) {
-                        setMessage(str)
-                        setTitle("COMPREHENSIVE DEVELOPMENT PLAN")
-
-                        setPositiveButton("OK", DialogInterface.OnClickListener
-                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
-                            this@MainActivity,
-                            DownloadManager::class.java
-                        ) as DownloadManager
-                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/CDP%20Annexes%202018-2023.pdf")
-                            val request = DownloadManager.Request(uri)
-                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-                            downloadManager.enqueue(request)  })
-                        setNegativeButton("CANCEL", null)
-                    }
-                    val alertDialog = builder.create()
-                    alertDialog.show()
-                }
-
-                ecoView.btn_eco_prof.setOnClickListener {
-                    ecoDialog.dismiss()
-                    var str = "Would you like to download this document?"
-                    val builder = AlertDialog.Builder(this)
-                    with(builder) {
-                        setMessage(str)
-                        setTitle("SPC ECOLOGICAL PROFILE")
-
-                        setPositiveButton("OK", DialogInterface.OnClickListener
-                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
-                            this@MainActivity,
-                            DownloadManager::class.java
-                        ) as DownloadManager
-                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/SPC%20Ecological%20Profile.pdf")
-                            val request = DownloadManager.Request(uri)
-                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-                            downloadManager.enqueue(request)  })
-                        setNegativeButton("CANCEL", null)
-                    }
-                    val alertDialog = builder.create()
-                    alertDialog.show()
-                }
-
-                ecoView.btn_eco_cdp.setOnClickListener {
-                    ecoDialog.dismiss()
-                    var str = "Would you like to download this document?"
-                    val builder = AlertDialog.Builder(this)
-                    with(builder) {
-                        setMessage(str)
-                        setTitle("CDP ANNEXES")
-
-                        setPositiveButton("OK", DialogInterface.OnClickListener
-                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
-                            this@MainActivity,
-                            DownloadManager::class.java
-                        ) as DownloadManager
-                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/CDP%20Annexes%202018-2023.pdf")
-                            val request = DownloadManager.Request(uri)
-                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-                            downloadManager.enqueue(request)  })
-                        setNegativeButton("CANCEL", null)
-                    }
-                    val alertDialog = builder.create()
-                    alertDialog.show()
-                }
-            }
-
-            R.id.nav_gallery ->{
-                supportFragmentManager.beginTransaction().replace(
-                    R.id.frag_container,
-                    FragmentGallery()
-                ).commit()
-            }
-
-            R.id.nav_tourism_plan->{
-                    var str = "Would you like to download this document?"
-                    val builder = AlertDialog.Builder(this)
-                    with(builder) {
-                        setMessage(str)
-                        setTitle("Tourism Master Plan")
-
-                        setPositiveButton("OK", DialogInterface.OnClickListener
-                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
-                            applicationContext,
-                            DownloadManager::class.java
-                        ) as DownloadManager
-                            val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/SP%20TMP.pdf")
-                            val request = DownloadManager.Request(uri)
-                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-                            downloadManager.enqueue(request)  })
-                        setNegativeButton("CANCEL", null)
-                    }
-                    val alertDialog = builder.create()
-
-                    alertDialog.show()
-
-        }
 
             R.id.nav_charter->{
                 var str = "Would you like to download this document?"
@@ -540,18 +603,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
                 alertDialog.show()
 
-            }
-            R.id.nav_landmarks ->{
-                supportFragmentManager.beginTransaction().replace(
-                    R.id.frag_container,
-                    FragmentLandmarks()
-                ).commit()
-            }
-            R.id.nav_official_map ->{
-                supportFragmentManager.beginTransaction().replace(
-                    R.id.frag_container,
-                    FragmentOfficeMap()
-                ).commit()
             }
 
 

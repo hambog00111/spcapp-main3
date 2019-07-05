@@ -48,5 +48,5 @@ android:gravity="center">
               android:layout_margin="20dp"
               android:text="cancel"
               android:id="@+id/btn_eco_cancel"
-              android:textSize="20sp"/>
+              android:textSize="15sp"/>
 </LinearLayout>

@@ -1,4 +1,4 @@
-package ph.sanpablocitygov.iSanPablo.theCity.barangay
+package ph.sanpablocitygov.iSanPablo.OurBarangay
 
 class BarangayModel
 

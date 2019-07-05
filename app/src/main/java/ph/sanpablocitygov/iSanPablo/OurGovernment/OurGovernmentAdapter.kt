@@ -1,4 +1,4 @@
-package ph.sanpablocitygov.iSanPablo.goverment.department
+package ph.sanpablocitygov.iSanPablo.OurGovernment
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,8 +10,8 @@ import android.widget.TextView
 import ph.sanpablocitygov.iSanPablo.R
 
 
-class DepartmentAdapter(var mcontext: Context, var resource:Int, var items:List<DepartmentModel>)
-    : ArrayAdapter<DepartmentModel>( mcontext , resource , items ) {
+class OurGovernmentAdapter(var mcontext: Context, var resource:Int, var items:List<OurGovernmentModel>)
+    : ArrayAdapter<OurGovernmentModel>( mcontext , resource , items ) {
 
     @SuppressLint("ViewHolder")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
@@ -24,7 +24,7 @@ class DepartmentAdapter(var mcontext: Context, var resource:Int, var items:List<
         val officename: TextView = view.findViewById(R.id.nav_office_name)
         val departmenthead: TextView = view.findViewById(R.id.nav_department_head)
 
-        val person : DepartmentModel = items[position]
+        val person : OurGovernmentModel = items[position]
 
         office.text = person.ivoffice
         officename.text = person.ivofficename

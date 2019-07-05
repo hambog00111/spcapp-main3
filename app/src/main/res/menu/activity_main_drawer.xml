@@ -8,43 +8,51 @@
         <item
             android:id="@+id/nav_home"
             android:title="Home"/>
+        <item
+                android:id="@+id/nav_our_city"
+                android:title="Our City"/>
+        <item
+                android:id="@+id/nav_our_government"
+                android:title="Our Government"/>
+        <item android:id="@+id/nav_full_disclosure"
+              android:title="Full Disclosure"/>
+        <!--<item android:title="The City">-->
+            <!--<menu>-->
+                <!--<item-->
+                        <!--android:id="@+id/nav_history"-->
+                        <!--android:title="History" />-->
+                <!--<item-->
+                        <!--android:id="@+id/nav_sanpablo"-->
+                        <!--android:title="San Pableños" />-->
+                <!--<item-->
+                        <!--android:id="@+id/nav_barangay"-->
+                        <!--android:title="Barangay"-->
+                <!--/>-->
+                <!--<item-->
+                        <!--android:id="@+id/nav_hymn"-->
+                        <!--android:title="Hymn"/>-->
+                <!--<item-->
+                        <!--android:id="@+id/nav_location"-->
+                        <!--android:title="Location"/>-->
+                <!--<item-->
+                        <!--android:id="@+id/nav_mission"-->
+                        <!--android:title="Mission and Vision"/>-->
 
-        <item android:title="The City">
-            <menu>
-                <item
-                        android:id="@+id/nav_history"
-                        android:title="History" />
-                <item
-                        android:id="@+id/nav_sanpablo"
-                        android:title="San Pableños" />
-                <item
-                        android:id="@+id/nav_barangay"
-                        android:title="Barangay"
-                />
-                <item
-                        android:id="@+id/nav_hymn"
-                        android:title="Hymn"/>
-                <item
-                        android:id="@+id/nav_location"
-                        android:title="Location"/>
-                <item
-                        android:id="@+id/nav_mission"
-                        android:title="Mission and Vision"/>
-            </menu>
-        </item>
+            <!--</menu>-->
+        <!--</item>-->
 
-        <item android:title="The Goverment">
-            <menu>
-                    <item
-                            android:id="@+id/nav_official_map"
-                            android:title="Office Vicinity Map" />
-                    <item
-                            android:id="@+id/nav_local_officials"
-                            android:title="Local Officials" />
+        <!--<item android:title="The Goverment">-->
+            <!--<menu>-->
+                    <!--<item-->
+                            <!--android:id="@+id/nav_official_map"-->
+                            <!--android:title="Office Vicinity Map" />-->
+                    <!--<item-->
+                            <!--android:id="@+id/nav_local_officials"-->
+                            <!--android:title="Local Officials" />-->
 
-                    <item
-                            android:id="@+id/nav_department_head"
-                            android:title="Departments"/>
+                    <!--<item-->
+                            <!--android:id="@+id/nav_department_head"-->
+                            <!--android:title="Departments"/>-->
                     <!--<item-->
                             <!--android:id="@+id/nav_standing_committees"-->
                             <!--android:title="Standing Committees"/>-->
@@ -54,32 +62,32 @@
                     <!--<item-->
                             <!--android:id="@+id/nav_ela"-->
                             <!--android:title="Executive Legislative Agenda"/>-->
-                    <item
-                            android:id="@+id/nav_economy"
-                            android:title="Economy"/>
-
-            </menu>
-        </item>
-
-        <item android:title="Toursim">
-            <menu>
-
-                    <item
-                            android:id="@+id/nav_tourism_plan"
-                            android:title="Tourism Master Plan" />
                     <!--<item-->
-                            <!--android:id="@+id/nav_festival"-->
-                            <!--android:title="Festival" />-->
+                            <!--android:id="@+id/nav_economy"-->
+                            <!--android:title="Economy"/>-->
 
-                    <item
-                            android:id="@+id/nav_gallery"
-                            android:title="Gallery"/>
-                    <item
-                            android:id="@+id/nav_landmarks"
-                            android:title="Landmarks"/>
+            <!--</menu>-->
+        <!--</item>-->
 
-            </menu>
-        </item>
+        <!--<item android:title="Toursim">-->
+            <!--<menu>-->
+
+                    <!--<item-->
+                            <!--android:id="@+id/nav_tourism_plan"-->
+                            <!--android:title="Tourism Master Plan" />-->
+                    <!--&lt;!&ndash;<item&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:id="@+id/nav_festival"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:title="Festival" />&ndash;&gt;-->
+
+                    <!--<item-->
+                            <!--android:id="@+id/nav_gallery"-->
+                            <!--android:title="Gallery"/>-->
+                    <!--<item-->
+                            <!--android:id="@+id/nav_landmarks"-->
+                            <!--android:title="Landmarks"/>-->
+
+            <!--</menu>-->
+        <!--</item>-->
 
 <item android:title="Others">
         <menu>

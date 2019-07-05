@@ -1,6 +1,6 @@
-package ph.sanpablocitygov.iSanPablo.goverment.department
+package ph.sanpablocitygov.iSanPablo.OurGovernment
 
-class DepartmentModel
+class OurGovernmentModel
 
 {
     var ivoffice:  String = ""

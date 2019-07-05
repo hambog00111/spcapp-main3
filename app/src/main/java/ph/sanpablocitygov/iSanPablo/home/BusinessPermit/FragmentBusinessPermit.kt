@@ -11,6 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.MediaController
 
 import kotlinx.android.synthetic.main.dialog_bplo.view.*
 import ph.sanpablocitygov.iSanPablo.FragmentFillUp

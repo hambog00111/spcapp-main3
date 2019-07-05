@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
@@ -18,7 +17,6 @@
         <LinearLayout android:layout_height="wrap_content"
                       android:layout_width="match_parent"
                       android:gravity="center">
-
             <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -30,7 +28,7 @@
                 <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/spc_logo"
+                        android:src="@drawable/spc_logo2"
                         android:layout_marginStart="6dp"
                         android:layout_marginEnd="10dp"
                         android:layout_marginTop="4dp"/>
@@ -66,13 +64,257 @@
         </LinearLayout>
 
 
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:src="@drawable/cathedral"
+               android:fitsSystemWindows="true"
+               android:layout_gravity="center"
+               android:scaleType="center"
+               android:padding="5dp"
+               android:layout_marginLeft="5dp"
+               android:layout_marginRight="5dp"
+    />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HISTORY"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+        />
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/history1"
+                android:textColor="@color/white"
+                android:layout_marginStart="27dp"
+                android:textSize="13sp"
+        />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Pre-Hispanic Village of Sampalok"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+        />
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Sampalok"
+                android:textColor="@color/white"
+                android:layout_marginStart="27dp"
+                android:textSize="13sp"
+        />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Coming of Spaniards"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Spaniards"
+                android:textColor="@color/white"
+                android:layout_marginStart="27dp"
+                android:textSize="13sp"
+        />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="American Occupation"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/american"
+                android:textColor="@color/white"
+                android:layout_marginStart="27dp"
+                android:textSize="13sp"/>
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Japanese Occupation"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/japanese"
+                android:textColor="@color/white"
+                android:layout_marginStart="27dp"
+                android:textSize="13sp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modern History"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/marcos"
+                android:textColor="@color/white"
+                android:layout_marginStart="27dp"
+                android:textSize="13sp"/>
+
+    </LinearLayout>
+
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/line_border"
+        android:layout_marginBottom="15dp"/>
+
+
+        <ImageView android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:src="@drawable/lights"
+               android:fitsSystemWindows="true"
+               android:layout_gravity="center"
+               android:scaleType="centerInside"
+               android:padding="5dp"
+               android:layout_marginLeft="5dp"
+               android:layout_marginRight="5dp"
+    />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="San Pableños"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+        />
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sanpablos"
+                android:textColor="@color/white"
+                android:layout_marginStart="27dp"
+                android:textSize="13sp"
+        />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Natatanging San Pableños"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+        />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Seven Lakes"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+        />
+
+    </LinearLayout>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/line_border"
+                  android:layout_marginBottom="15dp"/>
+
 
         <ImageView android:layout_width="match_parent"
                    android:layout_height="200dp"
-                   android:src="@drawable/lights"
+                   android:src="@drawable/slake5"
                    android:fitsSystemWindows="true"
                    android:layout_gravity="center"
-                   android:scaleType="center"
+                   android:scaleType="centerInside"
                    android:padding="5dp"
 
         />
@@ -232,56 +474,105 @@
 
         </LinearLayout>
 
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/line_border"
+                  android:layout_marginBottom="15dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HYMN"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+        />
+
+<FrameLayout android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+
+</FrameLayout>
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
-
             <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="61dp"
-                    android:text="@string/tab_govphil"
-                    android:layout_marginTop="8dp"
-                    android:textSize="11sp"
+                    android:layout_height="wrap_content"
+                    android:text="LUNSOD NAMING MAHAL"
+                    android:textStyle="bold"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="20sp"
                     android:textAlignment="center"
                     android:gravity="center"
                     android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hymn"
+                    android:textStyle="bold"
 
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
             />
 
-            <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="55dp"
-                    android:layout_marginBottom="8dp"
-            >
 
+            <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="PLAY VIDEO HYMN"
+                    android:id="@+id/btn_play_hymn"
+                    android:background="@drawable/text_border2"
+                    android:padding="8dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp"/>
 
-                <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/asti"
-                        android:id="@+id/imageView5"
-                        android:layout_weight="1"
-                        android:layout_marginRight="7dp"/>
-                <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/dict"
-                        android:id="@+id/imageView6"
-                        android:layout_weight="1"/>
-
-            </LinearLayout>
 
 
         </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:orientation="horizontal"
                 android:layout_gravity="center"
-                android:gravity="center">
+                android:gravity="center"
+                android:layout_marginTop="20dp">
             <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -395,15 +686,11 @@
                         android:layout_height="wrap_content"
                         android:textSize="13sp"
                         android:gravity="center"
+
                         android:textColor="@color/white"
                         android:textAlignment="center"
                 />
             </LinearLayout>
-
         </LinearLayout>
-
-
-
     </LinearLayout>
-
 </ScrollView>

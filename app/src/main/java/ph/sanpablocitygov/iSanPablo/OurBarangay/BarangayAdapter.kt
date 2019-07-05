@@ -1,4 +1,4 @@
-package ph.sanpablocitygov.iSanPablo.theCity.barangay
+package ph.sanpablocitygov.iSanPablo.OurBarangay
 
 import android.annotation.SuppressLint
 import android.content.Context
