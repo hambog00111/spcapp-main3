@@ -563,7 +563,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         setTitle("PDAF UTILIZATION")
 
                         setPositiveButton("OK", DialogInterface.OnClickListener
-                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
                             this@MainActivity,
                             DownloadManager::class.java) as DownloadManager
                             val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/PDAF%20UTILIZATION.xls")

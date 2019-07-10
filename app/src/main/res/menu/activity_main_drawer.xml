@@ -16,6 +16,9 @@
                 android:title="Our Government"/>
         <item android:id="@+id/nav_full_disclosure"
               android:title="Full Disclosure"/>
+        <item
+                android:id="@+id/nav_barangay"
+                android:title="Barangay"/>
         <!--<item android:title="The City">-->
             <!--<menu>-->
                 <!--<item-->

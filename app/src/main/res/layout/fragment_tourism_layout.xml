@@ -81,9 +81,11 @@
             <Button
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:background="@drawable/logo_tourism_plan"
                     android:id="@+id/btn_tourism_masterplan"
                     android:fitsSystemWindows="true"
                     android:scaleType="fitCenter"
+
                     android:layout_gravity="center"/>
 
             <TextView
@@ -111,6 +113,7 @@
                     android:layout_height="100dp"
                     android:id="@+id/btn_tourism_festivals"
                     android:fitsSystemWindows="true"
+                    android:background="@drawable/logo_tourism_festival"
                     android:scaleType="fitCenter"
                     android:layout_gravity="center"/>
 
@@ -148,25 +151,25 @@
             <Button
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:id="@+id/btn_tourism_gallery"
+                    android:id="@+id/btn_tourism_go"
+                    android:background="@drawable/logo_tourism_go"
                     android:fitsSystemWindows="true"
                     android:scaleType="fitCenter"
-
                     android:layout_gravity="center"/>
+
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Landmarks/\nGallery"
+                    android:text="Where to go?"
                     android:textStyle="bold"
                     android:layout_marginTop="5dp"
-                    android:textSize="15sp"
                     android:padding="3dp"
+                    android:textSize="15sp"
                     android:textAlignment="center"
                     android:gravity="center"
                     android:textColor="@color/white"/>
 
         </LinearLayout>
-
         <LinearLayout
                 android:layout_marginTop="5dp"
                 android:layout_width="180dp"
@@ -176,15 +179,15 @@
             <Button
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:background="@drawable/logo_tourism_where"
                     android:fitsSystemWindows="true"
                     android:scaleType="fitCenter"
-                    android:id="@+id/btn_tourism_how_tgt"
+                    android:id="@+id/btn_tourism_where"
                     android:layout_gravity="center"/>
-
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="How to get\nthere?"
+                    android:text="Where to Stay/ Eat?"
                     android:textStyle="bold"
                     android:layout_marginTop="5dp"
                     android:textSize="15sp"
@@ -194,6 +197,8 @@
                     android:textColor="@color/white"/>
 
         </LinearLayout>
+
+
 
     </LinearLayout>
 
@@ -215,14 +220,16 @@
             <Button
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-
                     android:fitsSystemWindows="true"
                     android:scaleType="fitCenter"
+                    android:background="@drawable/logo_tourisim_how"
+                    android:id="@+id/btn_tourism_how_tgt"
                     android:layout_gravity="center"/>
+
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Where to Stay/ Eat?"
+                    android:text="How to get\nthere?"
                     android:textStyle="bold"
                     android:layout_marginTop="5dp"
                     android:textSize="15sp"
@@ -233,6 +240,7 @@
 
         </LinearLayout>
 
+
         <LinearLayout
                 android:layout_marginTop="5dp"
                 android:layout_width="180dp"
@@ -242,19 +250,19 @@
             <Button
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-
+                    android:id="@+id/btn_tourism_gallery"
                     android:fitsSystemWindows="true"
                     android:scaleType="fitCenter"
+                    android:background="@drawable/logo_tourism_gallery"
                     android:layout_gravity="center"/>
-
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Where to go?"
+                    android:text="Landmarks/\nGallery"
                     android:textStyle="bold"
                     android:layout_marginTop="5dp"
-                    android:padding="3dp"
                     android:textSize="15sp"
+                    android:padding="3dp"
                     android:textAlignment="center"
                     android:gravity="center"
                     android:textColor="@color/white"/>

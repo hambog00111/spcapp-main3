@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
@@ -6,241 +7,250 @@
             android:layout_height="match_parent"
             android:background="@drawable/background"
             android:paddingTop="5dp"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp">
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
 
     <LinearLayout android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:orientation="vertical"
     >
 
-        <LinearLayout android:layout_height="wrap_content"
-                      android:layout_width="match_parent"
-                      android:gravity="center">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="7dp">
+
+
+
+
             <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="4dp"
                     android:gravity="center">
-
                 <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:src="@drawable/spc_logo2"
-                        android:layout_marginStart="6dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/spc_logo"
+                        android:id="@+id/imageView2"
+                        android:layout_marginStart="4dp"
                         android:layout_marginTop="4dp"/>
-
                 <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingLeft="15dp">
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:text="Republic of the Philippines"
                             android:textColor="@color/white"
-                            android:textSize="15sp"
-                            android:layout_marginTop="13dp"
-                            android:gravity="center"
-                            android:layout_gravity="center"
-                            android:text="Republic of the Philippines"/>
-
-                    <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/white"
-                            android:textSize="15sp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginBottom="10dp"
+                            android:textSize="17dp"
+                    />
 
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CITY GOVERMENT OF SAN PABLO"
+                            android:textColor="@color/white"
                             android:textStyle="bold"
+                            android:textSize="23sp"
+                            android:layout_marginTop="3dp"
 
-                            android:text="CITY GOVERMENT OF SAN PABLO"/>
+                    />
                 </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
-
-
-    <ImageView android:layout_width="match_parent"
-               android:layout_height="200dp"
-               android:src="@drawable/cathedral"
-               android:fitsSystemWindows="true"
-               android:layout_gravity="center"
-               android:scaleType="center"
-               android:padding="5dp"
-               android:layout_marginLeft="5dp"
-               android:layout_marginRight="5dp"
-    />
-
-
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="HISTORY"
-                android:textStyle="bold"
-                android:textAlignment="center"
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:textSize="25sp"
-                android:textColor="@color/white"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-        />
-
-        <me.biubiubiu.justifytext.library.JustifyTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/history1"
-                android:textColor="@color/white"
-                android:layout_marginStart="27dp"
-                android:textSize="13sp"
-        />
-
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="The Pre-Hispanic Village of Sampalok"
-                android:textStyle="bold"
-                android:paddingLeft="20dp"
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:textSize="20sp"
-                android:textColor="@color/white"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-        />
-
-        <me.biubiubiu.justifytext.library.JustifyTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/Sampalok"
-                android:textColor="@color/white"
-                android:layout_marginStart="27dp"
-                android:textSize="13sp"
-        />
-
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="The Coming of Spaniards"
-                android:textStyle="bold"
-                android:paddingLeft="20dp"
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:textSize="20sp"
-                android:textColor="@color/white"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
-
-        <me.biubiubiu.justifytext.library.JustifyTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/Spaniards"
-                android:textColor="@color/white"
-                android:layout_marginStart="27dp"
-                android:textSize="13sp"
-        />
-
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="American Occupation"
-                android:textStyle="bold"
-                android:paddingLeft="20dp"
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:textSize="20sp"
-                android:textColor="@color/white"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
-
-        <me.biubiubiu.justifytext.library.JustifyTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/american"
-                android:textColor="@color/white"
-                android:layout_marginStart="27dp"
-                android:textSize="13sp"/>
-
-
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Japanese Occupation"
-                android:textStyle="bold"
-                android:paddingLeft="20dp"
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:textSize="20sp"
-                android:textColor="@color/white"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"/>
-
-        <me.biubiubiu.justifytext.library.JustifyTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/japanese"
-                android:textColor="@color/white"
-                android:layout_marginStart="27dp"
-                android:textSize="13sp"/>
-
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Modern History"
-                android:textStyle="bold"
-                android:paddingLeft="20dp"
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:textSize="20sp"
-                android:textColor="@color/white"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
-
-        <me.biubiubiu.justifytext.library.JustifyTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/marcos"
-                android:textColor="@color/white"
-                android:layout_marginStart="27dp"
-                android:textSize="13sp"/>
-
-    </LinearLayout>
-
-
-        <TextView android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:background="@drawable/line_border"
-        android:layout_marginBottom="15dp"/>
-
-
         <ImageView android:layout_width="match_parent"
-                   android:layout_height="200dp"
-                   android:src="@drawable/lights"
+                   android:layout_height="300dp"
+                   android:src="@drawable/cathedral"
                    android:fitsSystemWindows="true"
                    android:layout_gravity="center"
-                   android:scaleType="centerInside"
+                   android:scaleType="centerCrop"
                    android:padding="5dp"
                    android:layout_marginLeft="5dp"
                    android:layout_marginRight="5dp"
         />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HISTORY"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="32sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/history2"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="35dp"
+                    android:textSize="17sp"/>
+
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The Pre-Hispanic Village of Sampalok"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="28sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sampalok"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="35dp"
+                    android:textSize="17sp"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The Coming of Spaniards"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="28sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Spaniards"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="35dp"
+                    android:textSize="17sp"
+
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="American Occupation"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="28sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/american"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="35dp"
+                    android:textSize="17sp"
+
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Japanese Occupation"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="28sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/japanese"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="35dp"
+                    android:textSize="17sp"
+
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Modern History"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="28sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/marcos"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="35dp"
+                    android:textSize="17sp"
+
+            />
+
+
+        </LinearLayout>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/line_border"
+                  android:layout_marginBottom="15dp"/>
+
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="300dp"
+               android:src="@drawable/lights"
+               android:fitsSystemWindows="true"
+               android:layout_gravity="center"
+               android:scaleType="centerCrop"
+               android:padding="5dp"
+               android:layout_marginLeft="5dp"
+               android:layout_marginRight="5dp"
+    />
 
 
     <LinearLayout
@@ -255,7 +265,7 @@
                 android:textAlignment="center"
                 android:paddingBottom="5dp"
                 android:paddingTop="5dp"
-                android:textSize="25sp"
+                android:textSize="32sp"
                 android:textColor="@color/white"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="10dp"
@@ -303,36 +313,36 @@
 
     </LinearLayout>
 
+
         <TextView android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:background="@drawable/line_border"
                   android:layout_marginBottom="15dp"/>
 
-
         <ImageView android:layout_width="match_parent"
-                   android:layout_height="200dp"
+                   android:layout_height="300dp"
                    android:src="@drawable/slake5"
                    android:fitsSystemWindows="true"
                    android:layout_gravity="center"
-                   android:scaleType="centerInside"
-                   android:padding="5dp"
-
+                   android:scaleType="centerCrop"
+                   android:padding="10dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="5dp"
         />
+
 
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-
-
             <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Location and Topography"
+                    android:text="Location and Topology"
                     android:textStyle="bold"
                     android:paddingBottom="5dp"
                     android:paddingTop="5dp"
-                    android:textSize="25sp"
+                    android:textSize="33sp"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:layout_marginBottom="5dp"
@@ -347,8 +357,7 @@
                     android:paddingLeft="20dp"
                     android:paddingBottom="5dp"
                     android:paddingTop="5dp"
-                    android:textSize="20sp"
-
+                    android:textSize="28sp"
                     android:textColor="@color/white"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="10dp"
@@ -360,8 +369,33 @@
                     android:layout_height="wrap_content"
                     android:text="@string/location_geographical"
                     android:textColor="@color/white"
-                    android:layout_marginStart="27dp"
-                    android:textSize="13sp"
+                    android:layout_marginStart="35dp"
+                    android:textSize="17sp"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Topography"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="28sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+            />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location_topography"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="35dp"
+                    android:textSize="17sp"
             />
 
             <TextView
@@ -370,8 +404,7 @@
                     android:text="Approximate Distance of Neighboring Municipalities\n San Pablo City"
                     android:textStyle="bold"
                     android:paddingBottom="5dp"
-
-                    android:textSize="13sp"
+                    android:textSize="17sp"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:layout_marginBottom="5dp"
@@ -387,14 +420,14 @@
 
                 <TextView android:layout_width="195dp"
                           android:text="Name of Municipality"
-                          android:textSize="13sp"
+                          android:textSize="17sp"
                           android:textColor="@color/white"
                           android:gravity="center"
                           android:layout_height="wrap_content"/>
 
                 <TextView android:layout_width="195dp"
                           android:text="Approximate Distance\n (Kilometers)"
-                          android:textSize="13sp"
+                          android:textSize="17sp"
                           android:textColor="@color/white"
                           android:gravity="center"
                           android:layout_height="wrap_content"/>
@@ -410,14 +443,14 @@
 
                 <TextView android:layout_width="195dp"
                           android:text="@string/location_municipality"
-                          android:textSize="15sp"
+                          android:textSize="17sp"
                           android:textColor="@color/white"
                           android:gravity="center"
                           android:layout_height="wrap_content"/>
 
                 <TextView android:layout_width="195dp"
                           android:text="@string/location_distance"
-                          android:textSize="15sp"
+                          android:textSize="17sp"
                           android:textColor="@color/white"
                           android:gravity="center"
                           android:layout_height="wrap_content"/>
@@ -427,36 +460,12 @@
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Topography"
-                    android:textStyle="bold"
-                    android:paddingLeft="20dp"
-                    android:paddingBottom="5dp"
-                    android:paddingTop="5dp"
-                    android:textSize="20sp"
-                    android:textColor="@color/white"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-            />
-
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/location_topography"
-                    android:textColor="@color/white"
-                    android:layout_marginStart="27dp"
-                    android:textSize="13sp"
-            />
-
-            <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="Climate"
                     android:textStyle="bold"
                     android:paddingLeft="20dp"
                     android:paddingBottom="5dp"
                     android:paddingTop="5dp"
-                    android:textSize="20sp"
+                    android:textSize="28sp"
                     android:textColor="@color/white"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="10dp"
@@ -468,50 +477,33 @@
                     android:layout_height="wrap_content"
                     android:text="@string/location_climate"
                     android:textColor="@color/white"
-                    android:layout_marginStart="27dp"
-                    android:textSize="13sp"
-            />
+                    android:layout_marginStart="35dp"
+                    android:textSize="17sp"
 
+            />
         </LinearLayout>
+
 
         <TextView android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:background="@drawable/line_border"
                   android:layout_marginBottom="15dp"/>
 
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="HYMN"
-                android:textStyle="bold"
-                android:textAlignment="center"
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:textSize="25sp"
-                android:textColor="@color/white"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-        />
 
-<FrameLayout android:layout_width="match_parent"
-             android:layout_height="wrap_content">
-
-
-</FrameLayout>
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="LUNSOD NAMING MAHAL"
                     android:textStyle="bold"
+
                     android:paddingBottom="5dp"
                     android:paddingTop="5dp"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
+                    android:textSize="28sp"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:layout_marginBottom="5dp"
@@ -523,11 +515,9 @@
                     android:layout_height="wrap_content"
                     android:text="@string/hymn"
                     android:textStyle="bold"
-
                     android:paddingBottom="5dp"
                     android:paddingTop="5dp"
-                    android:textSize="15sp"
-                    android:textAlignment="center"
+                    android:textSize="20sp"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:layout_marginBottom="5dp"
@@ -535,105 +525,77 @@
                     android:layout_gravity="center"
             />
 
-
             <Button
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:text="PLAY VIDEO HYMN"
-                android:id="@+id/btn_play_hymn"
-                android:background="@drawable/text_border2"
-                android:padding="8dp"
-                android:textSize="14sp"
-                android:layout_gravity="center"
-                android:textColor="@color/white"
-                android:gravity="center"
-                android:layout_marginBottom="8dp"/>
-
-
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:text="PLAY VIDEO HYMN"
+                    android:id="@+id/btn_play_hymn"
+                    android:background="@drawable/text_border2"
+                    android:padding="8dp"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp"/>
 
         </LinearLayout>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:layout_marginTop="20dp">
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/phlogo"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
             <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="70dp"
-                        android:src="@drawable/phlogo"
-                />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                    android:layout_width="150dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-
                 <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="18dp"
                         android:text="@string/Reps"
-                        android:textSize="10dp"
+                        android:textSize="13dp"
                         android:textColor="@color/white"
                         android:textAlignment="center"
-                        android:gravity="center"
                         android:textStyle="bold"/>
-
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/Rep"
-                        android:textSize="10dp"
+                        android:textSize="13dp"
                         android:textColor="@color/white"
                         android:textAlignment="center"
-                        android:gravity="center"
                         android:layout_marginBottom="5dp"/>
-
                 <TextView
                         android:text="© 2019 San Pablo City Goverment"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="10sp"
-                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:textSize="13dp"
                         android:textColor="@color/white"
                         android:textAlignment="center"
                         android:layout_marginEnd="8dp"
                         android:layout_marginStart="8dp"
-                        android:id="@+id/textView8"/>
+                        android:id="@+id/textView8"
+
+                />
 
             </LinearLayout>
-            <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="70dp"
-                        android:src="@drawable/transpa"
-                />
-            </LinearLayout>
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/transpa"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+
         </LinearLayout>
 
         <LinearLayout
@@ -652,7 +614,7 @@
                         android:text="Developed by:"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="13sp"
+                        android:textSize="15sp"
                         android:gravity="center"
                         android:layout_marginStart="5dp"
                         android:textColor="@color/white"
@@ -660,8 +622,8 @@
                         android:layout_marginEnd="3dp"
                 />
                 <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="21dp"
+                        android:layout_width="90dp"
+                        android:layout_height="25dp"
                         android:src="@drawable/pylon"
                         android:layout_marginRight="13dp"/>
             </LinearLayout>
@@ -674,7 +636,7 @@
                         android:text="Developer: "
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="13sp"
+                        android:textSize="15sp"
                         android:gravity="center"
                         android:layout_marginStart="5dp"
                         android:textColor="@color/white"
@@ -684,13 +646,15 @@
                         android:text="Chris Velasco"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="13sp"
+                        android:textSize="15sp"
                         android:gravity="center"
-
                         android:textColor="@color/white"
                         android:textAlignment="center"
                 />
             </LinearLayout>
+
         </LinearLayout>
+
     </LinearLayout>
+
 </ScrollView>
