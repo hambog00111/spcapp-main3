@@ -207,7 +207,7 @@
                                   android:background="@drawable/text_border2"
                                   android:padding="10dp"
                                   android:textStyle="bold"
-                                  android:text="City Hot Lines"
+                                  android:text="City Hotlines"
                                   android:id="@+id/btn_city_hot_lines"/>
                         <TextView
                                 android:textAllCaps="true"
