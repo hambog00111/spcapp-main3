@@ -1,40 +1,90 @@
 package layout.ph.sanpablocitygov.iSanPablo.goverment
 
 import android.annotation.SuppressLint
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ListView
+import kotlinx.android.synthetic.main.row_cityhot_lines.*
+import layout.ph.sanpablocitygov.iSanPablo.FragmentCityEmployeesCorner
 import layout.ph.sanpablocitygov.iSanPablo.cityhotlines.CityhotlineAdapter
 import layout.ph.sanpablocitygov.iSanPablo.cityhotlines.CityhotlineModel
-import layout.ph.sanpablocitygov.iSanPablo.cityhotlines.CityhotlinephoneAdapter
+
 
 import ph.sanpablocitygov.iSanPablo.R
 
 class FragmentCityHotline : Fragment() {
 
     private lateinit var listView: ListView
-    var cityhotline_name = arrayOf("San Pablo City Goverment", "San Pablo City Police", "Red Cross San Pablo", "San Pablo City Emergency Hospital","San Pablo General Hospital","City Disaster Risk Reduction Management Office","San Pablo Welfare and Development Office","Bureau of Fire Protection")
-
 
     @SuppressLint("RestrictedApi")
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
-        val rootview = inflater.inflate(R.layout.fragment_cityhotline_listview, null)
+        val rootview = inflater.inflate(R.layout.fragment_cityhotline_listview,null)
+
+
 
         listView = rootview.findViewById(R.id.listview_cityhotline)
         genList(listView)
+
+        val btncall= rootview.findViewById<Button>(R.id.btn_call_city_hot_line)
+        btncall?.setOnClickListener{
+            activity!!.supportFragmentManager.beginTransaction().replace(R.id.frag_container,
+                FragmentCityEmployeesCorner()
+            ).commit()
+        }
+
 
 
         return rootview
     }
 
     fun genList(ls: ListView) {
-        val lists: MutableList<CityhotlineModel> = mutableListOf<CityhotlineModel>()
-        for (i: Int in 0 until cityhotline_name.size step 1) {
-            lists.add(CityhotlineModel(cityhotline_name[i]))
+        var lists: MutableList<CityhotlineModel> = mutableListOf<CityhotlineModel>()
+
+        for (i in 0..0) {
+            var user: CityhotlineModel = CityhotlineModel("San Pablo City Goverment", "(049)3000-065")
+            lists.add(user)
+        }
+
+        for (i in 0..0) {
+            var user: CityhotlineModel = CityhotlineModel("San Pablo City Police", "(049)5626-474/(049)5210-610")
+            lists.add(user)
+        }
+
+
+        for (i in 0..0) {
+            var user: CityhotlineModel = CityhotlineModel("Red Cross San Pablo", "(049)5624-025")
+            lists.add(user)
+        }
+        for (i in 0..0) {
+            var user: CityhotlineModel = CityhotlineModel("San Pablo City Emergency Hospital", "(049)5031-351/(049)5031-432")
+            lists.add(user)
+        }
+
+
+        for (i in 0..0) {
+            var user: CityhotlineModel = CityhotlineModel("San Pablo General Hospital", "(049)5031-351/(049)5031431")
+            lists.add(user) }
+
+        for (i in 0..0) {
+            var user: CityhotlineModel = CityhotlineModel("City Disaster Risk Reduction Management Office", "(049)8000-405")
+            lists.add(user)
+        }
+
+
+        for (i in 0..0) {
+            var user: CityhotlineModel = CityhotlineModel("San Pablo Welfare and Development Office", "(049)5621-575")
+            lists.add(user)
+        }
+        for (i in 0..0) {
+            var user: CityhotlineModel = CityhotlineModel("Bureau of Fire Protection", "(049)5627-654")
+            lists.add(user)
         }
 
         val list = CityhotlineAdapter(requireContext(), R.layout.row_cityhot_lines, lists)

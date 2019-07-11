@@ -13,24 +13,21 @@ import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.MenuItem
 import ph.sanpablocitygov.iSanPablo.goverment.department.FragmentDepartment
-import ph.sanpablocitygov.iSanPablo.goverment.FragmentLocalOfficials
-import ph.sanpablocitygov.iSanPablo.goverment.FragmentOfficeMap
 import ph.sanpablocitygov.iSanPablo.home.FragmentHome
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.dialog_disclosure.view.*
-import kotlinx.android.synthetic.main.dialog_economy.view.*
+import kotlinx.android.synthetic.main.dialog_my_isanpablo.view.*
+import layout.FragmentMyTaxes
+import layout.ph.sanpablocitygov.iSanPablo.FragmentCityEmployeesCorner
+import layout.ph.sanpablocitygov.iSanPablo.FragmentMyAppOnlineRequest
+import layout.ph.sanpablocitygov.iSanPablo.goverment.FragmentCityHotline
+
+import layout.ph.sanpablocitygov.iSanPablo.goverment.department.FragmentGovermentOnlineServices
 import ph.sanpablocitygov.iSanPablo.OurGovernment.FragmentOurGoverment
+import ph.sanpablocitygov.iSanPablo.home.BusinessPermit.FragmentBusinessPermit
 import ph.sanpablocitygov.iSanPablo.links.*
-import ph.sanpablocitygov.iSanPablo.theCity.FragmentHistory
-import ph.sanpablocitygov.iSanPablo.theCity.FragmentHymn
-import ph.sanpablocitygov.iSanPablo.theCity.FragmentLocationTopology
-import ph.sanpablocitygov.iSanPablo.theCity.MissionVision
-import ph.sanpablocitygov.iSanPablo.OurBarangay.FragmentBarangay
-import ph.sanpablocitygov.iSanPablo.theCity.sanPablenos.FragmentSanPablo
-import ph.sanpablocitygov.iSanPablo.tourism.FragmentLandmarks
 //import ph.sanpablocitygov.iSanPablo.tourism.FragmentTourism
-import ph.sanpablocitygov.iSanPablo.tourism.gallery.FragmentGallery
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -563,7 +560,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         setTitle("PDAF UTILIZATION")
 
                         setPositiveButton("OK", DialogInterface.OnClickListener
-                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
                             this@MainActivity,
                             DownloadManager::class.java) as DownloadManager
                             val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/PDAF%20UTILIZATION.xls")
@@ -579,31 +576,80 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             }
 
+            R.id.nav_My_I_San_Pablo-> {
 
+                val disView = LayoutInflater.from(this).inflate(R.layout.dialog_my_isanpablo, null)
+                val disBuilder = AlertDialog.Builder(this)
+                    .setView(disView)
+                val disDialog = disBuilder.show()
 
-            R.id.nav_charter->{
-                var str = "Would you like to download this document?"
-                val builder = AlertDialog.Builder(this)
-                with(builder) {
-                    setMessage(str)
-                    setTitle("Citizen's Charter")
+                disView.btn_business_in_the_city.setOnClickListener {
+                    disDialog.dismiss()
+                    supportFragmentManager.beginTransaction().replace(
+                        R.id.frag_container,
+                        FragmentBusinessPermit()
+                    ).commit()
 
-                    setPositiveButton("OK", DialogInterface.OnClickListener
-                    { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
-                        applicationContext,
-                        DownloadManager::class.java
-                    ) as DownloadManager
-                        val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/SPC%20CC%20V%2004.24.19.pdf")
-                        val request = DownloadManager.Request(uri)
-                        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-                        downloadManager.enqueue(request)  })
-                    setNegativeButton("CANCEL", null)
                 }
-                val alertDialog = builder.create()
 
-                alertDialog.show()
+                disView.btn_my_taxes.setOnClickListener {
+                    disDialog.dismiss()
+                    supportFragmentManager.beginTransaction().replace(
+                        R.id.frag_container,
+                        FragmentFillUp()
+                    ).commit()
+
+                }
+                disView.btn_my_taxes.setOnClickListener {
+                    disDialog.dismiss()
+                    supportFragmentManager.beginTransaction().replace(
+                        R.id.frag_container,
+                        FragmentMyTaxes()
+                    ).commit()
+
+                }
+                disView.btn_online_request.setOnClickListener {
+                    disDialog.dismiss()
+                    supportFragmentManager.beginTransaction().replace(
+                        R.id.frag_container,
+                        FragmentMyAppOnlineRequest()
+                    ).commit()
+
+                }
+
+                disView.btn_city_hot_lines.setOnClickListener {
+                    disDialog.dismiss()
+                    supportFragmentManager.beginTransaction().replace(
+                        R.id.frag_container,
+                        FragmentCityHotline()
+                    ).commit()
+
+                }
+
+                disView.btn_gov_online_service.setOnClickListener {
+                    disDialog.dismiss()
+                    supportFragmentManager.beginTransaction().replace(
+                        R.id.frag_container,
+                        FragmentGovermentOnlineServices()
+                    ).commit()
+
+                }
+
+                disView.btn_city_employees_corner.setOnClickListener {
+                    disDialog.dismiss()
+                    supportFragmentManager.beginTransaction().replace(
+                        R.id.frag_container,
+                        FragmentCityEmployeesCorner()
+                    ).commit()
+
+                }
+
+                disView.btn_cancel.setOnClickListener {
+                    disDialog.dismiss()
+                }
 
             }
+
 
 
             R.id.nav_webview ->{
