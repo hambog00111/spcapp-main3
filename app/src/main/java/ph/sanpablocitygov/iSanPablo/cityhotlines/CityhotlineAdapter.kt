@@ -20,10 +20,16 @@ class CityhotlineAdapter(var mcontext: Context, var resource:Int, var items:List
 
         var name: TextView = view.findViewById(R.id.title_cityhot_line)
 
+        var phone: TextView = view.findViewById(R.id.title_cityhotline_number)
+
         var cityh : CityhotlineModel = items[position]
 
 
         name.text = cityh.ivcityhotline
+
+
+        phone.text = cityh.ivcityhotlinephone
+
 
 
 
