@@ -12,7 +12,6 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.MenuItem
-import ph.sanpablocitygov.iSanPablo.goverment.department.FragmentDepartment
 import ph.sanpablocitygov.iSanPablo.home.FragmentHome
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
@@ -185,26 +184,38 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,
                     FragmentHome()
-                ).commit()
+                    , null)
+                    .addToBackStack(null)
+                    .commit()
+
             }
             R.id.nav_our_city -> {
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,
-                    FragmentOurCity()
-                ).commit()
+                    FragmentOurCity() , null)
+                    .addToBackStack(null)
+                    .commit()
             }
             R.id.nav_our_government -> {
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,
-                    FragmentOurGoverment()
-                ).commit()
+                    FragmentOurGoverment() , null)
+                    .addToBackStack(null)
+                    .commit()
             }
-
+            R.id.nav_tourism -> {
+                supportFragmentManager.beginTransaction().replace(
+                    R.id.frag_container,
+                FragmentTourism() , null)
+                    .addToBackStack(null)
+                    .commit()
+            }
             R.id.nav_department_head -> {
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,
-                    FragmentDepartment()
-                ).commit()
+                    FragmentDepartment() , null)
+                    .addToBackStack(null)
+                    .commit()
             }
 
             R.id.nav_full_disclosure -> {
@@ -223,7 +234,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         setTitle("4th-quarter-SPP")
 
                         setPositiveButton("OK", DialogInterface.OnClickListener
-                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
                             this@MainActivity,
                             DownloadManager::class.java) as DownloadManager
                             val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/4th-qtr-SPP.xls")
@@ -246,7 +257,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         setTitle("20-utilization-2018-4th-Quarter")
 
                         setPositiveButton("OK", DialogInterface.OnClickListener
-                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
                             this@MainActivity,
                             DownloadManager::class.java) as DownloadManager
                             val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/20-Uitlization-2018-4th-Quarter.xls")
@@ -270,7 +281,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         setTitle("APP-2019")
 
                         setPositiveButton("OK", DialogInterface.OnClickListener
-                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
                             this@MainActivity,
                             DownloadManager::class.java) as DownloadManager
                             val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/APP-2019.xlsx")
@@ -294,7 +305,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         setTitle("BID-RESULTS 2018 4th Quarter")
 
                         setPositiveButton("OK", DialogInterface.OnClickListener
-                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
                             this@MainActivity,
                             DownloadManager::class.java) as DownloadManager
                             val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/BID-RESULTS%202018%204th%20Quarter.xlsx")
@@ -318,7 +329,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         setTitle("SFC-4THQ")
 
                         setPositiveButton("OK", DialogInterface.OnClickListener
-                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
                             this@MainActivity,
                             DownloadManager::class.java) as DownloadManager
                             val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/SCF-4THQ.xlsx")
@@ -342,7 +353,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         setTitle("SEF-Utilization-2018")
 
                         setPositiveButton("OK", DialogInterface.OnClickListener
-                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
                             this@MainActivity,
                             DownloadManager::class.java) as DownloadManager
                             val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/SEF-Utilization-2018.xls")
@@ -366,7 +377,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         setTitle("Statement of Debt Service 03.24.14")
 
                         setPositiveButton("OK", DialogInterface.OnClickListener
-                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
                             this@MainActivity,
                             DownloadManager::class.java) as DownloadManager
                             val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/Statement%20of%20Debt%20Services%2003.24.14.xlsx")
@@ -389,7 +400,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         setTitle("Unliquidated-2018")
 
                         setPositiveButton("OK", DialogInterface.OnClickListener
-                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
                             this@MainActivity,
                             DownloadManager::class.java) as DownloadManager
                             val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/Unliquidated-2018.xlsx")
@@ -412,7 +423,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         setTitle("CDRRMF-12.31.18")
 
                         setPositiveButton("OK", DialogInterface.OnClickListener
-                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
                             this@MainActivity,
                             DownloadManager::class.java) as DownloadManager
                             val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/CDRRMF-12.31.18.xlsx")
@@ -435,7 +446,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         setTitle("Manpower Complement(DILG)")
 
                         setPositiveButton("OK", DialogInterface.OnClickListener
-                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
                             this@MainActivity,
                             DownloadManager::class.java) as DownloadManager
                             val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/Manpower%20Complement%20(DILG).xlsx")
@@ -458,7 +469,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         setTitle("PDAF UTILIZATION")
 
                         setPositiveButton("OK", DialogInterface.OnClickListener
-                        { dialog, which ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
+                        { _, _ ->  val downloadManager: DownloadManager = ContextCompat.getSystemService(
                             this@MainActivity,
                             DownloadManager::class.java) as DownloadManager
                             val uri = Uri.parse("http://www.sanpablocitygov.ph/docs/PDAF%20UTILIZATION.xls")
@@ -472,92 +483,119 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     alertDialog.show()
                 }
 
+                disView.btn_dis_cancel.setOnClickListener {
+                    disDialog.dismiss()
+                }
+
             }
 
 
 
 
-            R.id.nav_webview ->{
-                supportFragmentManager.beginTransaction().replace(
-                    R.id.frag_container,
-                    FragmentBrowser()
-                ).commit()
-            }
+//            R.id.nav_webview ->{
+//                supportFragmentManager.beginTransaction().replace(
+//                    R.id.frag_container,
+//                    FragmentBrowser()
+//                ).commit()
+//            }
 
             R.id.nav_bplo ->{
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,
-                    FragmentFillUp()
-                ).commit()
+                    FragmentFillUp(), null)
+                    .addToBackStack(null)
+                    .commit()
             }
 
             R.id.nav_govph ->{
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,
                     FragmentGOV()
-                ).commit()
+                    , null)
+                    .addToBackStack(null)
+                    .commit()
             }
             R.id.nav_open_data ->{
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,
                     FragmentOpenData()
-                ).commit()
+                    , null)
+                    .addToBackStack(null)
+                    .commit()
             }
             R.id.nav_official_gazette ->{
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,
                     FragmentOfficialGazette()
-                ).commit()
+                    , null)
+                    .addToBackStack(null)
+                    .commit()
             }
 
             R.id.nav_president ->{
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,
                     FragmentOfficePresident()
-                ).commit()
+                    , null)
+                    .addToBackStack(null)
+                    .commit()
             }
             R.id.nav_vice_president ->{
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,
                     FragmentOfficeVice()
-                ).commit()
+                    , null)
+                    .addToBackStack(null)
+                    .commit()
             }
             R.id.nav_senate ->{
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,
                     FragmentSenate()
-                ).commit()
-            }
+                    , null)
+                    .addToBackStack(null)
+                    .commit()
+        }
             R.id.nav_representatives ->{
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,
                     FragmentRepresentatives()
-                ).commit()
+                    , null)
+                    .addToBackStack(null)
+                    .commit()
             }
             R.id.nav_supreme_court ->{
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,
                     FragmentSupremeCourt()
-                ).commit()
+                    , null)
+                    .addToBackStack(null)
+                    .commit()
             }
             R.id.nav_court ->{
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,
                     FragmentCourtAppeals()
-                ).commit()
+                    , null)
+                    .addToBackStack(null)
+                    .commit()
             }
             R.id.nav_sandiganbayan ->{
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,
                     FragmentSandiganbayan()
-                ).commit()
+                    , null)
+                    .addToBackStack(null)
+                    .commit()
             }
 
             else -> {
                 supportFragmentManager.beginTransaction().replace(
                     R.id.frag_container,
                     FragmentHome()
-                ).commit()
+                    , null)
+                    .addToBackStack(null)
+                    .commit()
             }
         }
         drawer_layout.closeDrawer(GravityCompat.START)
