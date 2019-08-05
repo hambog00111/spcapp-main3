@@ -1,5 +1,4 @@
-package ph.sanpablocitygov.iSanPablo.links
-
+package ph.sanpablocitygov.iSanPablo.home.isanpablo.GovernmentOnlineServices
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -11,8 +10,7 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import ph.sanpablocitygov.iSanPablo.R
 
-
-class FragmentHomePassport : Fragment() {
+class FragmentLinkBIR : Fragment() {
 
 
     @SuppressLint("SetJavaScriptEnabled")
@@ -24,7 +22,7 @@ class FragmentHomePassport : Fragment() {
 
 
         val  mWebView = view.findViewById(R.id.home_web_view) as WebView
-        mWebView.loadUrl("https://www.passport.gov.ph/")
+        mWebView.loadUrl("https://www.bir.gov.ph/index.php/registration-requirements/primary-registration/application-for-tin.html")
 
         val webSettings = mWebView.settings
         webSettings.javaScriptEnabled = true
@@ -32,9 +30,9 @@ class FragmentHomePassport : Fragment() {
 // Force links and redirects to open in the WebView instead of in a browser
         mWebView.webViewClient = WebViewClient()
 
+
+
         return  view
 
     }
-
-
 }

@@ -1,5 +1,4 @@
-package ph.sanpablocitygov.iSanPablo.links
-
+package ph.sanpablocitygov.iSanPablo.home.isanpablo.GovernmentOnlineServices
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -11,8 +10,7 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import ph.sanpablocitygov.iSanPablo.R
 
-
-class FragmentHomeBPLO : Fragment() {
+class FragmentLinkPhilSys : Fragment() {
 
 
     @SuppressLint("SetJavaScriptEnabled")
@@ -24,7 +22,7 @@ class FragmentHomeBPLO : Fragment() {
 
 
         val  mWebView = view.findViewById(R.id.home_web_view) as WebView
-        mWebView.loadUrl("http://www.sanpablocitygov.ph/form")
+        mWebView.loadUrl("https://psa.gov.ph/philsys")
 
         val webSettings = mWebView.settings
         webSettings.javaScriptEnabled = true
@@ -32,9 +30,9 @@ class FragmentHomeBPLO : Fragment() {
 // Force links and redirects to open in the WebView instead of in a browser
         mWebView.webViewClient = WebViewClient()
 
+
+
         return  view
 
     }
-
-
 }

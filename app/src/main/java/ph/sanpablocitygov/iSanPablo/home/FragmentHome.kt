@@ -1,37 +1,22 @@
 package ph.sanpablocitygov.iSanPablo.home
 
 import android.annotation.SuppressLint
-import android.app.AlertDialog
-import android.app.DownloadManager
-import android.content.Context
-import android.content.DialogInterface
-import android.content.pm.PackageManager
-import android.net.Uri
-import android.os.Build
 import android.os.Bundle
-import android.provider.MediaStore
 import android.support.v4.app.Fragment
-import android.support.v4.content.ContextCompat
-import android.support.v4.content.ContextCompat.*
 import android.support.v4.view.ViewPager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import kotlinx.android.synthetic.main.fragment_home_layout_2.*
 import ph.sanpablocitygov.iSanPablo.R
 import ph.sanpablocitygov.iSanPablo.links.*
-import java.util.jar.Manifest
 
 import android.widget.Button
-import android.widget.MediaController
-import android.widget.VideoView
-import kotlinx.android.synthetic.main.fragment_home_layout_2.view.*
 import layout.ph.sanpablocitygov.iSanPablo.goverment.FragmentCityHotline
-import ph.sanpablocitygov.iSanPablo.home.isanpablo.BusinessPermit.FragmentBusinessPermit
+import ph.sanpablocitygov.iSanPablo.home.isanpablo.BusinessInTheCity.FragmentBusinessInTheCity
 import ph.sanpablocitygov.iSanPablo.home.isanpablo.FragmentCityEmployeesCorner
-import ph.sanpablocitygov.iSanPablo.home.isanpablo.FragmentGovermentOnlineServices
-import ph.sanpablocitygov.iSanPablo.home.isanpablo.FragmentMyAppOnlineRequest
+import ph.sanpablocitygov.iSanPablo.home.isanpablo.GovernmentOnlineServices.FragmentGovermentOnlineServices
+import ph.sanpablocitygov.iSanPablo.home.isanpablo.MyAppOnlineRequest.FragmentMyAppOnlineRequest
 import ph.sanpablocitygov.iSanPablo.home.isanpablo.FragmentMyTaxes
 
 @Suppress("UNREACHABLE_CODE", "PLUGIN_WARNING")
@@ -104,7 +89,7 @@ class FragmentHome : Fragment() {
         textBITC.setOnClickListener {
             activity!!.supportFragmentManager.beginTransaction().replace(
                 R.id.frag_container,
-                FragmentBusinessPermit()
+                FragmentBusinessInTheCity()
                 , null)
                 .addToBackStack(null)
                 .commit()

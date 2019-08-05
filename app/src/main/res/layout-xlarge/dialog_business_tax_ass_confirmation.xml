@@ -1,88 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:orientation="vertical"
-            android:background="@drawable/background">
+              android:background="@drawable/background">
 
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Request for online Assessment"
+            android:text="Confirmation for Online Assessment"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:textSize="35sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name:"
             android:textStyle="bold"
             android:layout_marginStart="10dp"
             android:paddingBottom="5dp"
             android:paddingTop="5dp"
             android:textSize="30sp"
             android:textColor="@color/white"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"/>
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="First Name:"
-            android:textStyle="bold"
-            android:layout_marginStart="10dp"
-            android:paddingBottom="5dp"
-            android:paddingTop="5dp"
-            android:textSize="25sp"
-            android:textColor="@color/white"
-            android:layout_marginBottom="10dp"
-            android:layout_gravity="center"/>
-    <EditText android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:id="@+id/txt_assess_first"
-              android:textColor="@color/white"
-              android:layout_marginStart="10dp"
-              android:layout_marginEnd="10dp"
-              android:textSize="25sp"
-              android:hint="First Name"/>
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Middle Name:"
-            android:textStyle="bold"
-            android:layout_marginStart="10dp"
-            android:paddingBottom="5dp"
-            android:paddingTop="5dp"
-            android:textSize="25sp"
-            android:textColor="@color/white"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_gravity="center"/>
 
-    <EditText android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:id="@+id/txt_assess_middle"
-              android:textColor="@color/white"
-              android:layout_marginStart="10dp"
-              android:layout_marginEnd="10dp"
-              android:textSize="25sp"
-              android:layout_marginBottom="10dp"
-              android:hint="Middle Name"/>
 
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Last Name:"
+            android:text=""
             android:textStyle="bold"
             android:layout_marginStart="10dp"
             android:paddingBottom="5dp"
             android:paddingTop="5dp"
             android:textSize="25sp"
+            android:id="@+id/txt_assess_fullname"
             android:textColor="@color/white"
             android:layout_marginBottom="5dp"
             android:layout_gravity="center"/>
 
-    <EditText android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:id="@+id/txt_assess_last"
-              android:textColor="@color/white"
-              android:layout_marginStart="10dp"
-              android:layout_marginEnd="10dp"
-              android:textSize="25sp"
-              android:hint="Last Name"/>
+
+
+
 
     <TextView
             android:layout_width="match_parent"
@@ -92,22 +59,24 @@
             android:layout_marginStart="10dp"
             android:paddingBottom="5dp"
             android:paddingTop="5dp"
-            android:textSize="25sp"
+            android:textSize="30sp"
             android:textColor="@color/white"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_gravity="center"/>
 
-    <EditText android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:id="@+id/txt_assess_ref"
-              android:textColor="@color/white"
-              android:layout_marginStart="10dp"
-              android:layout_marginEnd="10dp"
-              android:textSize="25sp"
-              android:inputType="number"
-              android:layout_marginBottom="10dp"
-              android:hint="112388548"/>
-
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10093-11234-2222"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:layout_marginStart="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"/>
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -116,65 +85,57 @@
             android:layout_marginStart="10dp"
             android:paddingBottom="5dp"
             android:paddingTop="5dp"
-            android:textSize="25sp"
+            android:textSize="30sp"
             android:textColor="@color/white"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_gravity="center"/>
-
-    <EditText android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:id="@+id/txt_assess_email"
-              android:textColor="@color/white"
-              android:layout_marginStart="10dp"
-              android:layout_marginEnd="10dp"
-              android:textSize="25sp"
-              android:layout_marginBottom="5dp"
-              android:hint="example@gmail.com"/>
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="*please enter your own valid email address*"
+            android:text="juandelacruz@gmail.com"
             android:textStyle="bold"
             android:layout_marginStart="10dp"
             android:paddingBottom="5dp"
             android:paddingTop="5dp"
-            android:textSize="23sp"
+            android:textSize="25sp"
+            android:inputType="textEmailAddress"
             android:textColor="@color/white"
             android:layout_marginBottom="5dp"
             android:layout_gravity="center"/>
+
 
 
     <LinearLayout android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:orientation="horizontal">
 
-        <Button android:layout_width="160dp"
-                android:layout_height="60dp"
+        <Button android:layout_width="130dp"
+                android:layout_height="50dp"
                 android:layout_gravity=""
                 android:background="@drawable/text_border"
                 android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
                 android:layout_margin="15dp"
-                android:text="Send Request"
-                android:id="@+id/btn_assess_send"
-                android:textSize="20sp"/>
+                android:text="Confirm"
+                android:id="@+id/btn_assess_confirm"
+                android:textSize="22sp"/>
 
         <Button android:layout_width="130dp"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_gravity=""
                 android:background="@drawable/text_border"
                 android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
                 android:layout_margin="15dp"
-                android:text="Clear all"
-                android:id="@+id/btn_assess_clearall"
-                android:textSize="18sp"/>
+                android:text="Edit"
+                android:id="@+id/btn_assess_edit"
+                android:textSize="22sp"/>
 
 
         <Button android:layout_width="130dp"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_gravity=""
                 android:background="@drawable/text_border"
                 android:textStyle="bold"
@@ -183,7 +144,9 @@
                 android:layout_margin="15dp"
                 android:text="Cancel"
                 android:id="@+id/btn_assess_cancel"
-                android:textSize="18sp"/>
+                android:textSize="22sp"/>
+
+
     </LinearLayout>
 
 

@@ -1,5 +1,4 @@
-package ph.sanpablocitygov.iSanPablo.links
-
+package ph.sanpablocitygov.iSanPablo.home.isanpablo.GovernmentOnlineServices
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -11,8 +10,7 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import ph.sanpablocitygov.iSanPablo.R
 
-
-class FragmentHomeDTI : Fragment() {
+class FragmentLinkPassport : Fragment() {
 
 
     @SuppressLint("SetJavaScriptEnabled")
@@ -24,7 +22,7 @@ class FragmentHomeDTI : Fragment() {
 
 
         val  mWebView = view.findViewById(R.id.home_web_view) as WebView
-        mWebView.loadUrl("https://www.bnrs.dti.gov.ph/web/guest/home")
+        mWebView.loadUrl("https://www.passport.gov.ph/")
 
         val webSettings = mWebView.settings
         webSettings.javaScriptEnabled = true
@@ -32,9 +30,9 @@ class FragmentHomeDTI : Fragment() {
 // Force links and redirects to open in the WebView instead of in a browser
         mWebView.webViewClient = WebViewClient()
 
+
+
         return  view
 
     }
-
-
 }
