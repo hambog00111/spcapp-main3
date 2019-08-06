@@ -24,8 +24,6 @@ class FragmentCityHotline : Fragment() {
 
         val rootview = inflater.inflate(R.layout.fragment_isanpablo_hotline,null)
 
-
-
         listView = rootview.findViewById(R.id.listview_cityhotline)
         genList(listView)
 
