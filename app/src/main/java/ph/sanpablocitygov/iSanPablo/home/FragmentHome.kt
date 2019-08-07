@@ -17,7 +17,7 @@ import ph.sanpablocitygov.iSanPablo.home.isanpablo.BusinessInTheCity.FragmentBus
 import ph.sanpablocitygov.iSanPablo.home.isanpablo.FragmentCityEmployeesCorner
 import ph.sanpablocitygov.iSanPablo.home.isanpablo.GovernmentOnlineServices.FragmentGovermentOnlineServices
 import ph.sanpablocitygov.iSanPablo.home.isanpablo.MyAppOnlineRequest.FragmentMyAppOnlineRequest
-import ph.sanpablocitygov.iSanPablo.home.isanpablo.FragmentMyTaxes
+import ph.sanpablocitygov.iSanPablo.home.isanpablo.FragmentMyTaxes.FragmentMyTaxes
 
 @Suppress("UNREACHABLE_CODE", "PLUGIN_WARNING")
 class FragmentHome : Fragment() {
