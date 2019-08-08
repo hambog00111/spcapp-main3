@@ -130,7 +130,7 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="25dp"
+                                android:layout_height="29dp"
                                 android:text="My iSanPablo"
                                 android:textStyle="bold"
                                 android:gravity="center"
@@ -146,6 +146,7 @@
                                 android:layout_height="wrap_content"
                                 android:padding="5dp"
                                 android:gravity="center"
+
                                 android:layout_gravity="center"
                                 android:orientation="horizontal">
                             <LinearLayout
